@@ -1,0 +1,728 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"enlaceLoo",
+				"enlaceLogoUniversidad"
+			],
+			[
+				"enlaceLogo",
+				"enlaceLogoUniversidad"
+			],
+			[
+				"enlace",
+				"enlaceLogoGrupo"
+			],
+			[
+				"enla",
+				"enlaceLogoGrupo"
+			],
+			[
+				"ite",
+				"iteGrupo"
+			],
+			[
+				"arra",
+				"arrayGrupos"
+			],
+			[
+				"paddi",
+				"padding-bottom"
+			],
+			[
+				"padd",
+				"padding-bottom"
+			],
+			[
+				"enlaceI",
+				"enlaceInstitucion"
+			],
+			[
+				"enlaceIn",
+				"enlaceInstitucion2"
+			],
+			[
+				"logo",
+				"logoGrandeInstitucion"
+			],
+			[
+				"estilo",
+				"estilo-div-participantes-responsive"
+			],
+			[
+				"ri",
+				"right"
+			],
+			[
+				"paddin",
+				"padding-top"
+			],
+			[
+				"h6",
+				"h6-participantes-right"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"res",
+				"responsive-iframe-container-outline"
+			],
+			[
+				"respo",
+				"responsive-iframe-container-outline"
+			],
+			[
+				"fi",
+				"ficheroOrigen"
+			],
+			[
+				"qs_tab",
+				"qs_tableTotal"
+			],
+			[
+				"inline",
+				"inline-table"
+			],
+			[
+				"nom",
+				"nombreInstitucion"
+			],
+			[
+				"col-xs",
+				"col-xs-offset-2"
+			],
+			[
+				"nombre",
+				"nombreCoordinador"
+			],
+			[
+				"en",
+				"enlaceUniversidad"
+			],
+			[
+				"sig",
+				"siglasUniversidad"
+			],
+			[
+				"si",
+				"siglasInstitucion"
+			],
+			[
+				"siglas",
+				"siglasInstitucion"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"margi",
+				"margin-bottom"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"img",
+				"img-responsive"
+			],
+			[
+				"de",
+				"descripcion"
+			],
+			[
+				"im",
+				"imagenDeHerramienta"
+			],
+			[
+				"value",
+				"valueHerramientaCSV"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
+				"elace",
+				"enlaceLogoHerramienta"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"cta-sec",
+				"cta-section2"
+			],
+			[
+				"file_",
+				"file_get_contents"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"if",
+				"iframe	Tag"
+			],
+			[
+				"color",
+				"color_cerulean_approx"
+			],
+			[
+				"border",
+				"border-style"
+			],
+			[
+				"sub",
+				"substring(from, to?)"
+			],
+			[
+				"font-",
+				"font-weight"
+			],
+			[
+				"text-",
+				"text-decoration"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"link",
+				"link	Tag"
+			],
+			[
+				"back",
+				"background-color"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "<!doctype html>\n<!--\n	Template:	 Unika - Responsive One Page HTML5 Template\n	Author:		 imransdesign.com\n	URL:		 http://imransdesign.com/\n    Designed By: https://www.behance.net/poljakova\n	Version:	1.0	\n-->\n<html lang=\"en-US\">\n	\n<!-- Mirrored from demo.imransdesign.com/unika/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 06 Jul 2015 10:01:19 GMT -->\n<head>\n\n		<meta charset=\"utf-8\">\n		<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n		<title>Unika - Responsive One Page HTML5 Template</title>\n		<meta name=\"description\" content=\"Bootstrap HTML5 Template\">\n		<meta name=\"keywords\" content=\"HTML5, Bootsrtrap, One Page, Responsive, Template, Portfolio\" />\n		<meta name=\"author\" content=\"imransdesign.com\">\n\n		<!-- Mobile Metas -->\n		<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n        \n        <!-- Google Fonts  -->\n		<link href='http://fonts.googleapis.com/css?family=Roboto:400,700,500' rel='stylesheet' type='text/css'> <!-- Body font -->\n		<link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'> <!-- Navbar font -->\n\n		<!-- Libs and Plugins CSS -->\n		<link rel=\"stylesheet\" href=\"inc/bootstrap/css/bootstrap.min.css\">\n		<link rel=\"stylesheet\" href=\"inc/animations/css/animate.min.css\">\n		<link rel=\"stylesheet\" href=\"inc/font-awesome/css/font-awesome.min.css\"> <!-- Font Icons -->\n		<link rel=\"stylesheet\" href=\"inc/owl-carousel/css/owl.carousel.css\">\n		<link rel=\"stylesheet\" href=\"inc/owl-carousel/css/owl.theme.css\">\n\n		<!-- Theme CSS -->\n        <link rel=\"stylesheet\" href=\"css/reset.css\">\n		<link rel=\"stylesheet\" href=\"css/style.css\">\n		<link rel=\"stylesheet\" href=\"css/mobile.css\">\n\n		<!-- Skin CSS -->\n        <link rel=\"stylesheet\" href=\"css/skin/cool-gray.css\">\n        <link rel=\"alternate stylesheet\" media=\"screen\" title=\"ice-blue\" href=\"css/skin/ice-blue.css\"> \n        <link rel=\"alternate stylesheet\" media=\"screen\" title=\"summer-orange\" href=\"css/skin/summer-orange.css\">\n        <link rel=\"alternate stylesheet\" media=\"screen\" title=\"fresh-lime\" href=\"css/skin/fresh-lime.css\">\n        <link rel=\"alternate stylesheet\" media=\"screen\" title=\"night-purple\" href=\"css/skin/night-purple.css\">\n\n		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->\n		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->\n\n		<!--[if lt IE 9]>\n			<script src=\"https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js\"></script>\n			<script src=\"https://oss.maxcdn.com/respond/1.4.2/respond.min.js\"></script>\n		<![endif]-->\n\n	</head>\n\n    <body data-spy=\"scroll\" data-target=\"#main-navbar\">\n        <div class=\"page-loader\"></div>  <!-- Display loading image while page loads -->\n    	<div class=\"body\">\n        \n            <!--========== BEGIN HEADER ==========-->\n            <header id=\"header\" class=\"header-main\">\n\n                <!-- Begin Navbar -->\n                <nav id=\"main-navbar\" class=\"navbar navbar-default navbar-fixed-top\" role=\"navigation\"> <!-- Classes: navbar-default, navbar-inverse, navbar-fixed-top, navbar-fixed-bottom, navbar-transparent. Note: If you use non-transparent navbar, set \"height: 98px;\" to #header -->\n\n                  <div class=\"container\">\n\n                    <!-- Brand and toggle get grouped for better mobile display -->\n                    <div class=\"navbar-header\">\n                      <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\">\n                        <span class=\"sr-only\">Toggle navigation</span>\n                        <span class=\"icon-bar\"></span>\n                        <span class=\"icon-bar\"></span>\n                        <span class=\"icon-bar\"></span>\n                      </button>\n                      <a class=\"navbar-brand page-scroll\" href=\"index-2.html\">Unika</a>\n                    </div>\n\n                    <!-- Collect the nav links, forms, and other content for toggling -->\n                    <div class=\"collapse navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\n                        <ul class=\"nav navbar-nav navbar-right\">\n                            <li><a class=\"page-scroll\" href=\"body.html\">Home</a></li>\n                            <li><a class=\"page-scroll\" href=\"#about-section\">Members</a></li>\n                            <li><a class=\"page-scroll\" href=\"#services-section\">Research lines</a></li>\n                            <li><a class=\"page-scroll\" href=\"#portfolio-section\">Funding</a></li>\n                            <li><a class=\"page-scroll\" href=\"#team-section\">Publications</a></li>\n                            <li><a class=\"page-scroll\" href=\"#team-section\">Colaborations</a></li>                           \n                            <li><a class=\"page-scroll\" href=\"#prices-section\">Tools</a></li>\n                            <li><a class=\"page-scroll\" href=\"#contact-section\">Contact</a></li>\n                        </ul>\n                    </div><!-- /.navbar-collapse -->\n                  </div><!-- /.container -->\n                </nav>\n                <!-- End Navbar -->\n\n            </header>\n            <!-- ========= END HEADER =========-->\n            \n            \n            \n            \n        	<!-- Begin text carousel intro section -->\n			<section id=\"text-carousel-intro-section\" class=\"parallax\" data-stellar-background-ratio=\"0.5\" style=\"background-image: url(img/slider-bg.jpg);\">\n				\n				<div class=\"container\">\n					<div class=\"caption text-center text-white\" data-stellar-ratio=\"0.7\">\n\n						<div id=\"owl-intro-text\" class=\"owl-carousel\">\n							<div class=\"item\">\n								<h1>We have Awesome things</h1>\n								<p>Let's make the web beautiful together</p>\n                                <div class=\"extra-space-l\"></div>\n								<a class=\"btn btn-blank\" href=\"https://creativemarket.com/Themetorium\" target=\"_blank\" role=\"button\">View More!</a>\n							</div>\n							<div class=\"item\">\n								<h1>Join with us</h1>\n								<p>To the greatest Journey</p>\n								<div class=\"extra-space-l\"></div>\n								<a class=\"btn btn-blank\" href=\"https://creativemarket.com/Themetorium\" target=\"_blank\" role=\"button\">View More!</a>\n							</div>\n							<div class=\"item\">\n								<h1>I'm Unika</h1>\n								<p>One Page Responsive Theme</p>\n								<div class=\"extra-space-l\"></div>\n								<a class=\"btn btn-blank\" href=\"https://creativemarket.com/Themetorium\" target=\"_blank\" role=\"button\">View More!</a>\n							</div>\n						</div>\n\n					</div> <!-- /.caption -->\n				</div> <!-- /.container -->\n\n			</section>\n			<!-- End text carousel intro section -->\n                \n                \n                \n                \n            <!-- Begin about section -->\n			<section id=\"about-section\" class=\"page bg-style1\">\n                <!-- Begin page header-->\n                <div class=\"page-header-wrapper\">\n                    <div class=\"container\">\n                        <div class=\"page-header text-center wow fadeInUp\" data-wow-delay=\"0.3s\">\n                            <h2>About</h2>\n                            <div class=\"devider\"></div>\n                            <p class=\"subtitle\">little information</p>\n                        </div>\n                    </div>\n                </div>\n                <!-- End page header-->\n\n                <!-- Begin rotate box-1 -->\n                <div class=\"rotate-box-1-wrapper\">\n                    <div class=\"container\">\n                        <div class=\"row\">\n                            <div class=\"col-md-3 col-sm-6\">\n                                <a href=\"#\" class=\"rotate-box-1 square-icon wow zoomIn\" data-wow-delay=\"0\">\n                                    <span class=\"rotate-box-icon\"><i class=\"fa fa-users\"></i></span>\n                                    <div class=\"rotate-box-info\">\n                                        <h4>Who We Are?</h4>\n                                        <p>Lorem ipsum dolor sit amet set, consectetur utes anet adipisicing elit, sed do eiusmod tempor incidist.</p>\n                                    </div>\n                                </a>\n                            </div>\n\n                            <div class=\"col-md-3 col-sm-6\">\n                                <a href=\"#\" class=\"rotate-box-1 square-icon wow zoomIn\" data-wow-delay=\"0.2s\">\n                                    <span class=\"rotate-box-icon\"><i class=\"fa fa-diamond\"></i></span>\n                                    <div class=\"rotate-box-info\">\n                                        <h4>What We Do?</h4>\n                                        <p>Lorem ipsum dolor sit amet set, consectetur utes anet adipisicing elit, sed do eiusmod tempor incidist.</p>\n                                    </div>\n                                </a>\n                            </div>\n\n                            <div class=\"col-md-3 col-sm-6\">\n                                <a href=\"#\" class=\"rotate-box-1 square-icon wow zoomIn\" data-wow-delay=\"0.4s\">\n                                    <span class=\"rotate-box-icon\"><i class=\"fa fa-heart\"></i></span>\n                                    <div class=\"rotate-box-info\">\n                                        <h4>Why We Do It?</h4>\n                                        <p>Lorem ipsum dolor sit amet set, consectetur utes anet adipisicing elit, sed do eiusmod tempor incidist.</p>\n                                    </div>\n                                </a>\n                            </div>\n                            \n                            <div class=\"col-md-3 col-sm-6\">\n                                <a href=\"#\" class=\"rotate-box-1 square-icon wow zoomIn\" data-wow-delay=\"0.6s\">\n                                    <span class=\"rotate-box-icon\"><i class=\"fa fa-clock-o\"></i></span>\n                                    <div class=\"rotate-box-info\">\n                                        <h4>Since When?</h4>\n                                        <p>Lorem ipsum dolor sit amet set, consectetur utes anet adipisicing elit, sed do eiusmod tempor incidist.</p>\n                                    </div>\n                                </a>\n                            </div>\n                            \n                        </div> <!-- /.row -->\n                    </div> <!-- /.container -->\n                </div>\n                <!-- End rotate box-1 -->\n                \n                <div class=\"extra-space-l\"></div>\n                \n                <!-- Begin page header--> \n                <div class=\"page-header-wrapper\">\n                    <div class=\"container\">\n                        <div class=\"page-header text-center wow fadeInUp\" data-wow-delay=\"0.3s\">\n                            <h4>Our Skills</h4>\n                        </div>\n                    </div>\n                </div>\n                <!-- End page header-->\n                \n                <!-- Begin Our Skills -->\n                <div class=\"our-skills\">\n                	<div class=\"container\">\n                    	<div class=\"row\">\n                        \n                        	<div class=\"col-sm-6\">\n                                <div class=\"skill-bar wow slideInLeft\" data-wow-delay=\"0.2s\">\n                                    <div class=\"progress-lebel\">\n                                        <h6>Photoshop & Illustrator</h6>\n                                    </div>\n                                    <div class=\"progress\">\n                                      <div class=\"progress-bar\" role=\"progressbar\" aria-valuenow=\"75\" aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width: 75%;\">\n                                      </div>\n                                    </div>\n                                </div>\n                            </div>\n                            \n                            <div class=\"col-sm-6\">\n                                <div class=\"skill-bar wow slideInRight\" data-wow-delay=\"0.2s\">\n                                    <div class=\"progress-lebel\">\n                                        <h6>WordPress</h6>\n                                    </div>\n                                    <div class=\"progress\">\n                                      <div class=\"progress-bar\" role=\"progressbar\" aria-valuenow=\"85\" aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width: 85%;\">\n                                      </div>\n                                    </div>\n                                </div>\n                            </div>\n                            \n                            <div class=\"col-sm-6\">\n                                <div class=\"skill-bar wow slideInLeft\" data-wow-delay=\"0.4s\">\n                                    <div class=\"progress-lebel\">\n                                        <h6>Html & Css</h6>\n                                    </div>\n                                    <div class=\"progress\">\n                                      <div class=\"progress-bar\" role=\"progressbar\" aria-valuenow=\"95\" aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width: 95%;\">\n                                      </div>\n                                    </div>\n                                </div>\n                            </div>\n                            \n                            <div class=\"col-sm-6\">\n                                <div class=\"skill-bar wow slideInRight\" data-wow-delay=\"0.4s\">\n                                    <div class=\"progress-lebel\">\n                                        <h6>Javascript</h6>\n                                    </div>\n                                    <div class=\"progress\">\n                                      <div class=\"progress-bar\" role=\"progressbar\" aria-valuenow=\"70\" aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width: 70%;\">\n                                      </div>\n                                    </div>\n                                </div>\n                            </div>\n                            \n                        </div> <!-- /.row -->\n                    </div> <!-- /.container -->\n                </div>\n                <!-- End Our Skill -->\n          </section>\n          <!-- End about section -->\n\n              \n              \n              \n          <!-- Begin cta -->\n          <section id=\"cta-section\">\n          	<div class=\"cta\">\n            	<div class=\"container\">\n                	<div class=\"row\">\n                    \n                    	<div class=\"col-md-9\">\n                        	<h1>Download Our Pdf</h1>\n                            <p>Inspired by nature, follow technology, appreciate the classics. You can build modern & professional websites with Unika. The possibilities are just endless.</p>\n                        </div>\n                        \n                        <div class=\"col-md-3\">\n                        	<div class=\"cta-btn wow bounceInRight\" data-wow-delay=\"0.4s\">\n                        <a class=\"btn btn-default btn-lg\" href=\"http://www.imransdesign.com/\" target=\"_blank\" role=\"button\">Download</a>\n                        	</div>\n                        </div>\n                        \n                    </div> <!-- /.row -->\n                </div> <!-- /.container -->\n            </div>\n          </section>\n          <!-- End cta -->\n\n              \n              \n              \n            <!-- Begin Services -->\n            <section id=\"services-section\" class=\"page text-center\">\n                <!-- Begin page header-->\n                <div class=\"page-header-wrapper\">\n                    <div class=\"container\">\n                        <div class=\"page-header text-center wow fadeInDown\" data-wow-delay=\"0.4s\">\n                            <h2>Services</h2>\n                            <div class=\"devider\"></div>\n                            <p class=\"subtitle\">what we really know how</p>\n                        </div>\n                    </div>\n                </div>\n                <!-- End page header-->\n            \n                <!-- Begin roatet box-2 -->\n                <div class=\"rotate-box-2-wrapper\">\n                    <div class=\"container\">\n                        <div class=\"row\">\n                            <div class=\"col-md-3 col-sm-6\">\n                                <a href=\"#\" class=\"rotate-box-2 square-icon text-center wow zoomIn\" data-wow-delay=\"0\">\n                                    <span class=\"rotate-box-icon\"><i class=\"fa fa-mobile\"></i></span>\n                                    <div class=\"rotate-box-info\">\n                                        <h4>App Development</h4>\n                                        <p>Lorem ipsum dolor sit amet set, consectetur utes anet adipisicing elit, sed do eiusmod tempor incidist.</p>\n                                    </div>\n                                </a>\n                            </div>\n            \n                            <div class=\"col-md-3 col-sm-6\">\n                                <a href=\"#\" class=\"rotate-box-2 square-icon text-center wow zoomIn\" data-wow-delay=\"0.2s\">\n                                    <span class=\"rotate-box-icon\"><i class=\"fa fa-pie-chart\"></i></span>\n                                    <div class=\"rotate-box-info\">\n                                        <h4>Ui Design</h4>\n                                        <p>Lorem ipsum dolor sit amet set, consectetur utes anet adipisicing elit, sed do eiusmod tempor incidist.</p>\n                                    </div>\n                                </a>\n                            </div>\n            \n                            <div class=\"col-md-3 col-sm-6\">\n                                <a href=\"#\" class=\"rotate-box-2 square-icon text-center wow zoomIn\" data-wow-delay=\"0.4s\">\n                                    <span class=\"rotate-box-icon\"><i class=\"fa fa-cloud\"></i></span>\n                                    <div class=\"rotate-box-info\">\n                                        <h4>Cloud Hosting</h4>\n                                        <p>Lorem ipsum dolor sit amet set, consectetur utes anet adipisicing elit, sed do eiusmod tempor incidist.</p>\n                                    </div>\n                                </a>\n                            </div>\n                            \n                            <div class=\"col-md-3 col-sm-6\">\n                                <a href=\"#\" class=\"rotate-box-2 square-icon text-center wow zoomIn\" data-wow-delay=\"0.6s\">\n                                    <span class=\"rotate-box-icon\"><i class=\"fa fa-pencil\"></i></span>\n                                    <div class=\"rotate-box-info\">\n                                        <h4>Coding Pen</h4>\n                                        <p>Lorem ipsum dolor sit amet set, consectetur utes anet adipisicing elit, sed do eiusmod tempor incidist.</p>\n                                    </div>\n                                </a>\n                            </div>\n                            \n                        </div> <!-- /.row -->\n                    </div> <!-- /.container -->\n                    \n                    <div class=\"container\">\n                        <!-- Cta Button -->\n                        <div class=\"extra-space-l\"></div>\n                        <div class=\"text-center\">\n                    		<a class=\"btn btn-default btn-lg-xl\" href=\"http://www.imransdesign.com/\" target=\"_blank\" role=\"button\">Large Button</a>\n                        </div>\n                    </div> <!-- /.container -->                       \n                </div>\n                <!-- End rotate-box-2 -->\n            </section>\n            <!-- End Services -->\n              \n              \n              \n              \n            <!-- Begin testimonials -->\n            <section id=\"testimonial-section\">\n                <div id=\"testimonial-trigger\" class=\"testimonial text-white parallax\" data-stellar-background-ratio=\"0.5\" style=\"background-image: url(img/testimonial-bg.jpg);\">\n                    <div class=\"cover\"></div>\n                    <!-- Begin page header-->\n                    <div class=\"page-header-wrapper\">\n                        <div class=\"container\">\n                            <div class=\"page-header text-center wow fadeInDown\" data-wow-delay=\"0.4s\">\n                                <h2>Reviews</h2>\n                                <div class=\"devider\"></div>\n                                <p class=\"subtitle\">What people say about us</p>\n                            </div>\n                        </div>\n                    </div>\n                    <!-- End page header-->\n                    <div class=\"container\">\n                        <div class=\"testimonial-inner center-block text-center\">\n                            <div id=\"owl-testimonial\" class=\"owl-carousel\">\n                                <div class=\"item\">\n                                    <blockquote>\n                                        <p>\"This was my first experience with that team and outperformed my expectation! They know there stuff and I highly recommend them! A+++\".</p>\n                                        <footer><cite title=\"Source Title\">Daryl Hodgeman</cite></footer>\n                                    </blockquote>\n                                </div>\n                                <div class=\"item\">\n                                    <blockquote>\n                                        <p>\"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\n                                        tempor incididunt ut labore et dolore magna aliqua.\"</p>\n                                        <footer><cite title=\"Source Title\">John Doe</cite></footer>\n                                    </blockquote>\n                                </div>\n                                <div class=\"item\">\n                                    <blockquote>\n                                        <p>\"Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\n                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\n                                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\n                                        proident, sunt in culpa qui officia deserunt mollit\".</p>\n                                        <footer><cite title=\"Source Title\">John Doe</cite></footer>\n                                    </blockquote>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </section>\n            <!-- End testimonials -->\n                \n\n                \n                \n            <!-- Begin Portfolio -->\n            <section id=\"portfolio-section\" class=\"page bg-style1\">\n            	<div class=\"container\">\n                    <div class=\"row\">\n                        <div class=\"col-md-12\">\n                            <div class=\"portfolio\">\n                                <!-- Begin page header-->\n                                <div class=\"page-header-wrapper\">\n                                    <div class=\"container\">\n                                        <div class=\"page-header text-center wow fadeInDown\" data-wow-delay=\"0.4s\">\n                                            <h2>Our Works</h2>\n                                            <div class=\"devider\"></div>\n                                            <p class=\"subtitle\">What we are proud of</p>\n                                        </div>\n                                    </div>\n                                </div>\n                                <!-- End page header-->\n                                <div class=\"portfoloi_content_area\" >\n                                    <div class=\"portfolio_menu\" id=\"filters\">\n                                        <ul>\n                                            <li class=\"active_prot_menu\"><a href=\"#porfolio_menu\" data-filter=\"*\">all</a></li>\n                                            <li><a href=\"#porfolio_menu\" data-filter=\".websites\">websites</a></li>\n                                            <li><a href=\"#porfolio_menu\" data-filter=\".webDesign\" >web design</a></li>\n                                            <li><a href=\"#porfolio_menu\" data-filter=\".appsDevelopment\">apps development</a></li>\n                                            <li><a href=\"#porfolio_menu\" data-filter=\".GraphicDesign\">graphic design</a></li>\n                                            <li><a href=\"#porfolio_menu\" data-filter=\".responsive\">responsive</a></li>\n                                        </ul>\n                                    </div>\n                                    <div class=\"portfolio_content\">\n                                        <div class=\"row\"  id=\"portfolio\">\n                                            <div class=\"col-xs-12 col-sm-4 appsDevelopment\">\n                                                <div class=\"portfolio_single_content\">\n                                                    <img src=\"img/portfolio/p1.jpg\" alt=\"title\"/>\n                                                    <div>\n                                                        <a href=\"#\">Skull Awesome</a>\n                                                        <span>Subtitle</span>\n                                                    </div>\n                                                </div>\n                                            </div>\n                                            <div class=\"col-xs-12 col-sm-4 GraphicDesign\">\n                                                <div class=\"portfolio_single_content\">\n                                                    <img src=\"img/portfolio/p2.jpg\" alt=\"title\"/>\n                                                    <div>\n                                                        <a href=\"#\">Photo Frame</a>\n                                                        <span>Subtitle</span>\n                                                    </div>\n                                                </div>\n                                            </div>\n                                            <div class=\"col-xs-12 col-sm-4 responsive\">\n                                                <div class=\"portfolio_single_content\">\n                                                    <img src=\"img/portfolio/p3.jpg\" alt=\"title\"/>\n                                                    <div>\n                                                        <a href=\"#\">Hand Shots</a>\n                                                        <span>Subtitle</span>\n                                                    </div>\n                                                </div>\n                                            </div>\n                                            <div class=\"col-xs-12 col-sm-4 webDesign websites\">\n                                                <div class=\"portfolio_single_content\">\n                                                    <img src=\"img/portfolio/p4.jpg\" alt=\"title\"/>\n                                                    <div>\n                                                        <a href=\"#\">Night Abstract</a>\n                                                        <span>Subtitle</span>\n                                                    </div>\n                                                </div>\n                                            </div>\n                                            <div class=\"col-xs-12 col-sm-4 appsDevelopment websites\">\n                                                <div class=\"portfolio_single_content\">\n                                                    <img src=\"img/portfolio/p5.jpg\" alt=\"title\"/>\n                                                    <div>\n                                                        <a href=\"#\">Joy of Independence</a>\n                                                        <span>Subtitle</span>\n                                                    </div>\n                                                </div>\n                                            </div>\n                                            <div class=\"col-xs-12 col-sm-4 GraphicDesign\">\n                                                <div class=\"portfolio_single_content\">\n                                                    <img src=\"img/portfolio/p6.jpg\" alt=\"title\"/>\n                                                    <div>\n                                                        <a href=\"#\">Night Crawlers</a>\n                                                        <span>Subtitle</span>\n                                                    </div>\n                                                </div>\n                                            </div>\n                                            <div class=\"col-xs-12 col-sm-4 responsive\">\n                                                <div class=\"portfolio_single_content\">\n                                                    <img src=\"img/portfolio/p7.jpg\" alt=\"title\"/>\n                                                    <div>\n                                                        <a href=\"#\">Last Motel</a>\n                                                        <span>Subtitle</span>\n                                                    </div>\n                                                </div>\n                                            </div>\n                                            <div class=\"col-xs-12 col-sm-4 GraphicDesign\">\n                                                <div class=\"portfolio_single_content\">\n                                                    <img src=\"img/portfolio/p8.jpg\" alt=\"title\"/>\n                                                    <div>\n                                                        <a href=\"#\">Dirk Road</a>\n                                                        <span>Subtitle</span>\n                                                    </div>\n                                                </div>\n                                            </div>\n                                            <div class=\"col-xs-12 col-sm-4 websites\">\n                                                <div class=\"portfolio_single_content\">\n                                                    <img src=\"img/portfolio/p9.jpg\" alt=\"title\"/>\n                                                    <div>\n                                                        <a href=\"#\">Old is Gold</a>\n                                                        <span>Subtitle</span>\n                                                    </div>\n                                                </div>\n                                            </div>\n                                        </div>\n                                    </div>\n                                </div>\n                            \n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </section>\n            <!-- End portfolio -->\n            \n                \n                \n                \n            <!-- Begin counter up -->\n            <section id=\"counter-section\">                					\n				<div id=\"counter-up-trigger\" class=\"counter-up text-white parallax\" data-stellar-background-ratio=\"0.5\" style=\"background-image: url(img/counter-bg.jpg);\">\n					<div class=\"cover\"></div>\n                    <!-- Begin page header-->\n                    <div class=\"page-header-wrapper\">\n                        <div class=\"container\">\n                            <div class=\"page-header text-center wow fadeInDown\" data-wow-delay=\"0.4s\">\n                                <h2>Some Fun Facts</h2>\n                                <div class=\"devider\"></div>\n                                <p class=\"subtitle\">Before anyone is not told</p>\n                            </div>\n                        </div>\n                    </div>\n                    <!-- End page header-->\n					<div class=\"container\">\n\n						<div class=\"row\">\n\n							<div class=\"fact text-center col-md-3 col-sm-6\">\n								<div class=\"fact-inner\">\n									<i class=\"fa fa-users fa-3x\"></i>\n                                    <div class=\"extra-space-l\"></div>\n									<span class=\"counter\">6666</span>\n									<p class=\"lead\">Clients Worked With</p>\n								</div>\n							</div>\n\n							<div class=\"fact text-center col-md-3 col-sm-6\">\n								<div class=\"fact-inner\">\n									<i class=\"fa fa-leaf fa-3x\"></i>\n                                    <div class=\"extra-space-l\"></div>\n									<span class=\"counter\">800</span>\n									<p class=\"lead\">Completed Projects</p>\n								</div>\n							</div>\n\n							<div class=\"fact text-center col-md-3 col-sm-6\">\n								<div class=\"fact-inner\">\n									<i class=\"fa fa-trophy fa-3x\"></i>\n                                    <div class=\"extra-space-l\"></div>\n									<span class=\"counter\">55</span>\n									<p class=\"lead\">Winning Awards</p>\n								</div>\n							</div>\n\n							<div class=\"fact last text-center col-md-3 col-sm-6\">\n								<div class=\"fact-inner\">\n									<i class=\"fa fa-coffee fa-3x\"></i>\n                                    <div class=\"extra-space-l\"></div>\n									<span class=\"counter\">1100</span>\n									<p class=\"lead\">Cups of coffee drinking</p>\n								</div>\n							</div>\n\n						</div> <!-- /.row -->\n					</div> <!-- /.container -->\n				</div>\n            </section>\n			<!-- End counter up -->\n                \n                \n                \n                \n            <!-- Begin team-->\n            <section id=\"team-section\" class=\"page\">\n                <!-- Begin page header-->\n                <div class=\"page-header-wrapper\">\n                    <div class=\"container\">\n                        <div class=\"page-header text-center wow fadeInDown\" data-wow-delay=\"0.4s\">\n                            <h2>Our Team</h2>\n                            <div class=\"devider\"></div>\n                            <p class=\"subtitle\">Meat our experts</p>\n                        </div>\n                    </div>\n                </div>\n                <!-- End page header-->\n                <div class=\"container\">\n                    <div class=\"row\">\n                        <div class=\"team-items\">\n                            <div class=\"col-md-2\">\n                                <div class=\"team-container wow bounceIn\" data-wow-delay=\"0.2s\">\n                                    <div class=\"team-item\">\n                                        <div class=\"team-triangle\">\n                                            <div class=\"content\">\n                                                <img src=\"img/team/1.jpg\" alt=\"title\"/>\n                                                <div class=\"team-hover text-center\">\n                                                    <i class=\"fa fa-male\"></i>\n                                                    <p>John Doe</p>\n                                                </div>\n                                            </div>\n                                        </div>\n                                    </div>\n                                </div>\n                            </div>\n                            <div class=\"col-md-2\">\n                                <div class=\"team-container wow bounceIn\" data-wow-delay=\"0.3s\">\n                                    <div class=\"team-item\">\n                                        <div class=\"team-triangle\">\n                                            <div class=\"content\">\n                                                <img src=\"img/team/2.jpg\" alt=\"title\"/>\n                                                <div class=\"team-hover text-center\">\n                                                    <i class=\"fa fa-female\"></i>\n                                                    <p>Jane Doe</p>\n                                                </div>\n                                            </div>\n                                        </div>\n                                    </div>\n                                </div>\n                            </div>\n                            <div class=\"col-md-2\">\n                                <div class=\"team-container wow bounceIn\" data-wow-delay=\"0.4s\">\n                                    <div class=\"team-item\">\n                                        <div class=\"team-triangle\">\n                                            <div class=\"content\">\n                                                <img src=\"img/team/3.jpg\" alt=\"title\"/>\n                                                <div class=\"team-hover text-center\">\n                                                    <i class=\"fa fa-male\"></i>\n                                                    <p>John Doe</p>\n                                                </div>\n                                            </div>  \n                                        </div>\n                                    </div>\n                                </div>\n                            </div>\n    \n                            <div class=\"col-md-2\">\n                                <div class=\"team-container wow bounceIn\" data-wow-delay=\"0.5s\">\n                                    <div class=\"team-item\">\n                                        <div class=\"team-triangle\">\n                                            <div class=\"content\">\n                                                <img src=\"img/team/4.jpg\" alt=\"title\"/>\n                                                <div class=\"team-hover text-center\">\n                                                    <i class=\"fa fa-male\"></i>\n                                                    <p>John Doe</p>\n                                                </div>\n                                            </div>\n                                        </div>\n                                    </div>\n                                </div>\n                            </div>\n                            <div class=\"col-md-2\">\n                                <div class=\"team-container wow bounceIn\" data-wow-delay=\"0.6s\">\n                                    <div class=\"team-item\">\n                                        <div class=\"team-triangle\">\n                                            <div class=\"content\">\n                                                <img src=\"img/team/5.jpg\" alt=\"title\"/>\n                                                <div class=\"team-hover text-center\">\n                                                    <i class=\"fa fa-male\"></i>\n                                                    <p>John Doe</p>\n                                                </div>\n                                            </div>\n                                        </div>\n                                    </div>\n                                </div>\n                            </div>\n                            <div class=\"col-md-2\">\n                                <div class=\"team-container wow bounceIn\" data-wow-delay=\"0.7s\">\n                                    <div class=\"team-item\">\n                                        <div class=\"team-triangle\">\n                                            <div class=\"content\">\n                                                <img src=\"img/team/6.jpg\" alt=\"title\"/>\n                                                <div class=\"team-hover text-center\">\n                                                    <i class=\"fa fa-male\"></i>\n                                                    <p>John Doe</p>\n                                                </div>\n                                            </div>  \n                                        </div>\n                                    </div>\n                                </div>\n                            </div>\n                            <div class=\"col-md-2\">\n                                <div class=\"team-container wow bounceIn\" data-wow-delay=\"0.8s\">\n                                    <div class=\"team-item\">\n                                        <div class=\"team-triangle\">\n                                            <div class=\"content\">\n                                                <img src=\"img/team/7.jpg\" alt=\"title\"/>\n                                                <div class=\"team-hover text-center\">\n                                                    <i class=\"fa fa-female\"></i>\n                                                    <p>Jane Doe</p>\n                                                </div>\n                                            </div>\n                                        </div>\n                                    </div>\n                                </div>\n                            </div>\n                            <div class=\"clearfix\"></div>\n                        </div>  \n                    </div>\n                </div>\n\n            </section>\n            <!-- End team-->\n                \n                \n                \n                \n            <!-- Begin partners -->\n            <section id=\"partners-section\">\n                <!-- Begin page header-->\n                <div class=\"page-header-wrapper\">\n                    <div class=\"container\">\n                        <div class=\"page-header text-center wow fadeInDown\" data-wow-delay=\"0.4s\">\n                            <h2>Our Partners</h2>\n                            <div class=\"devider\"></div>\n                            <p class=\"subtitle\">Those who trust us</p>\n                        </div>\n                    </div>\n                </div>\n                <!-- End page header-->\n                <div class=\"container\">\n                    <div id=\"owl-partners\" class=\"owl-carousel\">\n                        <img src=\"img/partners/1.png\" alt=\"img\">\n                        <img src=\"img/partners/2.png\" alt=\"img\">\n                        <img src=\"img/partners/3.png\" alt=\"img\">\n                        <img src=\"img/partners/4.png\" alt=\"img\">\n                        <img src=\"img/partners/5.png\" alt=\"img\">\n                        <img src=\"img/partners/6.png\" alt=\"img\">\n                        <img src=\"img/partners/7.png\" alt=\"img\">\n                    </div>\n                </div>\n            </section>\n            <!-- End partners -->\n                \n                \n                \n                \n            <!-- Begin prices section -->\n			<section id=\"prices-section\" class=\"page\">\n\n                <!-- Begin page header-->\n                <div class=\"page-header-wrapper\">\n                    <div class=\"container\">\n                        <div class=\"page-header text-center wow fadeInDown\" data-wow-delay=\"0.4s\">\n                            <h2>Prices</h2>\n                            <div class=\"devider\"></div>\n                            <p class=\"subtitle\">That how much</p>\n                        </div>\n                    </div>\n                </div>\n                <!-- End page header-->\n\n				<div class=\"extra-space-l\"></div>\n\n				<!-- Begin prices -->\n				<div class=\"prices\">\n					<div class=\"container\">\n						<div class=\"row\">\n							\n							<div class=\"price-box col-sm-6 col-md-3 wow flipInY\" data-wow-delay=\"0.3s\">\n								<div class=\"panel panel-default\">\n									<div class=\"panel-heading text-center\">\n										<i class=\"fa fa-plug fa-2x\"></i>\n										<h3>Basic</h3>\n									</div>\n									<div class=\"panel-body text-center\">\n										<p class=\"lead\"><strong>$49</strong></p>\n									</div>\n									<ul class=\"list-group text-center\">\n										<li class=\"list-group-item\">Personal Use</li>\n										<li class=\"list-group-item\">3 projects</li>\n										<li class=\"list-group-item\">1 GB Disk</li>\n										<li class=\"list-group-item\">Custom Domain</li>\n										<li class=\"list-group-item\">24/7 Support</li>\n									</ul>\n									<div class=\"panel-footer text-center\">\n										<a class=\"btn btn-default\" href=\"#\">Order Now!</a>\n									</div>\n								</div>										\n							</div>\n\n							<div class=\"price-box col-sm-6 col-md-3 wow flipInY\" data-wow-delay=\"0.5s\">\n								<div class=\"panel panel-default\">\n									<div class=\"panel-heading text-center\">\n										<i class=\"fa fa-cog fa-2x\"></i>\n										<h3>Advanced</h3>\n									</div>\n									<div class=\"panel-body text-center\">\n										<p class=\"lead\"><strong>$99</strong></p>\n									</div>\n									<ul class=\"list-group text-center\">\n										<li class=\"list-group-item\">Personal Use</li>\n										<li class=\"list-group-item\">5 projects</li>\n										<li class=\"list-group-item\">5 GB Disk</li>\n										<li class=\"list-group-item\">Custom Domain</li>\n										<li class=\"list-group-item\">24/7 Support</li>\n									</ul>\n									<div class=\"panel-footer text-center\">\n										<a class=\"btn btn-default\" href=\"#\">Order Now!</a>\n									</div>\n								</div>										\n							</div>\n							\n							<div class=\"price-box col-sm-6 price-box-featured col-md-3 wow flipInY\" data-wow-delay=\"0.7s\">\n								<div class=\"panel panel-default\">\n									<div class=\"panel-heading text-center\">\n										<i class=\"fa fa-star fa-2x\"></i>\n										<h3>Professional</h3>\n									</div>\n									<div class=\"panel-body text-center\">\n										<p class=\"lead\"><strong>$149</strong></p>\n									</div>\n									<ul class=\"list-group text-center\">\n										<li class=\"list-group-item\">Personal Use</li>\n										<li class=\"list-group-item\">20 Projects</li>\n										<li class=\"list-group-item\">20 GB Disk</li>\n										<li class=\"list-group-item\">Custom Domain</li>\n										<li class=\"list-group-item\">24/7 Support</li>\n									</ul>\n									<div class=\"panel-footer text-center\">\n										<a class=\"btn btn-default\" href=\"#\">Order Now!</a>\n									</div>\n									<div class=\"price-box-ribbon\"><strong>Popular</strong></div>\n								</div>										\n							</div>\n							\n							<div class=\"price-box col-sm-6 col-md-3 wow flipInY\" data-wow-delay=\"0.9s\">\n								<div class=\"panel panel-default\">\n									<div class=\"panel-heading text-center\">\n										<i class=\"fa fa-plus fa-2x\"></i>\n										<h3>Ultimate</h3>\n									</div>\n									<div class=\"panel-body text-center\">\n										<p class=\"lead\"><strong>$199</strong></p>\n									</div>\n									<ul class=\"list-group text-center\">\n										<li class=\"list-group-item\">Multi Use</li>\n										<li class=\"list-group-item\">Unlimited Projects</li>\n										<li class=\"list-group-item\">99 GB Disk</li>\n										<li class=\"list-group-item\">Custom Domain</li>\n										<li class=\"list-group-item\">24/7 Support</li>\n									</ul>\n									<div class=\"panel-footer text-center\">\n										<a class=\"btn btn-default\" href=\"#\">Order Now!</a>\n									</div>\n								</div>										\n							</div>\n							\n						</div> <!-- /.row -->\n					</div> <!-- /.container -->\n				</div>\n				<!-- End prices -->\n				<div class=\"extra-space-l\"></div>\n			</section>\n			<!-- End prices section -->\n                \n                \n                \n                \n            <!-- Begin social section -->\n			<section id=\"social-section\">\n            \n                 <!-- Begin page header-->\n                <div class=\"page-header-wrapper\">\n                    <div class=\"container\">\n                        <div class=\"page-header text-center wow fadeInDown\" data-wow-delay=\"0.4s\">\n                            <h2>Join Us</h2>\n                            <div class=\"devider\"></div>\n                            <p class=\"subtitle\">Follow us on social networks</p>\n                        </div>\n                    </div>\n                </div>\n                <!-- End page header-->\n                \n                <div class=\"container\">\n                	<ul class=\"social-list\">\n                		<li> <a href=\"#\" class=\"rotate-box-1 square-icon text-center wow zoomIn\" data-wow-delay=\"0.3s\"><span class=\"rotate-box-icon\"><i class=\"fa fa-facebook\"></i></span></a></li>\n                		<li> <a href=\"#\" class=\"rotate-box-1 square-icon text-center wow zoomIn\" data-wow-delay=\"0.4s\"><span class=\"rotate-box-icon\"><i class=\"fa fa-twitter\"></i></span></a></li>\n                		<li> <a href=\"#\" class=\"rotate-box-1 square-icon text-center wow zoomIn\" data-wow-delay=\"0.5s\"><span class=\"rotate-box-icon\"><i class=\"fa fa-google-plus\"></i></span></a></li>\n                		<li> <a href=\"#\" class=\"rotate-box-1 square-icon text-center wow zoomIn\" data-wow-delay=\"0.6s\"><span class=\"rotate-box-icon\"><i class=\"fa fa-pinterest-p\"></i></span></a></li>\n                		<li> <a href=\"#\" class=\"rotate-box-1 square-icon text-center wow zoomIn\" data-wow-delay=\"0.7s\"><span class=\"rotate-box-icon\"><i class=\"fa fa-tumblr\"></i></span></a></li>\n                		<li> <a href=\"#\" class=\"rotate-box-1 square-icon text-center wow zoomIn\" data-wow-delay=\"0.8s\"><span class=\"rotate-box-icon\"><i class=\"fa fa-dribbble\"></i></span></a></li>                      \n                    </ul>\n                </div>\n                \n            </section>\n            <!-- End social section -->\n                \n                \n                \n                \n            <!-- Begin contact section -->\n			<section id=\"contact-section\" class=\"page text-white parallax\" data-stellar-background-ratio=\"0.5\" style=\"background-image: url(img/map-bg.jpg);\">\n            <div class=\"cover\"></div>\n            \n                 <!-- Begin page header-->\n                <div class=\"page-header-wrapper\">\n                    <div class=\"container\">\n                        <div class=\"page-header text-center wow fadeInDown\" data-wow-delay=\"0.4s\">\n                            <h2>Contacts</h2>\n                            <div class=\"devider\"></div>\n                            <p class=\"subtitle\">All to contact us</p>\n                        </div>\n                    </div>\n                </div>\n                <!-- End page header-->\n                \n                <div class=\"contact wow bounceInRight\" data-wow-delay=\"0.4s\">\n                    <div class=\"container\">\n                    	<div class=\"row\">\n                        \n                            <div class=\"col-sm-6\">\n                                <div class=\"contact-info\">\n                                    <h4>Our Address</h4>\n                                    <ul class=\"contact-address\">\n			                            <li><i class=\"fa fa-map-marker fa-lg\"></i>&nbsp; 100 Limpbiscayne Blvd. (North) 17st Floor ,<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; New World Tower New York ,<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; New York, USA, 33148</li>\n			                            <li><i class=\"fa fa-phone\"></i>&nbsp; 1 -234 -456 -7890</li>\n			                            <li><i class=\"fa fa-print\"></i>&nbsp; 1 -234 -456 -7890</li>\n			                            <li><i class=\"fa fa-envelope\"></i> info@yourdomain.com</li>\n			                            <li><i class=\"fa fa-skype\"></i> Unika-Design</li>\n			                        </ul>\n                                </div>\n                            </div>\n                        \n                        	<div class=\"col-sm-6\">\n                                <div class=\"contact-form\">\n                                	<h4>Write to us</h4>\n                                    <form role=\"form\">\n                                        <div class=\"form-group\">\n                                            <input type=\"text\" class=\"form-control input-lg\" placeholder=\"Your Name\" required>\n                                        </div>\n                                        <div class=\"form-group\">\n                                            <input type=\"email\" class=\"form-control input-lg\" placeholder=\"E-mail\" required>\n                                        </div>\n                                        <div class=\"form-group\">\n                                            <input type=\"text\" class=\"form-control input-lg\" placeholder=\"Subject\" required>\n                                        </div>\n                                        <div class=\"form-group\">\n                                            <textarea class=\"form-control input-lg\" rows=\"5\" placeholder=\"Message\" required></textarea>\n                                        </div>\n                                        <button type=\"submit\" class=\"btn wow bounceInRight\" data-wow-delay=\"0.8s\">Send</button>\n                                    </form>\n                                </div>	\n                            </div>\n                                                                                \n                        </div> <!-- /.row -->\n                    </div> <!-- /.container -->\n                </div>\n            </section>\n            <!-- End contact section -->\n                \n                \n\n                \n            <!-- Begin footer -->\n            <footer class=\"text-off-white\">\n            \n                <div class=\"footer-top\">\n                	<div class=\"container\">\n                    	<div class=\"row wow bounceInLeft\" data-wow-delay=\"0.4s\">\n\n                            <div class=\"col-sm-6 col-md-4\">\n                            	<h4>Useful Links</h4>\n                                <ul class=\"imp-links\">\n                                	<li><a href=\"#\">About</a></li>\n                                	<li><a href=\"#\">Services</a></li>\n                                	<li><a href=\"#\">Press</a></li>\n                                	<li><a href=\"#\">Copyright</a></li>\n                                	<li><a href=\"#\">Advertise</a></li>\n                                	<li><a href=\"#\">Legal</a></li>\n                                </ul>\n                            </div>\n                        \n                        	<div class=\"col-sm-6 col-md-4\">\n                                <h4>Subscribe</h4>\n                            	<div id=\"footer_signup\">\n                                    <div id=\"email\">\n                                        <form id=\"subscribe\" method=\"POST\">\n                                            <input type=\"text\" placeholder=\"Enter email address\" name=\"email\" id=\"address\" data-validate=\"validate(required, email)\"/>\n                                            <button type=\"submit\">Submit</button>\n                                            <span id=\"result\" class=\"section-description\"></span>\n                                        </form> \n                                    </div>\n                                </div> \n                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> \n                            </div>\n\n                            <div class=\"col-sm-12 col-md-4\">\n                                <h4>Recent Tweets</h4>\n                                <div class=\"single-tweet\">\n                                    <div class=\"tweet-content\"><span>@Unika</span> Excepteur sint occaecat cupidatat non proident</div>\n                                    <div class=\"tweet-date\">1 Hour ago</div>\n                                </div>\n                                <div class=\"single-tweet\">\n                                    <div class=\"tweet-content\"><span>@Unika</span> Excepteur sint occaecat cupidatat non proident uku shumaru</div>\n                                    <div class=\"tweet-date\">1 Hour ago</div>\n                                </div>\n                            </div>\n                            \n                        </div> <!-- /.row -->\n                    </div> <!-- /.container -->\n                </div>\n                \n                <div class=\"footer\">\n                    <div class=\"container text-center wow fadeIn\" data-wow-delay=\"0.4s\">\n                        <p class=\"copyright\">Copyright &copy; 2015 - Designed By <a href=\"https://www.behance.net/poljakova\" class=\"theme-author\">Veronika Poljakova</a> &amp; Developed by <a href=\"http://www.imransdesign.com/\" class=\"theme-author\">Imransdesign</a></p>\n                    </div>\n                </div>\n\n            </footer>\n            <!-- End footer -->\n\n            <a href=\"#\" class=\"scrolltotop\"><i class=\"fa fa-arrow-up\"></i></a> <!-- Scroll to top button -->\n                                              \n        </div><!-- body ends -->\n        \n        \n        \n        \n        <!-- Plugins JS -->\n		<script src=\"inc/jquery/jquery-1.11.1.min.js\"></script>\n		<script src=\"inc/bootstrap/js/bootstrap.min.js\"></script>\n		<script src=\"inc/owl-carousel/js/owl.carousel.min.js\"></script>\n		<script src=\"inc/stellar/js/jquery.stellar.min.js\"></script>\n		<script src=\"inc/animations/js/wow.min.js\"></script>\n        <script src=\"inc/waypoints.min.js\"></script>\n		<script src=\"inc/isotope.pkgd.min.js\"></script>\n		<script src=\"inc/classie.js\"></script>\n		<script src=\"inc/jquery.easing.min.js\"></script>\n		<script src=\"inc/jquery.counterup.min.js\"></script>\n		<script src=\"inc/smoothscroll.js\"></script>\n        <script src=\"inc/styleswitch.js\"></script>\n\n\n		<!-- Theme JS -->\n		<script src=\"js/theme.js\"></script>\n\n\n\n        <!--================================================================================\n        ///// Begin Stylesheet Switcher /////\n        ================================================================================ -->\n        <div class=\"switcher-wrapper hidden-sm hidden-xs\">\n            <div class=\"switcher pull-left\">\n                <p>Color Scheme</p>\n                <a class=\"switcher-box default\" href=\"javascript:chooseStyle('none', 60)\"></a>\n                <a class=\"switcher-box blue\" href=\"javascript:chooseStyle('ice-blue', 60)\"></a>\n                <a class=\"switcher-box lime\" href=\"javascript:chooseStyle('fresh-lime', 60)\"></a>\n                <a class=\"switcher-box orange\" href=\"javascript:chooseStyle('summer-orange', 60)\"></a>\n                <a class=\"switcher-box purple\" href=\"javascript:chooseStyle('night-purple', 60)\"></a>\n            </div>\n            <div class=\"switcher-btn pull-right\"><i class=\"fa fa-paint-brush\"></i></div>\n        </div>\n\n        <script type=\"text/javascript\">\n        $(function(){\n\n            $(\".switcher-btn\").on(\"click\", function(e) {\n                e.preventDefault();\n                var div = $(\".switcher-wrapper\");\n                if (div.css(\"left\") === \"-160px\") {\n                    $(\".switcher-wrapper\").animate({\n                        left: \"0px\"\n                    });\n                } else {\n                    $(\".switcher-wrapper\").animate({\n                        left: \"-160px\"\n                    });\n                }\n            });\n\n        });\n        </script>\n        <!--==============================================================================\n        ///// End Stylesheet Switcher /////\n        ============================================================================== -->\n\n    </body> \n        \n            \n\n<!-- Mirrored from demo.imransdesign.com/unika/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 06 Jul 2015 10:03:38 GMT -->\n</html>\n",
+			"file": "index.html",
+			"file_size": 60214,
+			"file_write_time": 130807807110235865,
+			"settings":
+			{
+				"buffer_size": 59204,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Packages/SASS Build/SASS.sublime-build",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"synhtm",
+				"Set Syntax: HTML"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"P",
+				"Package Control: Install Package"
+			],
+			[
+				"Emmet",
+				"Set Syntax: Emmet"
+			],
+			[
+				"Emme",
+				"Set Syntax: Emmet"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"Package",
+				"Preferences: Browse Packages"
+			],
+			[
+				"diff",
+				"Set Syntax: Diff"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"install p",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: instal",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 512.0
+	},
+	"console":
+	{
+		"height": 146.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os; pr='Preferences.sublime-settings'; ip='ignored_packages'; n='Package Control'; s=sublime.load_settings(pr); ig=s.get(ip); ig.append(n); s.set(ip,ig); sublime.save_settings('Preferences.sublime-settings'); pf=n+'.sublime-package'; urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler())); by=urllib.request.urlopen('https://packagecontrol.io/'+pf.replace(' ','%20')).read(); open(os.path.join(sublime.installed_packages_path(),pf),'wb').write(by); ig.remove(n); s.set(ip,ig); sublime.save_settings(pr); print('Package Control: 3.0.0 upgrade successful!')",
+			"  import urllib.request,os; pr='Preferences.sublime-settings'; ip='ignored_packages'; n='Package Control'; s=sublime.load_settings(pr); ig=s.get(ip); ig.append(n); s.set(ip,ig); sublime.save_settings('Preferences.sublime-settings'); pf=n+'.sublime-package'; urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler())); by=urllib.request.urlopen('https://packagecontrol.io/'+pf.replace(' ','%20')).read(); open(os.path.join(sublime.installed_packages_path(),pf,'wb').write(by); ig.remove(n); s.set(ip,ig); sublime.save_settings(pr); print('Package Control: 3.0.0 upgrade successful!')",
+			"  import urllib.request,os; pr='Preferences.sublime-settings'; ip='ignored_packages'; n='Package Control'; s=sublime.load_settings(pr); ig=s.get(ip); ig.append(n); s.set(ip,ig); sublime.save_settings('Preferences.sublime-settings'); pf=n+'.sublime-package'; urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler())); by=urllib.request.urlopen('https://packagecontrol.io/'+pf.replace(' ','%20')).read(); open(os.path.join(sublime.installed_packages_path(),pf),'wb').write(by); ig.remove(n); s.set(ip,ig); sublime.save_settings(pr); print('Package Control: 3.0.0 upgrade successful!')",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/xampp/htdocs/webisa"
+	],
+	"file_history":
+	[
+		"/C/xampp/htdocs/archivos_base/Emmet/layout2.html",
+		"/C/Users/criperrui/Desktop/sesion9",
+		"/C/xampp/htdocs/rcis/listaHerramientas.php",
+		"/C/xampp/htdocs/rcis/sliderHerramientasJSON.php",
+		"/C/xampp/htdocs/rcis/css/style.scss",
+		"/C/xampp/htdocs/rcis/participantesCSV.php",
+		"/C/xampp/htdocs/rcis/enviarEmail.php",
+		"/C/xampp/htdocs/rcis/css/estilo-slider-herramientas.css",
+		"/C/xampp/htdocs/rcis/cuerpoindex.html",
+		"/C/xampp/htdocs/rcis/js/manejoOutline.js",
+		"/C/xampp/htdocs/rcis/logged.php",
+		"/C/xampp/htdocs/rcis/js/manejoDeTablas.js",
+		"/C/xampp/htdocs/rcis/tablaResumen.php",
+		"/C/xampp/htdocs/rcis/tablaTotal.php",
+		"/C/xampp/htdocs/rcis/outliner.js",
+		"/C/xampp/htdocs/rcis/index.php",
+		"/C/xampp/htdocs/rcis/tablaPrueba.php",
+		"/C/xampp/htdocs/rcis/sliderHerramientasResponsive.html",
+		"/C/Users/criperrui/Downloads/publicaciones-rcis (1).table",
+		"/C/xampp/htdocs/rcis/js/cambiaVistaRecursosDrive.js",
+		"/C/xampp/htdocs/rcis/css/skin/cool-gray.scss",
+		"/C/xampp/htdocs/rcis/logged.html",
+		"/C/xampp/htdocs/rcis/popupsEmails.php",
+		"/C/xampp/htdocs/rcis/errorlogin.php",
+		"/C/xampp/htdocs/rcis/index.html",
+		"/C/xampp/htdocs/rcis/test-table-ResumenOriginal.html",
+		"/C/xampp/htdocs/rcis/test-table-TotalOriginal.html",
+		"/C/xampp/htdocs/rcis/lectorCSV.php",
+		"/C/xampp/htdocs/rcis/sliderHerramientasJSON.html",
+		"/C/xampp/htdocs/rcis/js/manejoSliderHerramientas.js",
+		"/C/Users/criperrui/Google Drive/Drupal Summer/Sesión7Cris.txt",
+		"/C/xampp/htdocs/rcis/scriptsSliderHerramientasFinales.html",
+		"/C/xampp/htdocs/rcis/Popover requires tooltip.html",
+		"/C/xampp/htdocs/rcis/test-table-Resumen.html",
+		"/C/xampp/htdocs/rcis/css/mobile.css",
+		"/C/xampp/htdocs/rcis/test-table-pro.html",
+		"/C/xampp/htdocs/rcis/css/skinGlobal.scss",
+		"/C/xampp/htdocs/pruebaScandirphp/index.php",
+		"/C/xampp/htdocs/rcis/indexOutline.html",
+		"/C/xampp/htdocs/pruebaOutliner/index.html",
+		"/C/Users/criperrui/Downloads/index.html",
+		"/C/xampp/htdocs/rcis/js/theme.js",
+		"/C/xampp/htdocs/parallax/index2.html",
+		"/C/xampp/htdocs/rcis/publicaciones-rcis.html",
+		"/C/xampp/htdocs/rcis/css/style.css",
+		"/C/xampp/htdocs/rcis/css/style_demo.css",
+		"/C/xampp/htdocs/rcis/index3.html",
+		"/C/xampp/htdocs/parallax/index3.html",
+		"/C/xampp/htdocs/parallax/style_demo.css",
+		"/C/xampp/htdocs/parallax/jMyCarousel.min.js",
+		"/C/xampp/htdocs/parallax/estiloprueba.css",
+		"/C/xampp/htdocs/parallax/jsprueba.js",
+		"/C/Users/criperrui/Downloads/test-table-pro.html",
+		"/C/xampp/htdocs/rcis/scss/style.scss",
+		"/C/xampp/htdocs/rcis/scss/style.css",
+		"/C/xampp/htdocs/rcis/scss/cool-gray.scss",
+		"/C/xampp/htdocs/rcis/scss/cool-gray.css",
+		"/C/Users/MarcosAlberto/Desktop/jquery-ui-1.11.4.custom/index.html",
+		"/C/xampp/htdocs/rcis/css/paragridma.css",
+		"/C/xampp/htdocs/calendarios/index.html",
+		"/C/xampp/htdocs/rcis/css/reset.css",
+		"/C/xampp/htdocs/rcis/css/skin/cool-grayOriginal.css",
+		"/C/xampp/htdocs/parallax/scrollTransition.js",
+		"/C/xampp/htdocs/rcis/css/skin/cool-gray.css",
+		"/C/xampp/htdocs/rcis/index-2.html",
+		"/C/xampp/htdocs/parallax/estilo2.css",
+		"/C/xampp/htdocs/parallax/main.js",
+		"/C/xampp/htdocs/parallax/estilo.css",
+		"/C/xampp/htdocs/parallax/index.html",
+		"/C/Users/MarcosAlberto/Desktop/DrupalAcademy Sesion 5/Notas 5.txt",
+		"/C/Users/MarcosAlberto/Desktop/DrupalAcademy Session 4/Notas 4.txt",
+		"/C/Users/MarcosAlberto/Desktop/DrupalAcademy Sesión 3/Notas.txt",
+		"/C/Users/MarcosAlberto/Desktop/PHP.txt",
+		"/C/xampp/htdocs/E01/index.html",
+		"/C/xampp/htdocs/bootstrap/drupalacademy01/index.html",
+		"/C/Users/MarcosAlberto/Desktop/Nueva carpeta/SOS_ENTREGA_FINAL/war/src/js/main/birds.min.js",
+		"/C/xampp/mysql/my-default.ini",
+		"/C/Users/MarcosAlberto/Desktop/Nueva carpeta/SOS_ENTREGA_FINAL/war/src/js/main/dashboard_main.js",
+		"/C/Users/MarcosAlberto/git/sos-2015-02/sos-2015-02/war/preChargeCo.csv",
+		"/C/Users/MarcosAlberto/git/sos-2015-02/sos-2015-02/war/preChargeIn3.csv",
+		"/C/Users/MarcosAlberto/git/sos-2015-02/sos-2015-02/war/preChargeIn.csv",
+		"/D/Dropbox/Material común/Trabajo.txt",
+		"/D/Dropbox/Fabrik/annotations.json",
+		"/C/Users/MarcosAlberto/Desktop/la.csv",
+		"/C/Users/MarcosAlberto/Desktop/prueba/prueba/c.cpp",
+		"/C/Users/MarcosAlberto/Desktop/preChargeIn3.csv",
+		"/C/Users/MarcosAlberto/Desktop/preChargeCo3.csv",
+		"/C/Users/MarcosAlberto/Desktop/preChargeCo2.csv",
+		"/C/Users/MarcosAlberto/Downloads/descarga.csv",
+		"/D/Dropbox/Facultad/Histórico/2/ADA/ADA - Análisis de Algoritmos/2002-2003/ADA/practiObligatoria0304/temporizadores/practiObligatoria0304/TemporizadorBusVoraz.java",
+		"/D/Dropbox/Facultad Grado/2/AC/Prácticas/Práctica 10/Soluciones.txt",
+		"/C/Users/MarcosAlberto/Google Drive/FAC GRADO/ASD (No completa - Actual)/Prácticas/P7ASD (1)/hola_mundo_avanzado_en_anillo.c",
+		"/C/xampp/htdocs/bootstrap/index.php",
+		"/D/Dropbox/Facultad Grado/2/AC/Prácticas/Práctica 11/P11ac/P11ac/practica11.cpp",
+		"/C/Users/MarcosAlberto/git/sos-2015-02/sos-2015-02/war/css/estilos.css",
+		"/C/xampp/htdocs/bootstrap/02grid/index.html",
+		"/C/Users/MarcosAlberto/git/sos-2015-02/sos-2015-02/war/css/fonts.css",
+		"/C/xampp/htdocs/bootstrap/01intro/index.html",
+		"/C/xampp/htdocs/bootstrap/02grid/estilos.css",
+		"/C/xampp/htdocs/bootstrap/03tipografia/tipografia.html",
+		"/C/Users/MarcosAlberto/AppData/Roaming/Sublime Text 3/Packages/Emmet/Default (Windows).sublime-keymap",
+		"/C/Users/MarcosAlberto/AppData/Roaming/Sublime Text 3/Packages/Emmet/Emmet.sublime-settings",
+		"/C/xampp/htdocs/bootstrap/intro/index.html",
+		"/C/Users/MarcosAlberto/Desktop/Entregable Práctica 8/Código/p8MPIlogv1.c",
+		"/C/Users/MarcosAlberto/Google Drive/FAC GRADO/SOS/Prácticas/P5/Practica5.txt",
+		"/C/Users/MarcosAlberto/Google Drive/FAC GRADO/ASD (No completa - Actual)/Prácticas/P7/saludos.c",
+		"/C/Users/MarcosAlberto/Desktop/ingles.txt",
+		"/F/P7ASD/hola_mundo_avanzado.c",
+		"/F/P7ASD/Resolucion.txt",
+		"/C/Users/MarcosAlberto/Downloads/Telegram Desktop/principal_ej3.cpp",
+		"/C/Users/MarcosAlberto/Desktop/asdp6Resuelto/ej3/principal_ej3.cpp",
+		"/F/Juegos/Dragon Age Origins/agbgame.com_AGB.nfo",
+		"/C/Users/MarcosAlberto/Downloads/marcosginelcom.wordpress.2015-04-07.xml",
+		"/D/Dropbox/IbonitaEnMarcos/LSO/ApuntesTema1.txt",
+		"/C/Program Files (x86)/Steam/SteamApps/downloading/state_4570_4571.patch",
+		"/C/Program Files (x86)/Steam/SteamApps/temp/4570/instscript.vdf",
+		"/C/Program Files (x86)/Steam/SteamApps/common/Dawn of War Gold/instscript.vdf",
+		"/C/Users/MarcosAlberto/Documents/Cities In Motion/settings.script",
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/D/Software/Adobe Creative Cloud/Adobe Photoshop 64 bits/PATCH_V1.1-PainteR/painter.nfo",
+		"/D/Juegos/Nueva Carpeta/Worlds_of_Magic-FLT/fairlight.nfo",
+		"/D/Juegos/Magic/Worlds_of_Magic-FLT/fairlight.nfo",
+		"/C/Users/MarcosAlberto/Desktop/280iteraciones Caso3.txt",
+		"/C/Users/MarcosAlberto/Desktop/256 iteraciones Caso 3.txt",
+		"/C/Users/MarcosAlberto/Desktop/Versión de SeleniumHQ 2.45.txt",
+		"/C/Users/MarcosAlberto/Desktop/Ahorro.txt",
+		"/C/Users/MarcosAlberto/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/MarcosAlberto/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 96.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"enlaceLogoGrupo",
+			"logos-slider",
+			"button",
+			"hre",
+			"participantes",
+			"h6",
+			"h5",
+			"vez",
+			"collapse",
+			"scroll",
+			"22%",
+			";\n",
+			"thead",
+			"bnt-default",
+			"boton-vista-drive",
+			"bt",
+			"by",
+			"button",
+			"img-responsive",
+			"slider",
+			"//$",
+			"texto-slider",
+			"jquery",
+			"jq",
+			"jquer",
+			"collapse",
+			"display",
+			"display:",
+			"colapse",
+			"<div class=\"extra-space-l\"></div>",
+			"extra",
+			"text-carousel",
+			"cta",
+			"cta-",
+			"back",
+			";\n",
+			"outl",
+			"\");\n",
+			"ico",
+			"ico ",
+			"cta-s",
+			".css",
+			".cc",
+			"owl-demo",
+			"owl-wrapp",
+			"participantes",
+			"botonFlip",
+			"center",
+			"demo",
+			"jMyCarousel",
+			"style_demo.css",
+			"jMyCarousel",
+			"@me",
+			"backgro",
+			"backg",
+			"height",
+			".link",
+			".testi",
+			"dropdown",
+			"dropdown-",
+			"dropdown-t",
+			"dropd",
+			"navLogin",
+			"nav",
+			"media",
+			"font",
+			"text-ca",
+			"#cta-section",
+			"section",
+			"PPINOT",
+			"section",
+			"test",
+			"testi",
+			"testim",
+			"car",
+			"Themetori",
+			"text-ca",
+			"#cta-section",
+			"about-section",
+			"size",
+			".*\\n.*\\n",
+			"Maurit",
+			"Afghanistan",
+			"Mauritius",
+			";",
+			",",
+			";",
+			",",
+			";;;;;;;;;;;;;;",
+			",,,",
+			",,",
+			";",
+			"ignore",
+			"92.222.220.175",
+			"444",
+			"92.222.220.175",
+			"ProposicionCurso",
+			"plantilla",
+			"entrenamiento",
+			"doc_bu",
+			"video707378/cute_bitches_2",
+			"roxxx",
+			"Light"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			",",
+			"",
+			",",
+			"",
+			",",
+			"127.0.0.1"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 59204,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4693,
+								4693
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1874.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.active_lines_compare":
+	{
+		"height": 118.0
+	},
+	"output.exec":
+	{
+		"height": 76.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "webisa.sublime-project",
+	"replace":
+	{
+		"height": 56.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 259.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
