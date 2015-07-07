@@ -156,28 +156,24 @@ section {
 	width: 150px;
 	height: auto;
 	padding: 24px 0;
-	text-indent: -99999px;
+	/*text-indent: -99999px;*/
 	font-size: 24px;
 	font-weight: 600;
 	line-height: 20px;
 	letter-spacing: 4px;
-	-webkit-transition: all 0.2s ease-in-out;
-	-moz-transition: all 0.2s ease-in-out;
-	-o-transition: all 0.2s ease-in-out;
-	-ms-transition: all 0.2s ease-in-out;
 	transition: all 0.2s ease-in-out;
 }
 .navbar-default .navbar-brand {
-	background-image: url(../img/logo.png);
+	/*background-image: url(../img/logo.png);*/
 }
 .navbar-shrink .navbar-brand {
-	background-image: url(../img/logo.png);
+	/*background-image: url(../img/logo.png);*/
 }
 .navbar-transparent .navbar-brand {
-	background-image: url(../img/logo.png);
+	/*background-image: url(../img/logo.png);*/
 }
 .navbar-inverse .navbar-brand {
-	background-image: url(../img/logo.png);
+	/*background-image: url(../img/logo.png);*/
 }
 
 /* Navbar links */
