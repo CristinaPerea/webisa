@@ -1215,7 +1215,9 @@ p.subtitle {
 	background-color: #51497F;
 }
 /* ===== End Stylesheet Switcher (for demo only). Remove if you do not need it. ===== */
-ul.colaborations-section>li{
+ul.style-colaborations-section>li{
 	list-style: circle;
 	padding: 1em;
+	margin-left: 15%;
+	margin-right: 10%;
 }
