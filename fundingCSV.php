@@ -21,7 +21,10 @@
             $elemento .= '<div class="item-list">';
             $elemento .= '  <h3>'.$areaProyecto.'</h3>';
             $elemento .= '  <ul>';
-            $elemento .= '      <li>'.$nombreProyecto.'. '.$descripcionProyecto.'. '.$fechaProyecto.'.';
+            $elemento .= '      <li>'.$nombreProyecto.'. '.$descripcionProyecto.'. '.$fechaProyecto.'.</li>';
+            $elemento .= '  </ul>';
+            $elemento .= '</div>';
+            $elemento .= '</div>';
             echo $elemento;
         }
 
