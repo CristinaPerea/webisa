@@ -84,7 +84,7 @@
                             <li><a class="page-scroll" href="#services-section">Research lines</a></li>
                             <li><a class="page-scroll" href="#portfolio-section">Funding</a></li>
                             <li><a class="page-scroll" href="#">Publications</a></li>
-                            <li><a class="page-scroll" href="#">Tools</a></li>                           
+                            <li><a class="page-scroll" href="#services-section-2">Tools</a></li>                           
                             <li><a class="page-scroll" href="#social-section">Collaborations</a></li>
                             <li><a class="page-scroll" href="#contact-section">Contact</a></li>
                             <li><a class="page-scroll" href="http://www.isa.us.es/user">Login</a></li>
@@ -642,11 +642,11 @@
 			</section>
 			<!-- End prices section -->
                 
-            <section id="services-section" class="page text-center">
+            <section id="services-section-2" class="page text-center">
                 <div class="page-header-wrapper">
                     <div class="container">
                         <div class="page-header text-center wow fadeInDown" data-wow-delay="0.4s">
-                            <h2>Herramientas</h2>
+                            <h2>Tools</h2>
                         <div class="devider"></div> 
                         <div class="extra-space-l"></div>
                             <?php 
