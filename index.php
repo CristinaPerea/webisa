@@ -253,7 +253,7 @@
             <section id="testimonial-section">
 
                 <div id="testimonial-trigger" class="testimonial text-white parallax" data-stellar-background-ratio="0.5" style="background-image: url(img/ETSiI.jpg);">
-                <div class="cover"><div class="extra-space-1"></div></div>
+                <div class="cover"><div class="extra-space-l"></div></div>
 
                 </div>
             </section>
@@ -373,9 +373,9 @@
             <section id="testimonial-section">
                 <div id="testimonial-trigger" class="testimonial text-white parallax" data-stellar-background-ratio="0.5" style="background-image: url(img/ISA.jpg);">
                 <div class="cover"></div>
-                <div class="extra-space-1"></div>
-                <div class="extra-space-1"></div>
-                <div class="extra-space-1"></div>
+                <div class="extra-space-l"></div>
+                <div class="extra-space-l"></div>
+                <div class="extra-space-l"></div>
                 </div>
             </section>
             <!-- End page parallax -->
@@ -647,9 +647,9 @@
                         <div class="page-header text-center wow fadeInDown" data-wow-delay="0.4s">
                             <h2>Herramientas</h2>
                         <div class="devider"></div> 
-                        <p class="subtitle"></p>
+                        <div class="extra-space-l"></div>
                             <?php 
-                                include("tools/tools.php");
+                                include_once("tools/tools.php");
                             ?>
                         </div>
                     </div>

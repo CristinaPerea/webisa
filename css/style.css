@@ -1221,3 +1221,44 @@ ul.style-collaborations-section>li{
 	margin-left: 15%;
 	margin-right: 10%;
 }
+
+@media (max-width: 992px) {
+	.clase-de-imagen-logo-grupo {
+		height: 25px;
+		padding-top:2%;
+		/*border-bottom: 1px solid lightgrey;*/
+	}
+
+	.clase-enlace-herramienta {
+		text-align: left;
+		padding-top:2%;
+		text-decoration: underline;
+	}
+
+	.cabecera-lista-herramientas {
+		border-top: 1px solid lightgrey;
+	}
+
+	.clase-texto-descripcion {
+		text-align: left;
+	}
+
+}
+.clase-de-imagen-logo-grupo {
+	height: 25px;
+	padding-top:2%;
+}
+
+.clase-enlace-herramienta {
+	text-align: left;
+	padding-top:2%;
+}
+
+.cabecera-lista-herramientas {
+	border-top: 1px solid lightgrey;
+}
+
+.clase-texto-descripcion {
+	text-align: left;
+}
+
