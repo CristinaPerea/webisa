@@ -6,7 +6,7 @@
     Designed By: https://www.behance.net/poljakova
 	Version:	1.0	
 -->
-<html lang="en-US">
+<html lang="es-ES">
 	
 <!-- Mirrored from demo.imransdesign.com/unika/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 06 Jul 2015 10:01:19 GMT -->
 <head>
@@ -83,7 +83,7 @@
                             <li><a class="page-scroll" href="#team-section">Members</a></li>
                             <li><a class="page-scroll" href="#services-section">Research lines</a></li>
                             <li><a class="page-scroll" href="#portfolio-section">Funding</a></li>
-                            <li><a class="page-scroll" href="#">Publications</a></li>
+                            <li><a class="page-scroll" href="#partners-section">Publications</a></li>
                             <li><a class="page-scroll" href="#services-section-2">Tools</a></li>                           
                             <li><a class="page-scroll" href="#social-section">Collaborations</a></li>
                             <li><a class="page-scroll" href="#contact-section">Contact</a></li>
@@ -101,7 +101,7 @@
             
             
         	<!-- Begin text carousel intro section -->
-			<section id="text-carousel-intro-section" class="parallax" data-stellar-background-ratio="0.5" style="background-image: url(img/slider-bg.jpg);">
+			<section id="text-carousel-intro-section" class="parallax" data-stellar-background-ratio="0.5" style="background-image: url(img/fondoISA.jpg);">
 				
 				<div class="container">
 					<div class="caption text-center text-white" data-stellar-ratio="0.7">
@@ -428,150 +428,23 @@
             <section id="partners-section">
                 <!-- Begin page header-->
                 <div class="page-header-wrapper">
-                    <div class="container">
-                        <div class="page-header text-center wow fadeInDown" data-wow-delay="0.4s">
-                            <h2>Our Partners</h2>
-                            <div class="devider"></div>
-                            <p class="subtitle">Those who trust us</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- End page header-->
                 <div class="container">
-                    <div id="owl-partners" class="owl-carousel">
-                        <img src="img/partners/1.png" alt="img">
-                        <img src="img/partners/2.png" alt="img">
-                        <img src="img/partners/3.png" alt="img">
-                        <img src="img/partners/4.png" alt="img">
-                        <img src="img/partners/5.png" alt="img">
-                        <img src="img/partners/6.png" alt="img">
-                        <img src="img/partners/7.png" alt="img">
+                    <div class="page-header text-center wow fadeInDown" data-wow-delay="0.4s">
+                            <h2 class="titulo-tablas-publicaciones">Publications</h2>
+                                <div class="devider"></div>
+                                <div class="extra-space-l"></div>
+                                <div class="container tablaTotal col-md-12">
+                                    <?php include("publications/tablaPublications.php"); ?>
+                                </div>                                
                     </div>
-                </div>
+                </div>      
             </section>
             <!-- End partners -->
+              
                 
                 
                 
-                
-            <!-- Begin prices section -->
-			<section id="prices-section" class="page">
-
-                <!-- Begin page header-->
-                <div class="page-header-wrapper">
-                    <div class="container">
-                        <div class="page-header text-center wow fadeInDown" data-wow-delay="0.4s">
-                            <h2>Prices</h2>
-                            <div class="devider"></div>
-                            <p class="subtitle">That how much</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- End page header-->
-
-				<div class="extra-space-l"></div>
-
-				<!-- Begin prices -->
-				<div class="prices">
-					<div class="container">
-						<div class="row">
-							
-							<div class="price-box col-sm-6 col-md-3 wow flipInY" data-wow-delay="0.3s">
-								<div class="panel panel-default">
-									<div class="panel-heading text-center">
-										<i class="fa fa-plug fa-2x"></i>
-										<h3>Basic</h3>
-									</div>
-									<div class="panel-body text-center">
-										<p class="lead"><strong>$49</strong></p>
-									</div>
-									<ul class="list-group text-center">
-										<li class="list-group-item">Personal Use</li>
-										<li class="list-group-item">3 projects</li>
-										<li class="list-group-item">1 GB Disk</li>
-										<li class="list-group-item">Custom Domain</li>
-										<li class="list-group-item">24/7 Support</li>
-									</ul>
-									<div class="panel-footer text-center">
-										<a class="btn btn-default" href="#">Order Now!</a>
-									</div>
-								</div>										
-							</div>
-
-							<div class="price-box col-sm-6 col-md-3 wow flipInY" data-wow-delay="0.5s">
-								<div class="panel panel-default">
-									<div class="panel-heading text-center">
-										<i class="fa fa-cog fa-2x"></i>
-										<h3>Advanced</h3>
-									</div>
-									<div class="panel-body text-center">
-										<p class="lead"><strong>$99</strong></p>
-									</div>
-									<ul class="list-group text-center">
-										<li class="list-group-item">Personal Use</li>
-										<li class="list-group-item">5 projects</li>
-										<li class="list-group-item">5 GB Disk</li>
-										<li class="list-group-item">Custom Domain</li>
-										<li class="list-group-item">24/7 Support</li>
-									</ul>
-									<div class="panel-footer text-center">
-										<a class="btn btn-default" href="#">Order Now!</a>
-									</div>
-								</div>										
-							</div>
-							
-							<div class="price-box col-sm-6 price-box-featured col-md-3 wow flipInY" data-wow-delay="0.7s">
-								<div class="panel panel-default">
-									<div class="panel-heading text-center">
-										<i class="fa fa-star fa-2x"></i>
-										<h3>Professional</h3>
-									</div>
-									<div class="panel-body text-center">
-										<p class="lead"><strong>$149</strong></p>
-									</div>
-									<ul class="list-group text-center">
-										<li class="list-group-item">Personal Use</li>
-										<li class="list-group-item">20 Projects</li>
-										<li class="list-group-item">20 GB Disk</li>
-										<li class="list-group-item">Custom Domain</li>
-										<li class="list-group-item">24/7 Support</li>
-									</ul>
-									<div class="panel-footer text-center">
-										<a class="btn btn-default" href="#">Order Now!</a>
-									</div>
-									<div class="price-box-ribbon"><strong>Popular</strong></div>
-								</div>										
-							</div>
-							
-							<div class="price-box col-sm-6 col-md-3 wow flipInY" data-wow-delay="0.9s">
-								<div class="panel panel-default">
-									<div class="panel-heading text-center">
-										<i class="fa fa-plus fa-2x"></i>
-										<h3>Ultimate</h3>
-									</div>
-									<div class="panel-body text-center">
-										<p class="lead"><strong>$199</strong></p>
-									</div>
-									<ul class="list-group text-center">
-										<li class="list-group-item">Multi Use</li>
-										<li class="list-group-item">Unlimited Projects</li>
-										<li class="list-group-item">99 GB Disk</li>
-										<li class="list-group-item">Custom Domain</li>
-										<li class="list-group-item">24/7 Support</li>
-									</ul>
-									<div class="panel-footer text-center">
-										<a class="btn btn-default" href="#">Order Now!</a>
-									</div>
-								</div>										
-							</div>
-							
-						</div> <!-- /.row -->
-					</div> <!-- /.container -->
-				</div>
-				<!-- End prices -->
-				<div class="extra-space-l"></div>
-			</section>
-			<!-- End prices section -->
+ 
                 
             <section id="services-section-2" class="page text-center">
                 <div class="page-header-wrapper">
@@ -726,6 +599,7 @@
 
 		<!-- Theme JS -->
 		<script src="js/theme.js"></script>
+        <script type="text/javascript" src="publications/manejoDeTabla.js"></script>
 
 
 
