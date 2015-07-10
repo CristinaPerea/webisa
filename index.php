@@ -101,8 +101,7 @@
             
             
         	<!-- Begin text carousel intro section -->
-			<section id="text-carousel-intro-section" class="parallax" data-stellar-background-ratio="0.5" style="background-image: url(img/fondoISA.jpg);">
-				
+			<section id="text-carousel-intro-section" class="parallax" data-stellar-background-ratio="0.5" style="background-image: url(img/fondoISA2.jpg);">
 				<div class="container">
 					<div class="caption text-center text-white" data-stellar-ratio="0.7">
                         <!--id="owl-intro-text" class="owl-carousel"-->
