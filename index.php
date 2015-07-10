@@ -252,8 +252,12 @@
             <section id="testimonial-section">
 
                 <div id="testimonial-trigger" class="testimonial text-white parallax" data-stellar-background-ratio="0.5" style="background-image: url(img/ETSII.jpg);">
-                <div class="cover"><div class="extra-space-l"></div></div>
-
+                    <div class="cover">
+                   
+                    </div>
+                 <div class="extra-space-l"></div>
+                    <div class="extra-space-l"></div>
+                    <div class="extra-space-l"></div>
                 </div>
             </section>
             <!-- End page parallax -->
