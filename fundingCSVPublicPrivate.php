@@ -1,7 +1,7 @@
 <?php     
        include_once('lectorCSV.php');
        $arrayFunding = array();
-       $arrayFunding = loadDataFromCSV("funding/FundingPublicPrivateCSV.csv");
+       $arrayFunding = loadDataFromCSV("funding/fundingPublicPrivateCSV.csv");
        //print_r($arrayFunding);  
 
        $areaProyecto;
