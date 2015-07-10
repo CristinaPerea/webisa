@@ -92,7 +92,7 @@ only screen and (max-width: 760px) {
 		include_once("lectorCSV.php");
 		$miarray = loadDataFromCSV("publications/publications.csv");
 
-		$mensaje = '<table id="qs_tableTotal" border="1" class=""><thead id="cabecera-publicaciones"><tr><th width="30%">Authors</th><th width="30%">Title</th><th width="35%">Description</th><th width="5%">PDF</th></tr></thead><tbody class="">';
+		$mensaje = '<table id="qs_tableTotal" border="1" class=""><thead id="cabecera-publicaciones"><tr><th width="30%">Authors</th><th width="30%">Title</th><th width="35%">Description</th><th style="height:10px;" width="5%">PDF</th></tr></thead><tbody class="">';
 		for($i=1; $i<sizeof($miarray); $i++){
 			$autor=$miarray[$i][0];
 			$titulo=$miarray[$i][1];
@@ -105,7 +105,7 @@ only screen and (max-width: 760px) {
 			if($url != "")
 				$mensaje .= '<td><a href="'.$url.'"><center><img src="publications/icon-pdf.png"></img></center></a></td>';
 			else 
-				$mensaje .= '<td><a href="#"></a></td>';
+				$mensaje .= '<td><a href="#">Not available</a></td>';
 			$mensaje .= '</tr>';
 		}
 		$mensaje .= '</tbody></table>';
