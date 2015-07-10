@@ -10,8 +10,8 @@
        $fechaProyecto;
        $areaAñadida = array();                                 
        $elemento = "";
-       $elemento = '<div class="col-xs-12 col-sm-4 ongoing">';
-       $elemento .= '<div class="portfolio_single_content">';
+       $elemento = '<div class="col-xs-12 ongoing">';
+       $elemento .= '<div class="portfolio_single_content estilo-funding">';
        for ($i = 1; $i < sizeof($arrayFunding) ; $i++) {
             
             $areaProyecto = $arrayFunding[$i][0];
@@ -29,7 +29,7 @@
                         $nombreProyecto = $arrayFunding[$j][1];
                         $descripcionProyecto = $arrayFunding[$j][2];
                         $fechaProyecto = $arrayFunding[$j][3]; 
-                        $elemento .= '<li>'.$nombreProyecto.' '.$descripcionProyecto.' '.$fechaProyecto.'</li>';
+                        $elemento .= '<li><b>'.$nombreProyecto.'</b>. '.$descripcionProyecto.' '.$fechaProyecto.'</li>';
                         //print_r($elemento);
                     }
                 }

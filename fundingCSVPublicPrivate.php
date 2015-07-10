@@ -1,7 +1,7 @@
 <?php     
        include_once('lectorCSV.php');
        $arrayFunding = array();
-       $arrayFunding = loadDataFromCSV("funding/FundingCSVAll.csv");
+       $arrayFunding = loadDataFromCSV("funding/FundingPublicPrivateCSV.csv");
        //print_r($arrayFunding);  
 
        $areaProyecto;
@@ -10,7 +10,7 @@
        $fechaProyecto;
        $areaAñadida = array();                                 
        $elemento = "";
-       $elemento = '<div class="col-xs-12 all">';
+       $elemento = '<div class="col-xs-12 publicprivate">';
        $elemento .= '<div class="portfolio_single_content estilo-funding">';
        for ($i = 1; $i < sizeof($arrayFunding) ; $i++) {
             

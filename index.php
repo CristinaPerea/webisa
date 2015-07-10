@@ -400,7 +400,7 @@
                                 <div class="portfoloi_content_area" >
                                     <div class="portfolio_menu" id="filters">
                                         <ul>
-                                            <li class="active_prot_menu"><a href="#porfolio_menu" data-filter="*">All project</a></li>
+                                            <li class="active_prot_menu"><a href="#porfolio_menu" data-filter=".all">All project</a></li>
                                             <li><a href="#porfolio_menu" data-filter=".ongoing">Ongoing projects</a></li>
                                             <li><a href="#porfolio_menu" data-filter=".publicprivate" >Public-Private Partnerships</a></li>
                                             
@@ -410,6 +410,7 @@
                                         <div class="row" id="portfolio">
                                             <?php include("fundingCSVAll.php"); ?>
                                             <?php include("fundingCSV.php"); ?>
+                                            <?php include("fundingCSVPublicPrivate.php"); ?>
                                         </div>
                                     </div>
                                 </div>

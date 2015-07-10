@@ -1262,3 +1262,13 @@ ul.style-collaborations-section>li{
 	text-align: left;
 }
 
+div.estilo-funding>ul{
+	margin-bottom: 10px;
+	margin-left: 20px;
+	list-style: circle;
+}
+div.estilo-funding>ul>li{
+	margin-bottom: 10px;
+	list-style: circle;
+	margin-left: 10px;
+}
