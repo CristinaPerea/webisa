@@ -74,7 +74,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                       </button>
-                      <a class="navbar-brand page-scroll" href="#">ISA</a>
+                      <a class="navbar-brand page-scroll" href="#text-carousel-intro-section">ISA</a>
                     </div>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
