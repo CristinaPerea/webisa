@@ -43,7 +43,7 @@
         <link rel="alternate stylesheet" media="screen" title="summer-orange" href="css/skin/summer-orange.css">
         <link rel="alternate stylesheet" media="screen" title="fresh-lime" href="css/skin/fresh-lime.css">
         <link rel="alternate stylesheet" media="screen" title="night-purple" href="css/skin/night-purple.css">
-
+        <link rel="stylesheet" href="css/estilo-slider-herramientas.css">
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 
@@ -454,11 +454,17 @@
                     <div class="container">
                         <div class="page-header text-center wow fadeInDown" data-wow-delay="0.4s">
                             <h2>Tools</h2>
-                        <div class="devider"></div> 
-                        <div class="extra-space-l"></div>
-                            <?php 
-                                include_once("tools/tools.php");
-                            ?>
+                            <div class="devider"></div> 
+                            <div class="extra-space-l"></div>
+                             <?php 
+                                  include_once("tools/toolsSliderResponsive.php");
+                               ?>
+                               <?php 
+                                   include_once("tools/tools.php");
+                                ?>
+                              <div class="row">
+                                   <a href="#services-section" class="btn btn-default botonFlipHerramientas">Ver listado de herramientas</a>
+                              </div>
                         </div>
                     </div>
                 </div>
@@ -603,6 +609,7 @@
 		<!-- Theme JS -->
 		<script src="js/theme.js"></script>
         <script type="text/javascript" src="publications/manejoDeTabla.js"></script>
+        <script type="text/javascript" src="js/manejoSliderHerramientas.js"></script>
 
 
 

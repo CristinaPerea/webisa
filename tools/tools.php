@@ -9,7 +9,7 @@
     $tituloHerramienta;
     $enlaceHerramienta;
     $descripcionHerramienta;
-    $elemento =  '<div class="container">';
+    $elemento =  '<div class="container lista-herramientas-totales">';
     $contador = 0;
     $clasefondo = 'filapar';
     for($i=1; $i<sizeof($arrayHerramientas); $i++)
@@ -29,7 +29,7 @@
                         $clasefondo = "filaimpar";
                     $elemento .=  '<div id="cabecera'.$tituloHerramienta.'" class="cabecera-lista-herramientas '.$clasefondo.' row">';
                     $elemento .=    '<div class="col-md-2 col-sm-4 col-xs-4 logo-institucion-en-cabecera-lista-herramientas">';
-                    $elemento .=        '<img class="clase-de-imagen-logo-grupo" src="tools/'.$urlLogoHerramienta.'"/>';
+                    $elemento .=        '<img class="clase-de-imagen-logo-grupo" src="'.$urlLogoHerramienta.'"/>';
                     $elemento .=    '</div>';
                     $elemento .=    '<div class="col-md-3 col-sm-8 col-xs-8 nombre-institucion-en-cabecera-lista-herramientas">';
                     $elemento .=        '<h6 class="clase-enlace-herramienta"><a target="_blank" href="'.$enlaceHerramienta.'">'.$tituloHerramienta.'</a></h6>';

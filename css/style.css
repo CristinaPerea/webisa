@@ -176,6 +176,22 @@ section {
 	background-image: url(../img/logo.png);
 }
 
+@media (max-width: 460px) {
+	.navbar-default .navbar-brand {
+		background-image: url(../img/logo2.png);
+	}
+	.navbar-shrink .navbar-brand {
+		background-image: url(../img/logo2.png);
+	}
+	.navbar-transparent .navbar-brand {
+		background-image: url(../img/logo2.png);
+	}
+	.navbar-inverse .navbar-brand {
+		background-image: url(../img/logo2.png);
+	}
+
+}
+
 /* Navbar links */
 .navbar-nav > li > a {
 	padding: 24px 0;
@@ -1271,4 +1287,8 @@ div.estilo-funding>ul>li{
 	margin-bottom: 10px;
 	list-style: circle;
 	margin-left: 10px;
+}
+
+.lista-herramientas-totales {
+	display:none;
 }

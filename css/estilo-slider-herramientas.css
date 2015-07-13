@@ -1,0 +1,44 @@
+#owl-demo-herramientas .item{
+        display: block;
+        padding: 30px 0px;
+        margin: 5px;
+        color: black;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        text-align: center;
+        -webkit-tap-highlight-color: rgba(255, 255, 255, 0); 
+        cursor:default;
+}
+
+.texto-slider-herramientas {
+        padding-top: 140px;
+        padding-bottom: 2%;
+        font-weight: bold;
+}
+.texto-slider-herramientas-descripcion{
+        font-weight: none;
+}
+.slider-logo-1{
+        height: 57px !important;
+}
+.slider-logo-2{
+        height: 57px !important;
+       
+}
+
+.logo-derecha-slider {
+        float: right;
+}
+
+.logos-de-slider {
+        height: 57px !important;
+        padding-bottom: 15px;
+
+}
+@media(max-width: 992px) {
+        .texto-slider-herramientas{
+                padding-top: 0px;
+                padding-bottom: 0px;
+        }
+}
