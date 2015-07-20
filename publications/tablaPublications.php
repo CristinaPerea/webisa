@@ -91,9 +91,36 @@ only screen and (max-width: 760px) {
 	<?php 
 		include_once("lectorCSV.php");
 		$miarray = loadDataFromCSV("publications/publications.csv");
-
+		$miurl="http://www.isa.us.es/apps/api/publications";
+		$mijson = file_get_contents($miurl);
+		$miarray = json_decode($mijson);
+		$descripcion = "";
+		$url ="";
 		$mensaje = '<table id="qs_tableTotal" border="1" class=""><thead id="cabecera-publicaciones"><tr><th width="30%">Authors</th><th width="30%">Title</th><th width="35%">Description</th><th style="height:10px;" width="5%">PDF</th></tr></thead><tbody class="">';
-		for($i=1; $i<sizeof($miarray); $i++){
+		foreach ($miarray as $miarraykey => $miarrayvalue) {
+			//echo "Title = ".$miarrayvalue->{'title'}.'<br/>';
+		//echo "Description = ".$miarrayvalue->{'description'}.'<br/>';
+			$title = $miarrayvalue->{'title'};
+			$autores = "";
+			foreach ($miarrayvalue->{'authors'} as $miautorkey => $miautorvalue) {
+				$autores .= $miautorvalue->{'name'}." ".$miautorvalue->{'surname'}.", ";
+			}
+			$caractervacio="";
+			$autores = substr($autores, 0, -2).$caractervacio;
+			$mensaje .= '<tr ';
+				$mensaje .= ' class="entry"><td>'.$autores.'</td>';
+				$mensaje .= '<td>'.$title.'</td>';
+				$mensaje .= '<td>'.$descripcion.'</td>';
+				if($url != "")
+					$mensaje .= '<td><a href="'.$url.'"><center><img src="publications/icon-pdf.png"></img></center></a></td>';
+				else 
+					$mensaje .= '<td>Not available</td>';
+				$mensaje .= '</tr>';
+		//echo $autores.'<br/>';
+		}
+		$mensaje .= '</tbody></table>';
+		
+	/*	for($i=1; $i<sizeof($miarray); $i++){
 			$autor=$miarray[$i][0];
 			$titulo=$miarray[$i][1];
 			$descripcion = $miarray[$i][2];
@@ -107,7 +134,7 @@ only screen and (max-width: 760px) {
 			else 
 				$mensaje .= '<td><a href="#">Not available</a></td>';
 			$mensaje .= '</tr>';
-		}
-		$mensaje .= '</tbody></table>';
+		}*/
+		
 		echo $mensaje;
 	?>

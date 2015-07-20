@@ -1,6 +1,6 @@
 	$(document).ready(function(){
             $('#qs_tableTotal').after('<div id="nav"></div>');
-            var rowsShown = 2;
+            var rowsShown = 10;
             var rowsTotal = $('#qs_tableTotal tbody tr').length;
             var numPages = rowsTotal/rowsShown;
             for(i = 0;i < numPages;i++) {
