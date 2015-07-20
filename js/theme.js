@@ -162,6 +162,27 @@ $('#filters').on( 'click', 'a', function() {
 });
 });
 
+////////////////////////////////////////////////////////////////////////////////////////////
+// Isotop Package 2
+////////////////////////////////////////////////////////////////////////////////////////////
+$(window).load(function() {
+$('.portfolio_menu ul li').click(function(){
+    $('.portfolio_menu ul li').removeClass('active_prot_menu');
+    $(this).addClass('active_prot_menu');
+});
+
+var $container = $('#portfolioMembers');
+$container.isotope({
+  itemSelector: '.col-xs-12',
+  layoutMode: 'fitRows'
+});
+$('#filtersMembers').on( 'click', 'a', function() {
+  var filterValue = $(this).attr('data-filter-portfolio');
+  $container.isotope({ filter: filterValue });
+  return false;
+});
+});
+
 
 
 /////////////////////////

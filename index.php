@@ -117,7 +117,7 @@
 
 			</section>
 			<!-- End text carousel intro section -->  
-            <section id="portfolio-section" class="page bg-style1">
+            <section id="team-section" class="page bg-style1">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
@@ -126,27 +126,26 @@
                                 <div class="page-header-wrapper">
                                     <div class="container">
                                         <div class="page-header text-center wow fadeInDown" data-wow-delay="0.4s">
-                                            <h2>Our Works</h2>
+                                            <h2>Members</h2>
                                             <div class="devider"></div>
-                                            <p class="subtitle">What we are proud of</p>
                                         </div>
                                     </div>
                                 </div>
                                 <!-- End page header-->
                                 <div class="portfoloi_content_area" >
-                                    <div class="portfolio_menu" id="filters">
+                                    <div class="portfolio_menu" id="filtersMembers">
                                         <ul>
-                                            <li class="active_prot_menu"><a href="#porfolio_menu" data-filter="*">all</a></li>
-                                            <li><a href="#porfolio_menu" data-filter=".head">Head</a></li>
-                                            <li><a href="#porfolio_menu" data-filter=".reseachstaff" >Research Staff</a></li>
-                                            <li><a href="#porfolio_menu" data-filter=".researchassistants">Research Assistants</a></li>
-                                            <li><a href="#porfolio_menu" data-filter=".externalcollaborators">External Collaborators</a></li>
-                                            <li><a href="#porfolio_menu" data-filter=".technicalstaff">Technical Staff</a></li>
-                                            <li><a href="#porfolio_menu" data-filter=".formermembers" >Former Members</a></li>
+                                            <li class="active_prot_menu"><a href="#porfolio_menu2" data-filter-portfolio="*">all</a></li>
+                                            <li><a href="#porfolio_menu2" data-filter-portfolio=".head">Head</a></li>
+                                            <li><a href="#porfolio_menu2" data-filter-portfolio=".reseachstaff" >Research Staff</a></li>
+                                            <li><a href="#porfolio_menu2" data-filter-portfolio=".researchassistants">Research Assistants</a></li>
+                                            <li><a href="#porfolio_menu2" data-filter-portfolio=".externalcollaborators">External Collaborators</a></li>
+                                            <li><a href="#porfolio_menu2" data-filter-portfolio=".technicalstaff">Technical Staff</a></li>
+                                            <li><a href="#porfolio_menu2" data-filter-portfolio=".formermembers" >Former Members</a></li>
                                         </ul>
                                     </div>
                                     <div class="portfolio_content">
-                                        <div class="row"  id="portfolio">
+                                        <div class="row"  id="portfolioMembers">
                                         <?php include_once('leeJson.php'); ?>
 
                                             
