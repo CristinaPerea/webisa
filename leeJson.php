@@ -1,6 +1,6 @@
 <?php
-	$miJsonURL = "http://www.isa.us.es/apps/api/members";
-	$miJson = file_get_contents($miJsonURL);
+	$mifichero="members.json";
+	$miJson = file_get_contents($mifichero);
 	//print_r(json_decode($miJson));
 	$miJsonDecode = json_decode($miJson);
 	$miArrayPositions = array();

@@ -1,6 +1,6 @@
 <?php
-	$miurl="http://www.isa.us.es/apps/api/publications";
-	$mijson = file_get_contents($miurl);
+	$mifichero="publications.json";
+	$mijson = file_get_contents($mifichero);
 	$miarray = json_decode($mijson);
 
 	foreach ($miarray as $miarraykey => $miarrayvalue) {

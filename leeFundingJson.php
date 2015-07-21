@@ -1,6 +1,6 @@
 <?php
-	$miJsonURL = "http://www.isa.us.es/apps/api/projects";
-	$miJson = file_get_contents($miJsonURL);
+	$mifichero="fundings.json";
+	$mijson = file_get_contents($mifichero);
 	$miJsonDecode = json_decode($miJson);
 	$arrayOnGoing = array();
 	$arrayNoOnGoing = array();
