@@ -125,26 +125,27 @@
                                 <!-- Begin page header-->
                                 <div class="page-header-wrapper">
                                     <div class="container">
-                                        <div class="page-header text-center wow fadeInDown" data-wow-delay="0.4s">
+                                        <div class="page-header page-header-members text-center wow fadeInDown" data-wow-delay="0.4s">
                                             <h2>Members</h2>
-                                            <div class="devider"></div>
                                         </div>
                                     </div>
                                 </div>
                                 <!-- End page header-->
                                 <div class="portfoloi_content_area" >
-                                    <div class="portfolio_menu" id="filtersMembers">
+                                    <div class="portfolio_menu portfolio-menu-members" id="filtersMembers">
                                         <ul>
                                             <li class="active_prot_menu"><a href="#porfolio_menu2" data-filter-portfolio="*">all</a></li>
                                             <li><a href="#porfolio_menu2" data-filter-portfolio=".head">Head</a></li>
                                             <li><a href="#porfolio_menu2" data-filter-portfolio=".reseachstaff" >Research Staff</a></li>
                                             <li><a href="#porfolio_menu2" data-filter-portfolio=".researchassistants">Research Assistants</a></li>
                                             <li><a href="#porfolio_menu2" data-filter-portfolio=".externalcollaborators">External Collaborators</a></li>
+                                            <li><a href="#porfolio_menu2" data-filter-portfolio=".phdstudents" >PhD Students</a></li>
+                                            <li><a href="#porfolio_menu2" data-filter-portfolio=".mscstudents" >MSC Students</a></li>
                                             <li><a href="#porfolio_menu2" data-filter-portfolio=".technicalstaff">Technical Staff</a></li>
                                             <li><a href="#porfolio_menu2" data-filter-portfolio=".formermembers" >Former Members</a></li>
                                         </ul>
                                     </div>
-                                    <div class="portfolio_content">
+                                    <div class="portfolio_content portfolio-content-members">
                                         <div class="row"  id="portfolioMembers">
                                         <?php include('leeJson.php'); ?>
                                         </div>

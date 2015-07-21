@@ -115,7 +115,7 @@ section {
 .parallax {
 	position: relative;
 	background-position: 0 0;
-	background-repeat: no-repeat;
+	background-repeat: repeat;
 	background-attachment: fixed;
 	-webkit-background-size: cover;
   	background-size: cover;
@@ -1295,4 +1295,34 @@ div.estilo-funding>ul>li{
 
 .botonTabla {
 	margin-top: 10px;
+}
+
+div.estilo-members>ul{
+	margin-bottom: 20px;
+	/*margin-left: 20px;*/
+	list-style: none;
+}
+div.estilo-members>ul>li{
+	margin-bottom: 6px;
+	list-style: none;
+	margin-left: 10px;
+}
+
+.avatar-members {
+	width: 85px;
+	height: 85px;
+	float:left;
+	margin-right:7px;
+}
+
+.portfolio-menu-members {
+	margin-bottom: 10px;
+}
+
+.portfolio-content-members {
+	margin-top: 10px;
+}
+
+.page-header-members {
+	margin-bottom: 10px;
 }
