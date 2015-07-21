@@ -1,9 +1,9 @@
 <?php
 	// Lectura de JSON desde la API de Drupal
 	// Código de desarrollo
-	$miJsonURL = "http://www.isa.us.es/apps/api/members";
+	//$miJsonURL = "http://www.isa.us.es/apps/api/members";
 	// Código de despliegue
-	//$miJsonURL = "http://localhost/apps/api/members";
+	$miJsonURL = "http://localhost/apps/api/members";
 	// Caché
 	//$miJsonURL="members.json";
 	$miJson = file_get_contents($miJsonURL);
@@ -117,7 +117,7 @@
 		$web = $head[$i][6];
 		$urlFoto = $head[$i][7];
 		if($urlFoto != "") {
-	        $elemento .= '<ul class="col-md-3 col-sm-3">';
+	        $elemento .= '<ul class="col-md-4 col-sm-6">';
 	        $elemento .= '  <li><img class="img-responsive avatar-members" src="'.$urlFoto.'""></img></li>';
 	        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
 	        $elemento .= '	<li>Office: '.$office.'</li>';
@@ -126,7 +126,7 @@
 	        $elemento .= '</ul>';
         }
         else{
-        	$elemento .= '<ul class="col-md-3 col-sm-3">';
+        	$elemento .= '<ul class="col-md-4 col-sm-6">';
 	        $elemento .= '  <li><img class="img-responsive avatar-members" src="http://www.isa.us.es/sites/default/files/pictures/default-avatar.jpg"></img>';
 	        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
 	        $elemento .= '	<li>Office: '.$office.'</li>';
@@ -157,7 +157,7 @@
 		$web = $researchStaff[$i][6];
 		$urlFoto = $researchStaff[$i][7];
 		if($urlFoto != "") {
-	        $elemento .= '<ul class="col-md-3 col-sm-3">';
+	        $elemento .= '<ul class="col-md-4 col-sm-6">';
 	        $elemento .= '  <li><img class="img-responsive avatar-members" src="'.$urlFoto.'""></img></li>';
 	        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
 	        $elemento .= '	<li>Office: '.$office.'</li>';
@@ -166,7 +166,7 @@
 	        $elemento .= '</ul>';
         }
         else{
-        	$elemento .= '<ul class="col-md-3 col-sm-3">';
+        	$elemento .= '<ul class="col-md-4 col-sm-6">';
 	        $elemento .= '  <li><img class="img-responsive avatar-members" src="http://www.isa.us.es/sites/default/files/pictures/default-avatar.jpg"></img>';
 	        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
 	        $elemento .= '	<li>Office: '.$office.'</li>';
@@ -197,7 +197,7 @@
 		$web = $reseachAssistants[$i][6];
 		$urlFoto = $reseachAssistants[$i][7];
 		if($urlFoto != "") {
-	        $elemento .= '<ul class=" col-md-3 col-sm-3">';
+	        $elemento .= '<ul class=" col-md-4 col-sm-6">';
 	        $elemento .= '  <li><img class="img-responsive avatar-members" src="'.$urlFoto.'""></img></li>';
 	        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
 	        $elemento .= '	<li>Office: '.$office.'</li>';
@@ -206,7 +206,7 @@
 	        $elemento .= '</ul>';
         }
         else{
-        	$elemento .= '<ul class="col-md-3 col-sm-3">';
+        	$elemento .= '<ul class="col-md-4 col-sm-6">';
 	        $elemento .= '  <li><img class="img-responsive avatar-members" src="http://www.isa.us.es/sites/default/files/pictures/default-avatar.jpg"></img>';
 	        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
 	       $elemento .= '	<li>Office: '.$office.'</li>';
@@ -238,7 +238,7 @@
 		$web = $externalsCollaborators[$i][6];
 		$urlFoto = $externalsCollaborators[$i][7];
 		if($urlFoto != "") {
-	        $elemento .= '<ul class="col-md-3 col-sm-3">';
+	        $elemento .= '<ul class="col-md-4 col-sm-6">';
 	        $elemento .= '  <li><img class="img-responsive avatar-members" src="'.$urlFoto.'""></img></li>';
 	        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
 	        $elemento .= '	<li>Office: '.$office.'</li>';
@@ -247,7 +247,7 @@
 	        $elemento .= '</ul>';
         }
         else{
-        	$elemento .= '<ul class="col-md-3 col-sm-3">';
+        	$elemento .= '<ul class="col-md-4 col-sm-6">';
 	        $elemento .= '  <li><img class="img-responsive avatar-members" src="http://www.isa.us.es/sites/default/files/pictures/default-avatar.jpg"></img>';
 	        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
 	        $elemento .= '	<li>Office: '.$office.'</li>';
@@ -279,7 +279,7 @@
 		$web = $technicalStaff[$i][6];
 		$urlFoto = $technicalStaff[$i][7];
 		if($urlFoto != "") {
-	        $elemento .= '<ul class="col-md-3 col-sm-3">';
+	        $elemento .= '<ul class="col-md-4 col-sm-6">';
 	        $elemento .= '  <li><img class="img-responsive avatar-members" src="'.$urlFoto.'""></img></li>';
 	        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
 	        $elemento .= '	<li>Office: '.$office.'</li>';
@@ -288,7 +288,7 @@
 	        $elemento .= '</ul>';
         }
         else{
-        	$elemento .= '<ul class="col-md-3 col-sm-3">';
+        	$elemento .= '<ul class="col-md-4 col-sm-6">';
 	        $elemento .= '  <li><img class="img-responsive avatar-members" src="http://www.isa.us.es/sites/default/files/pictures/default-avatar.jpg"></img>';
 	        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
 	        $elemento .= '	<li>Office: '.$office.'</li>';
@@ -320,7 +320,7 @@
 		$web = $formerMembers[$i][6];
 		$urlFoto = $formerMembers[$i][7];
 		if($urlFoto != "") {
-	        $elemento .= '<ul class=" col-md-3 col-sm-3">';
+	        $elemento .= '<ul class=" col-md-4 col-sm-6">';
 	        $elemento .= '  <li><img class="img-responsive avatar-members" src="'.$urlFoto.'""></img></li>';
 	        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
 	        $elemento .= '	<li>Office: '.$office.'</li>';
@@ -329,7 +329,7 @@
 	        $elemento .= '</ul>';
         }
         else{
-        	$elemento .= '<ul class="col-md-3 col-sm-3">';
+        	$elemento .= '<ul class="col-md-4 col-sm-6">';
 	        $elemento .= '  <li><img class="img-responsive avatar-members" src="http://www.isa.us.es/sites/default/files/pictures/default-avatar.jpg"></img>';
 	        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
 	       $elemento .= '	<li>Office: '.$office.'</li>';
@@ -362,7 +362,7 @@
 		$web = $phdStudents[$i][6];
 		$urlFoto = $phdStudents[$i][7];
 		if($urlFoto != "") {
-	        $elemento .= '<ul class="col-md-3 col-sm-3">';
+	        $elemento .= '<ul class="col-md-4 col-sm-6">';
 	        $elemento .= '  <li><img class="img-responsive avatar-members" src="'.$urlFoto.'""></img></li>';
 	        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
 	        $elemento .= '	<li>Office: '.$office.'</li>';
@@ -371,7 +371,7 @@
 	        $elemento .= '</ul>';
         }
         else{
-        	$elemento .= '<ul class="col-md-3 col-sm-3">';
+        	$elemento .= '<ul class="col-md-4 col-sm-6">';
 	        $elemento .= '  <li><img class="img-responsive avatar-members" src="http://www.isa.us.es/sites/default/files/pictures/default-avatar.jpg"></img>';
 	        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
 	        $elemento .= '	<li>Office: '.$office.'</li>';
@@ -405,7 +405,7 @@
 		$web = $mscStudents[$i][6];
 		$urlFoto = $mscStudents[$i][7];
 		if($urlFoto != "") {
-	        $elemento .= '<ul class="col-md-3 col-sm-3">';
+	        $elemento .= '<ul class="col-md-4 col-sm-6">';
 	        $elemento .= '  <li><img class="img-responsive avatar-members" src="'.$urlFoto.'""></img></li>';
 	        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
 	        $elemento .= '	<li>Office: '.$office.'</li>';
@@ -414,7 +414,7 @@
 	        $elemento .= '</ul>';
         }
         else{
-        	$elemento .= '<ul class="col-md-3 col-sm-3">';
+        	$elemento .= '<ul class="col-md-4 col-sm-6">';
 	        $elemento .= '  <li><img class="img-responsive avatar-members" src="http://www.isa.us.es/sites/default/files/pictures/default-avatar.jpg"></img>';
 	        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
 	        $elemento .= '	<li>Office: '.$office.'</li>';
