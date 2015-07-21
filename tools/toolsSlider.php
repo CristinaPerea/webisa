@@ -52,7 +52,7 @@
 			$elemento .= $descripcion.'</p>'	;
 			$elemento .= '<br><br><br><a href="';
 			$elemento .= $enlaceWeb;
-			$elemento .= '" class="btn btn-default">Más información</a></div></div></div>';
+			$elemento .= '" class="btn btn-default">More information</a></div></div></div>';
 		}else{
 			$elemento .= '<div class="slider-fila-2"><div class=""><img src="';
 			$elemento .= $imagenDeHerramienta;
@@ -63,7 +63,7 @@
 			$elemento .= $descripcion.'</p>'	;
 			$elemento .= '<br><br><br><a href="';
 			$elemento .= $enlaceWeb;
-			$elemento .= '" class="btn btn-default">Más información</a></div></div></div>';
+			$elemento .= '" class="btn btn-default">More information</a></div></div></div>';
 		}
 		
 		echo $elemento;

@@ -1292,3 +1292,7 @@ div.estilo-funding>ul>li{
 .lista-herramientas-totales {
 	display:none;
 }
+
+.botonTabla {
+	margin-top: 10px;
+}

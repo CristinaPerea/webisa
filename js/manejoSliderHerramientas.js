@@ -16,17 +16,17 @@ $(document).ready(function() {
 $('.botonFlipHerramientas').click(function(event) {
       var opcion = $(this).text();
 
-      if(opcion == "Ver listado de herramientas"){
+      if(opcion == "All tools"){
             $("div.span12").slideUp(function() {
                   //$(".owl-wrapper-outer").css({'display':'false'});
                   $(".lista-herramientas-totales").css({'display':'true'});
                   $(".lista-herramientas-totales").slideDown(1000);
 
             });
-            $(this).text("Volver");
+            $(this).text("Back");
       }
       else {
-            $(this).text("Ver listado de herramientas");
+            $(this).text("All tools");
             $(".lista-herramientas-totales").slideUp(1000, function() {
                   $("div.span12").css({'display':'true'});
                   $("div.span12").slideDown();

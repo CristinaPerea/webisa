@@ -1,7 +1,7 @@
 <?php
 	$mifichero="fundings.json";
 	$mijson = file_get_contents($mifichero);
-	$miJsonDecode = json_decode($miJson);
+	$miJsonDecode = json_decode($mijson);
 	$arrayOnGoing = array();
 	$arrayNoOnGoing = array();
 	//print_r($miJsonDecode)

@@ -84,19 +84,20 @@ only screen and (max-width: 760px) {
 	*/
 	td:nth-of-type(1):before { content: "Authors"; }
 	td:nth-of-type(2):before { content: "Title"; }
-	td:nth-of-type(3):before { content: "Description"; }
-	td:nth-of-type(4):before { content: "PDF"; }
+	/*td:nth-of-type(3):before { content: "Description"; }*/
+	/*td:nth-of-type(4):before { content: "PDF"; }*/
 }
 </style>
 	<?php 
-		include_once("lectorCSV.php");
-		$miarray = loadDataFromCSV("publications/publications.csv");
+		//include_once("lectorCSV.php");
+		//$miarray = loadDataFromCSV("publications/publications.csv");
 		$miurl="http://www.isa.us.es/apps/api/publications";
+		$miurl="publications.json";
 		$mijson = file_get_contents($miurl);
 		$miarray = json_decode($mijson);
 		$descripcion = "";
 		$url ="";
-		$mensaje = '<table id="qs_tableTotal" border="1" class=""><thead id="cabecera-publicaciones"><tr><th width="30%">Authors</th><th width="30%">Title</th><th width="35%">Description</th><th style="height:10px;" width="5%">PDF</th></tr></thead><tbody class="">';
+		$mensaje = '<table id="qs_tableTotal" border="1" class=""><thead id="cabecera-publicaciones"><tr><th width="30%">Authors</th><th width="30%">Title</th><!--<th width="35%">Description</th><th style="height:10px;" width="5%">PDF</th>--></tr></thead><tbody class="">';
 		foreach ($miarray as $miarraykey => $miarrayvalue) {
 			//echo "Title = ".$miarrayvalue->{'title'}.'<br/>';
 		//echo "Description = ".$miarrayvalue->{'description'}.'<br/>';
@@ -110,11 +111,11 @@ only screen and (max-width: 760px) {
 			$mensaje .= '<tr ';
 				$mensaje .= ' class="entry"><td>'.$autores.'</td>';
 				$mensaje .= '<td>'.$title.'</td>';
-				$mensaje .= '<td>'.$descripcion.'</td>';
-				if($url != "")
-					$mensaje .= '<td><a href="'.$url.'"><center><img src="publications/icon-pdf.png"></img></center></a></td>';
-				else 
-					$mensaje .= '<td>Not available</td>';
+				//$mensaje .= '<td>'.$descripcion.'</td>';
+				//if($url != "")
+				//	$mensaje .= '<td><a href="'.$url.'"><center><img src="publications/icon-pdf.png"></img></center></a></td>';
+				//else 
+				//	$mensaje .= '<td>Not available</td>';
 				$mensaje .= '</tr>';
 		//echo $autores.'<br/>';
 		}

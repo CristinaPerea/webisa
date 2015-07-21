@@ -146,7 +146,7 @@
                                     </div>
                                     <div class="portfolio_content">
                                         <div class="row"  id="portfolioMembers">
-                                        <?php include_once('leeJson.php'); ?>
+                                        <?php include('leeJson.php'); ?>
                                         </div>
                                     </div>
                                 </div>
@@ -472,7 +472,10 @@
                                 <div class="extra-space-l"></div>
                                 <div class="container tablaTotal col-md-12">
                                     <?php include("publications/tablaPublications.php"); ?>
-                                </div>                                
+                                </div>           
+                                <div class="row">
+                                   <a href="http://www.isa.us.es/publications" target="_blank" class="btn btn-default botonTabla">More information</a>
+                                </div>
                     </div>
                 </div>      
             </section>
@@ -497,7 +500,7 @@
                                    include_once("tools/tools.php");
                                 ?>
                               <div class="row">
-                                   <a href="#services-section" class="btn btn-default botonFlipHerramientas">Ver listado de herramientas</a>
+                                   <a href="#services-section" class="btn btn-default botonFlipHerramientas">All tools</a>
                               </div>
                         </div>
                     </div>

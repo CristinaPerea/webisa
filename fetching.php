@@ -17,7 +17,7 @@
 		$miurl="http://www.isa.us.es/apps/api/publications";
 		$mijson = file_get_contents($miurl);
 		$publications = 'publications.json';
-		file_put_contents($publications, $miJson);
+		file_put_contents($publications, $mijson);
 		$mensaje = "";
 		$mensaje .= "Escritos 3 ficheros:<br/>";
 		$mensaje .= '<a href="publications.json">publications.json</a><br/>';
