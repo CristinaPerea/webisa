@@ -38,16 +38,56 @@
 
 
 		unset($miFunding);
-
-		//echo $title.'. ';
-		//echo $authors.'<br/>';
-		//echo $acronym;
-		//echo $organic;
-		//echo $coordinator;	
-		//echo $startDate;
-		//echo $endDate;
+	}
 
 
+	$elemento = "";
+    $elemento .= '<div class="col-xs-12 ongoing">';
+    $elemento .= '<div class="portfolio_single_content estilo-funding">';
+
+    for ($i = 0; $i < sizeof($arrayOnGoing); $i++) {
+
+		$title = $arrayOnGoing[$i][0];
+		$authors = $arrayOnGoing[$i][1];
+		$acronym = $arrayOnGoing[$i][2];
+		$organic = $arrayOnGoing[$i][3];
+		$coordinator = $arrayOnGoing[$i][4];
+		$startDate = $arrayOnGoing[$i][5];
+		$endDate = $arrayOnGoing[$i][6];
+        $elemento .= '<ul>';
+        $elemento .= '<li><b>'.$acronym.'</b>. '.$title.'. ('.$startDate.' - '.$endDate.')</li>';
+        $elemento .= '</ul>';
+    
+    }
+        $elemento .= ' </div>';
+        $elemento .= '</div>';
+        echo $elemento;
+
+        $elemento = "";
+    $elemento .= '<div class="col-xs-12 publicprivate">';
+    $elemento .= '<div class="portfolio_single_content estilo-funding">';
+
+    for ($i = 0; $i < sizeof($arrayNoOnGoing); $i++) {
+
+		$title = $arrayNoOnGoing[$i][0];
+		$authors = $arrayNoOnGoing[$i][1];
+		$acronym = $arrayNoOnGoing[$i][2];
+		$organic = $arrayNoOnGoing[$i][3];
+		$coordinator = $arrayNoOnGoing[$i][4];
+		$startDate = $arrayNoOnGoing[$i][5];
+		$endDate = $arrayNoOnGoing[$i][6];
+        $elemento .= '<ul>';
+        $elemento .= '<li><b>'.$acronym.'</b>. '.$title.'. ('.$startDate.' - '.$endDate.')</li>';
+        $elemento .= '</ul>';
+    
+    }
+        $elemento .= ' </div>';
+        $elemento .= '</div>';
+        echo $elemento;
+
+
+
+// FUNCIONES
 	function enCurso($date) {
 		$caractervacio="";
 		$date = substr($date, 0, -9).$caractervacio;
