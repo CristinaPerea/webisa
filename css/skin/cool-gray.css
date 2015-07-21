@@ -247,7 +247,7 @@ a, a:hover, a:focus {
 
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 767px) {
+@media only screen and (max-width : 992px) {
 
 .navbar-collapse {
 		background-color: #676D75;
