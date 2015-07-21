@@ -1,6 +1,11 @@
 <?php
-	$mifichero="members.json";
-	$miJson = file_get_contents($mifichero);
+	// Código de desarrollo
+	//$miJsonURL = "http://www.isa.us.es/apps/api/members";
+	// Código de despliegue
+	$miJsonURL = "http://localhost/apps/api/members";
+	// Caché
+	//$miJsonURL="members.json";
+	$miJson = file_get_contents($miJsonURL);
 	//print_r(json_decode($miJson));
 	$miJsonDecode = json_decode($miJson);
 	$miArrayPositions = array();

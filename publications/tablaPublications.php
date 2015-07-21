@@ -91,8 +91,12 @@ only screen and (max-width: 760px) {
 	<?php 
 		//include_once("lectorCSV.php");
 		//$miarray = loadDataFromCSV("publications/publications.csv");
-		$miurl="http://www.isa.us.es/apps/api/publications";
-		$miurl="publications.json";
+		// Código para desarrollo
+		//$miurl="http://www.isa.us.es/apps/api/publications";
+		// Código para despliegue
+		$miurl="http://localhost/apps/api/publications";
+		// Caché
+		//$miurl="publications.json";
 		$mijson = file_get_contents($miurl);
 		$miarray = json_decode($mijson);
 		$descripcion = "";
