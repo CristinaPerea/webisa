@@ -1,7 +1,7 @@
 <?php
-	$mifichero="fundings.json";
-	$mijson = file_get_contents($mifichero);
-	$miJsonDecode = json_decode($mijson);
+	$miJsonURL = "http://www.isa.us.es/apps/api/projects";
+	$miJson = file_get_contents($miJsonURL);
+	$miJsonDecode = json_decode($miJson);
 	$arrayOnGoing = array();
 	$arrayNoOnGoing = array();
 	//print_r($miJsonDecode)
@@ -20,6 +20,8 @@
 			$coordinator .= $miJsonValue->{'coordinator'}->{'name'}." ".$miJsonValue->{'coordinator'}->{'surname'};
 		$startDate = transformaFecha($miJsonValue->{'startDate'});
 		$endDate = transformaFecha($miJsonValue->{'endDate'});
+		$projectID = $miJsonValue->{'projectID'};
+
 
 		$miFunding = array();
 		array_push($miFunding, $title);
@@ -29,6 +31,7 @@
 		array_push($miFunding, $coordinator);
 		array_push($miFunding, $startDate);
 		array_push($miFunding, $endDate);
+		array_push($miFunding, $projectID);
 
 		if(enCurso($miJsonValue->{'endDate'})){
 			array_push($arrayOnGoing, $miFunding);
@@ -54,8 +57,9 @@
 		$coordinator = $arrayOnGoing[$i][4];
 		$startDate = $arrayOnGoing[$i][5];
 		$endDate = $arrayOnGoing[$i][6];
+		$projectID = $arrayOnGoing[$i][7];
         $elemento .= '<ul>';
-        $elemento .= '<li><b>'.$acronym.'</b>. '.$title.'. ('.$startDate.' - '.$endDate.')</li>';
+        $elemento .= '<li><a href="http://www.isa.us.es/node/'.$projectID.'" target="_blank" ><b>'.$acronym.'</b></a>. '.$title.'. ('.$startDate.' - '.$endDate.')</li>';
         $elemento .= '</ul>';
     
     }
@@ -76,8 +80,10 @@
 		$coordinator = $arrayNoOnGoing[$i][4];
 		$startDate = $arrayNoOnGoing[$i][5];
 		$endDate = $arrayNoOnGoing[$i][6];
+		$projectID = $arrayNoOnGoing[$i][7];
+
         $elemento .= '<ul>';
-        $elemento .= '<li><b>'.$acronym.'</b>. '.$title.'. ('.$startDate.' - '.$endDate.')</li>';
+        $elemento .= '<li><a href="http://www.isa.us.es/node/'.$projectID.'" target="_blank" ><b>'.$acronym.'</b></a>. '.$title.'. ('.$startDate.' - '.$endDate.')</li>';
         $elemento .= '</ul>';
     
     }
