@@ -1,8 +1,8 @@
 <?php
 	// Código de desarrollo
-	//$miJsonURL = "http://www.isa.us.es/apps/api/projects";
+	$miJsonURL = "http://www.isa.us.es/apps/api/projects";
 	// Código de despliegue
-	$miJsonURL = "http://localhost/apps/api/projects";
+	//$miJsonURL = "http://localhost/apps/api/projects";
 	// Caché
 	//$miJsonURL = "fundings.json";
 	$miJson = file_get_contents($miJsonURL);
