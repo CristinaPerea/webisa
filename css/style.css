@@ -1353,6 +1353,11 @@ div.estilo-members>ul>li{
   	}
 }
 
+.v-center{
+	display: inline-block;
+	vertical-align: top;
+	float: none;
+}
 .paginaActiva {
 	font-weight: bold;
 }

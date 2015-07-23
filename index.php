@@ -98,8 +98,6 @@
             <!-- ========= END HEADER =========-->
             
             
-            
-            
         	<!-- Begin text carousel intro section -->
 			<section id="text-carousel-intro-section" class="parallax" data-stellar-background-ratio="0.5" style="background-image: url(img/fondoISA2.jpg);">
 				<div class="container">
@@ -114,9 +112,10 @@
 
 					</div> <!-- /.caption -->
 				</div> <!-- /.container -->
-
 			</section>
-			<!-- End text carousel intro section -->  
+			<!-- End text carousel intro section -->
+
+            <!--Begin team section-->  
             <section id="team-section" class="page bg-style1">
                 <div class="container">
                     <div class="row">
@@ -157,133 +156,7 @@
                     </div>
                 </div>
             </section>
-            <!-- Begin team-->
-            <!--<section id="team-section" class="page">
-                <div class="page-header-wrapper">
-                    <div class="container">
-                        <div class="page-header text-center wow fadeInDown" data-wow-delay="0.4s">
-                            <h2>Members</h2>
-                            <div class="devider"></div>
-                            <p class="subtitle"></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="team-items">
-                            <div class="col-md-2">
-                                <div class="team-container wow bounceIn" data-wow-delay="0.2s">
-                                    <div class="team-item">
-                                        <div class="team-triangle">
-                                            <div class="content">
-                                                <img src="img/team/1.jpg" alt="title"/>
-                                                <div class="team-hover text-center">
-                                                    <i class="fa fa-male"></i>
-                                                    <p>John Doe</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-2">
-                                <div class="team-container wow bounceIn" data-wow-delay="0.3s">
-                                    <div class="team-item">
-                                        <div class="team-triangle">
-                                            <div class="content">
-                                                <img src="img/team/2.jpg" alt="title"/>
-                                                <div class="team-hover text-center">
-                                                    <i class="fa fa-female"></i>
-                                                    <p>Jane Doe</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-2">
-                                <div class="team-container wow bounceIn" data-wow-delay="0.4s">
-                                    <div class="team-item">
-                                        <div class="team-triangle">
-                                            <div class="content">
-                                                <img src="img/team/3.jpg" alt="title"/>
-                                                <div class="team-hover text-center">
-                                                    <i class="fa fa-male"></i>
-                                                    <p>John Doe</p>
-                                                </div>
-                                            </div>  
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-    
-                            <div class="col-md-2">
-                                <div class="team-container wow bounceIn" data-wow-delay="0.5s">
-                                    <div class="team-item">
-                                        <div class="team-triangle">
-                                            <div class="content">
-                                                <img src="img/team/4.jpg" alt="title"/>
-                                                <div class="team-hover text-center">
-                                                    <i class="fa fa-male"></i>
-                                                    <p>John Doe</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-2">
-                                <div class="team-container wow bounceIn" data-wow-delay="0.6s">
-                                    <div class="team-item">
-                                        <div class="team-triangle">
-                                            <div class="content">
-                                                <img src="img/team/5.jpg" alt="title"/>
-                                                <div class="team-hover text-center">
-                                                    <i class="fa fa-male"></i>
-                                                    <p>John Doe</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-2">
-                                <div class="team-container wow bounceIn" data-wow-delay="0.7s">
-                                    <div class="team-item">
-                                        <div class="team-triangle">
-                                            <div class="content">
-                                                <img src="img/team/6.jpg" alt="title"/>
-                                                <div class="team-hover text-center">
-                                                    <i class="fa fa-male"></i>
-                                                    <p>John Doe</p>
-                                                </div>
-                                            </div>  
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-2">
-                                <div class="team-container wow bounceIn" data-wow-delay="0.8s">
-                                    <div class="team-item">
-                                        <div class="team-triangle">
-                                            <div class="content">
-                                                <img src="img/team/7.jpg" alt="title"/>
-                                                <div class="team-hover text-center">
-                                                    <i class="fa fa-female"></i>
-                                                    <p>Jane Doe</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="clearfix"></div>
-                        </div>  
-                    </div>
-                </div>
-                
-            </section>-->
-            <!-- End team-->
+            <!--End team section-->
 
             <!-- Begin page parallax-->
             <section id="testimonial-section">
@@ -318,93 +191,11 @@
                 <div class="rotate-box-1-wrapper">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-3 col-sm-6">
-                                <a href="#" class="rotate-box-1 square-icon wow zoomIn" data-wow-delay="0">
-                                    <span class="rotate-box-icon"><i class="fa fa-file-text-o"></i></span>
-                                    <div class="rotate-box-info">
-                                        <h4>Service Level Agreements</h4>
-                                        <p>Automated analysis, creation, diagnosis, negotiation and management of SLAs; advanced models of SLAs: temporal-awareness, symmetry, uncertainty, composition; formalisation and extension of WS-Agreement.</p>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="col-md-3 col-sm-6">
-                                <a href="#" class="rotate-box-1 square-icon wow zoomIn" data-wow-delay="0.2s">
-                                    <span class="rotate-box-icon"><i class="fa fa-book"></i></span>
-                                    <div class="rotate-box-info">
-                                        <h4>SOA Governance</h4>
-                                        <p>Automated analysis, creation, diagnosis and management of governance documents; policies modelling; enforcement of SLAs; autonomic and self-* platforms; monitoring.</p>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="col-md-3 col-sm-6">
-                                <a href="#" class="rotate-box-1 square-icon wow zoomIn" data-wow-delay="0.4s">
-                                    <span class="rotate-box-icon"><i class="fa fa-cube"></i></span>
-                                    <div class="rotate-box-info">
-                                        <h4>Requirements engineering</h4>
-                                        <p>Requirements elicitation, specification, analysis, negotiation, validation and verification.</p>
-                                    </div>
-                                </a>
-                            </div>
-                            
-                            <div class="col-md-3 col-sm-6">
-                                <a href="#" class="rotate-box-1 square-icon wow zoomIn" data-wow-delay="0.6s">
-                                    <span class="rotate-box-icon"><i class="fa fa-cubes"></i></span>
-                                    <div class="rotate-box-info">
-                                        <h4>Services engineering</h4>
-                                        <p>Quality-aware service composition, advanced modelling and management of user preferences; semantic discovery and ranking; service life-cycle support.</p>
-                                    </div>
-                                </a>
-                            </div>
-                            
-                        </div> <!-- /.row -->
-                        <div class="row">
-                            <div class="col-md-3 col-sm-6">
-                                <a href="#" class="rotate-box-1 square-icon wow zoomIn" data-wow-delay="0">
-                                    <span class="rotate-box-icon"><i class="fa fa-code"></i></span>
-                                    <div class="rotate-box-info">
-                                        <h4>Software product lines</h4>
-                                        <p>Automated analysis and management of feature models; algebra of variability models; software ecosystems; product management.</p>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="col-md-3 col-sm-6">
-                                <a href="#" class="rotate-box-1 square-icon wow zoomIn" data-wow-delay="0.2s">
-                                    <span class="rotate-box-icon"><i class="fa fa-code-fork"></i></span>
-                                    <div class="rotate-box-info">
-                                        <h4>Metaheuristics</h4>
-                                        <p>Development of metaheuristic frameworks and ecosystems; new heuristics for optimization problems in service and software engineering: composition, negotiation, ranking...</p>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="col-md-3 col-sm-6">
-                                <a href="#" class="rotate-box-1 square-icon wow zoomIn" data-wow-delay="0.4s">
-                                    <span class="rotate-box-icon"><i class="fa fa-briefcase"></i></span>
-                                    <div class="rotate-box-info">
-                                        <h4>Business process management</h4>
-                                        <p>Automated analysis, diagnosis and management of process models; key performance indicators and process performance indicators; business transactions; dashboards; compliance analysis; process model algebras.</p>
-                                    </div>
-                                </a>
-                            </div>
-                            
-                            <div class="col-md-3 col-sm-6">
-                                <a href="#" class="rotate-box-1 square-icon wow zoomIn" data-wow-delay="0.6s">
-                                    <span class="rotate-box-icon"><i class="fa fa-gears"></i></span>
-                                    <div class="rotate-box-info">
-                                        <h4>Software process</h4>
-                                        <p>Application lifecycle management (ALM); reference models (CMMI, Metrica...).</p>
-                                    </div>
-                                </a>
-                            </div>
-                            
+                            <?php include('leeResearchCSV.php'); ?>
                         </div> <!-- /.row -->
                     </div> <!-- /.container -->
                 </div>
                 <!-- End rotate box-1 -->
-                
                 <div class="extra-space-l"></div>
             </section>
             <!-- End Services -->
@@ -527,8 +318,9 @@
                 <div class="container">
                     <div class="row">
                     	<ul class="style-collaborations-section">
+                            <?php include("leeCollaborationsCSV.php"); ?>
 
-                            <li>Dr. Pastor and Dr. Pelechano's group, from the Univ. Politécnica de Valencia. Topic: transformation from BPMN to BPEL in order to build web applications automatically and development of dynamic software product line for embedded systems.</li>
+                           <!-- <li>Dr. Pastor and Dr. Pelechano's group, from the Univ. Politécnica de Valencia. Topic: transformation from BPMN to BPEL in order to build web applications automatically and development of dynamic software product line for embedded systems.</li>
                             <li>Dr. Vallecillo's group, from the Univ. de Málaga. Topic: formal transformations between models.</li>
                             <li>Drs. Franch and Botella's group, from the Univ. Politécnica de Cataluña. Topic: treatment of non-functional requirements for the procurement of software components, including web services, and in applying agile methodologies to develop software product lines.</li>
                             <li>Dr. Batory's group, from the Univ. of Texas. Topic: Software Product Lines and feature-oriented programming.</li>
@@ -538,7 +330,7 @@
                             <li>Dr. Shrivastava's group, from the Univ. of Newcastle. Topic: automatic web service procurement, including topics like trust, reputation and creation of electronic agreements</li>
                             <li>Dr. Casati's group, form the Univ. of Trento. Topic: automated analysis of SLAs, development of citation metrics based on mash-ups.</li>
                             <li>Dr. Weske's group, from the HPI at the Univ. of Potsdam. Topic: definition of process performance indicators.</li>
-                            <li>Dr. Hinchey's group, from the Irish Software Engineering Research Centre Lero, University of Limerick. Topic: Agent-oriented software engineering and Multi-agent system software product lines.</li> 
+                            <li>Dr. Hinchey's group, from the Irish Software Engineering Research Centre Lero, University of Limerick. Topic: Agent-oriented software engineering and Multi-agent system software product lines.</li>--> 
                                                  
                         </ul>
                     </div>
