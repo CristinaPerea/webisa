@@ -1352,3 +1352,7 @@ div.estilo-members>ul>li{
   		background-image: url(../img/logo2.png);
   	}
 }
+
+.paginaActiva {
+	font-weight: bold;
+}
