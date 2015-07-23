@@ -646,8 +646,11 @@
 
 		<!-- Theme JS -->
 		<script src="js/theme.js"></script>
+
         <script type="text/javascript" src="publications/manejoDeTabla.js"></script>
         <script type="text/javascript" src="js/manejoSliderHerramientas.js"></script>
+        <script type="text/javascript" src="publications/searcher.js"></script>
+
 
 
 
