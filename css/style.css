@@ -1313,13 +1313,13 @@ div.estilo-members>ul>li{
 	height: 85px;
 	float:left;
 	margin-right:7px;
-	border: 2px solid #363940;
-	border-radius: 20px !important;
-	-moz-border-radius: 20px !important;
-	-webkit-border-radius: 20px !important;
-	-webkit-box-shadow: 3px 3px 10px 0px  rgba(156,156,156,1) !important;
+	/*border: 2px solid #363940;*/
+	border-radius: 50px !important;
+	-moz-border-radius: 50px !important;
+	-webkit-border-radius: 50px !important;
+	/*-webkit-box-shadow: 3px 3px 10px 0px  rgba(156,156,156,1) !important;
 	-moz-box-shadow: 3px 3px 10px 0px  rgba(156,156,156,1) !important;
-	box-shadow: 3px 3px 10px 0px  rgba(156,156,156,1) !important;
+	box-shadow: 3px 3px 10px 0px  rgba(156,156,156,1) !important;*/
 	overflow: hidden;
 }
 
