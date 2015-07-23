@@ -101,7 +101,14 @@ only screen and (max-width: 760px) {
 		$miarray = json_decode($mijson);
 		$descripcion = "";
 		$url ="";
-		$mensaje = '<input type="text" id="searcher" placeholder="Type anything..."/>';
+		$mensaje = '<input class="form-control" type="text" id="searcher" placeholder="Type anything..."/>';
+		$mensaje = '<div class="row">
+        <form class="navbar-form" role="search ">
+        <div class="input-group">
+            <input type="search" class="form-control" placeholder="Type to search..." name="srch-term" id="searcher"><i id="filtersubmit" class="fa fa-search"></i>
+        </div>
+        </form>
+        </div>';
 		$mensaje .= '<table id="qs_tableTotal" border="1" class=""><thead id="cabecera-publicaciones"><tr><th width="30%">Authors</th><th width="30%">Title</th><!--<th width="35%">Description</th><th style="height:10px;" width="5%">PDF</th>--></tr></thead><tbody class="">';
 		foreach ($miarray as $miarraykey => $miarrayvalue) {
 			//echo "Title = ".$miarrayvalue->{'title'}.'<br/>';

@@ -1361,3 +1361,22 @@ div.estilo-members>ul>li{
 .paginaActiva {
 	font-weight: bold;
 }
+
+#filtersubmit {
+    position: relative;
+    z-index: 10;
+    left: -25px;
+    top: 10px;
+    color: #7B7B7B;
+    width: 0;
+}
+
+#searcher:focus {
+	border-color: black;
+}
+
+@media(max-width: 766px) {
+	form>div.input-group {
+    	display:inline-table;
+	}
+}
