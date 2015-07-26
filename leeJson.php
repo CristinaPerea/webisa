@@ -1,9 +1,9 @@
 <?php
 	// Lectura de JSON desde la API de Drupal
 	// Código de desarrollo
-	//$miJsonURL = "http://www.isa.us.es/apps/api/members";
+	$miJsonURL = "http://www.isa.us.es/apps/api/members";
 	// Código de despliegue
-	$miJsonURL = "http://localhost/apps/api/members";
+	//$miJsonURL = "http://localhost/apps/api/members";
 	// Caché
 	//$miJsonURL="members.json";
 	$miJson = file_get_contents($miJsonURL);
@@ -103,7 +103,7 @@
 	$elemento = "";
     $elemento .= '<div class="col-xs-12 head">';
     //$elemento .= '<div class="portfolio_single_content estilo-members">';
-    $elemento .= '<div class="container"><div class="devider"></div></div>';
+    $elemento .= '<div class="container"><div class="devider"></div><h4 class="text-center">HEAD</h4></div>';
     $elemento .= '<div class="estilo-members ">';
     for ($i = 0; $i < sizeof($head); $i++) {
 
@@ -144,7 +144,7 @@
     // Research staff
 	$elemento = "";
     $elemento .= '<div class="col-xs-12 reseachstaff">';
-    $elemento .= '<div class="container"><div class="devider"></div></div>';
+    $elemento .= '<div class="container"><div class="devider"></div><h4 class="text-center">RESEARCH STAFF</h4></div>';
     $elemento .= '<div class="estilo-members ">';
     for ($i = 0; $i < sizeof($researchStaff); $i++) {
 
@@ -184,7 +184,7 @@
     // Research assistants
 	$elemento = "";
     $elemento .= '<div class="col-xs-12 researchassistants">';
-    $elemento .= '<div class="container"><div class="devider"></div></div>';
+    $elemento .= '<div class="container"><div class="devider"></div><h4 class="text-center">RESEARCH ASSISTANTS</h4></div>';
     $elemento .= '<div class="estilo-members">';
     for ($i = 0; $i < sizeof($reseachAssistants); $i++) {
 
@@ -225,7 +225,7 @@
     $elemento = "";
     $elemento .= '<div class="col-xs-12 externalcollaborators">';
     //$elemento .= '<div class="portfolio_single_content estilo-members">';
-    $elemento .= '<div class="container"><div class="devider"></div></div>';
+    $elemento .= '<div class="container"><div class="devider"></div><h4 class="text-center">EXTERNAL COLLABORATORS</h4></div>';
     $elemento .= '<div class="estilo-members ">';
     for ($i = 0; $i < sizeof($externalsCollaborators); $i++) {
 
@@ -266,7 +266,7 @@
     $elemento = "";
     $elemento .= '<div class="col-xs-12 technicalstaff">';
     //$elemento .= '<div class="portfolio_single_content estilo-members">';
-    $elemento .= '<div class="container"><div class="devider"></div></div>';
+    $elemento .= '<div class="container"><div class="devider"></div><h4 class="text-center">TECHNICAL STAFF</h4></div>';
     $elemento .= '<div class="estilo-members ">';
     for ($i = 0; $i < sizeof($technicalStaff); $i++) {
 
@@ -303,52 +303,13 @@
     $elemento .= '</div>';
     echo $elemento;
 
-    // Former Members
-    
-	$elemento = "";
-    $elemento .= '<div class="col-xs-12 formermembers">';
-    $elemento .= '<div class="container"><div class="devider"></div></div>';
-    $elemento .= '<div class="estilo-members">';
-    for ($i = 0; $i < sizeof($formerMembers); $i++) {
 
-		$name = $formerMembers[$i][0];
-		$position = $formerMembers[$i][1];
-		$surname = $formerMembers[$i][2];
-		$office = $formerMembers[$i][3];
-		$telephone = $formerMembers[$i][4];
-		$email = $formerMembers[$i][5];
-		$web = $formerMembers[$i][6];
-		$urlFoto = $formerMembers[$i][7];
-		if($urlFoto != "") {
-	        $elemento .= '<ul class=" col-md-4 col-sm-6">';
-	        $elemento .= '  <li><img class="img-responsive avatar-members" src="'.$urlFoto.'""></img></li>';
-	        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
-	        $elemento .= '	<li>Office: '.$office.'</li>';
-	        $elemento .= '  <li>Phone: <a href="tel:'.$telephone.'">'.$telephone.'</a></li>';
-	        $elemento .= '  <li><a href="mailto:'.$email.'" target="_blank">Email</a>, <a href="'.$web.'" target="_blank">Personal Web</a></li>';
-	        $elemento .= '</ul>';
-        }
-        else{
-        	$elemento .= '<ul class="col-md-4 col-sm-6">';
-	        $elemento .= '  <li><img class="img-responsive avatar-members" src="http://www.isa.us.es/sites/default/files/pictures/default-avatar.jpg"></img>';
-	        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
-	       $elemento .= '	<li>Office: '.$office.'</li>';
-	        $elemento .= '  <li>Phone: <a href="tel:'.$telephone.'">'.$telephone.'</a></li>';
-	        $elemento .= '  <li><a href="mailto:'.$email.'" target="_blank">Email</a>, <a href="'.$web.'" target="_blank">Personal Web</a></li>';
-	        $elemento .= '</ul>';
-        }
-    
-    }
-
-    $elemento .= ' </div>';
-    $elemento .= '</div>';
-    echo $elemento;
 
     // PhD Students
     $elemento = "";
     $elemento .= '<div class="col-xs-12 phdstudents">';
     //$elemento .= '<div class="portfolio_single_content estilo-members">';
-    $elemento .= '<div class="container"><div class="devider"></div></div>';
+    $elemento .= '<div class="container"><div class="devider"></div><h4 class="text-center">PHD STUDENTS</h4></div>';
     $elemento .= '<div class="estilo-members ">';
     for ($i = 0; $i < sizeof($phdStudents); $i++) {
 
@@ -391,7 +352,7 @@
     $elemento = "";
     $elemento .= '<div class="col-xs-12 mscstudents">';
     //$elemento .= '<div class="portfolio_single_content estilo-members">';
-    $elemento .= '<div class="container"><div class="devider"></div></div>';
+    $elemento .= '<div class="container"><div class="devider"></div><h4 class="text-center">MSC STUDENTS</h4></div>';
     $elemento .= '<div class="estilo-members ">';
     for ($i = 0; $i < sizeof($mscStudents); $i++) {
 
@@ -425,6 +386,47 @@
     
     }
     
+    $elemento .= ' </div>';
+    $elemento .= '</div>';
+    echo $elemento;
+
+        // Former Members
+    
+	$elemento = "";
+    $elemento .= '<div class="col-xs-12 formermembers">';
+    $elemento .= '<div class="container"><div class="devider"></div><h4 class="text-center">FORMER MEMBERS</h4></div>';
+    $elemento .= '<div class="estilo-members">';
+    for ($i = 0; $i < sizeof($formerMembers); $i++) {
+
+		$name = $formerMembers[$i][0];
+		$position = $formerMembers[$i][1];
+		$surname = $formerMembers[$i][2];
+		$office = $formerMembers[$i][3];
+		$telephone = $formerMembers[$i][4];
+		$email = $formerMembers[$i][5];
+		$web = $formerMembers[$i][6];
+		$urlFoto = $formerMembers[$i][7];
+		if($urlFoto != "") {
+	        $elemento .= '<ul class=" col-md-4 col-sm-6">';
+	        $elemento .= '  <li><img class="img-responsive avatar-members" src="'.$urlFoto.'""></img></li>';
+	        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
+	        $elemento .= '	<li>Office: '.$office.'</li>';
+	        $elemento .= '  <li>Phone: <a href="tel:'.$telephone.'">'.$telephone.'</a></li>';
+	        $elemento .= '  <li><a href="mailto:'.$email.'" target="_blank">Email</a>, <a href="'.$web.'" target="_blank">Personal Web</a></li>';
+	        $elemento .= '</ul>';
+        }
+        else{
+        	$elemento .= '<ul class="col-md-4 col-sm-6">';
+	        $elemento .= '  <li><img class="img-responsive avatar-members" src="http://www.isa.us.es/sites/default/files/pictures/default-avatar.jpg"></img>';
+	        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
+	       $elemento .= '	<li>Office: '.$office.'</li>';
+	        $elemento .= '  <li>Phone: <a href="tel:'.$telephone.'">'.$telephone.'</a></li>';
+	        $elemento .= '  <li><a href="mailto:'.$email.'" target="_blank">Email</a>, <a href="'.$web.'" target="_blank">Personal Web</a></li>';
+	        $elemento .= '</ul>';
+        }
+    
+    }
+
     $elemento .= ' </div>';
     $elemento .= '</div>';
     echo $elemento;
