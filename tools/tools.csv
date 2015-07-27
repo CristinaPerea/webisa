@@ -1,4 +1,4 @@
-Tipo,urlLogo,Título,Enlace,Descripción,CapturaHerramienta
+Tipo,urlLogo,Título,Enlace,Descripción,"CapturaHerramienta (560px alto, 300px ancho)"
 Registered Tool,tools/logoFAMA-59.png,FAMA Tool Suite,http://www.isa.us.es/fama,FeAture Model Analizer framework. A java-based Tool Suite for analysing variability models.,img/tools/captura-fama.png
 Registered Tool,tools/fast-50.png,FAST,http://www.isa.us.es/fast,Framework for Automated Service Trading,img/tools/captura-fast.png
 Registered Tool,tools/minilogoISA.png,REM,http://www.isa.us.es/rem,REquirements Manager,img/tools/captura-rem.png
@@ -14,4 +14,4 @@ Registered Tool,tools/ppinot2-recortada6.jpg,PPINOT,http://www.isa.us.es/ppinot,
 Registered Tool,tools/cristal-logo-mini.png,CRISTAL,http://www.isa.us.es/cristal,"CRISTAL is a software ecosystem to analyse and manage business processes from different points of view. Specifically, it provides support to analyse business process models as for the data objects used in a business process and the human resources of the organization in which the process is implemented that participate in its execution by carrying out one or more tasks.",img/tools/captura-cristal.png
 Labs Tool,tools/soa4all_logo.png,SOA4All Integrated Ranking,http://www.isa.us.es/soa4all-integrated-ranking,SOA4All Integrated Ranking is a tool that allows a user to define and compose preferences using a generic and expressive model that integrate preference definitions used in three different ranking techniques developed in the European SOA4All project.,img/tools/captura-soa4all.png
 Labs Tool,tools/EXEMPLAR-peque.png,EXEMPLAR,http://exemplar.us.es/,EXpermientn Management PLAtfoRm,img/tools/captura-exemplar.png
-Labs Tool,tools/small-logo_STATService.png,STATService,http://moses.us.es/statservice,STATService is a set of software components for statististical analysis. Currently it comprises of: ,img/tools/captura-stat.png
+Labs Tool,tools/small-logo_STATService.png,STATService,http://moses.us.es/statservice,A set of software components for statististical analysis. Currently it comprises of: ,img/tools/captura-stat.png

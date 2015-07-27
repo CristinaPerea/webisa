@@ -1,8 +1,8 @@
 <?php     
        include_once('lectorCSV.php');
        $arrayCollaborations = array();
-       //$arrayCollaborations = loadDataFromCSV("collaborations/collaborationsCSV.csv");
-       $arrayCollaborations = loadDataFromCSV("https://docs.google.com/spreadsheets/d/1DqBiUjIaL0nyPQ89VWP5pt3uqxrszaobeMfD_LyK3qM/pub?output=csv");
+       $arrayCollaborations = loadDataFromCSV("collaborations/collaborationsCSV.csv");
+       //$arrayCollaborations = loadDataFromCSV("https://docs.google.com/spreadsheets/d/1DqBiUjIaL0nyPQ89VWP5pt3uqxrszaobeMfD_LyK3qM/pub?output=csv");
        //print_r($arrayCollaborations);
 
        $group;

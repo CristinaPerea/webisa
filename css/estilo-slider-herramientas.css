@@ -12,7 +12,7 @@
 }
 
 .texto-slider-herramientas {
-        padding-top: 140px;
+        padding-top: 10px;
         padding-bottom: 2%;
         font-weight: bold;
 }
@@ -42,4 +42,9 @@
                 padding-top: 0px;
                 padding-bottom: 0px;
         }
+
+        .img-responsive-capturas {
+                display:inline;
+        }
 }
+

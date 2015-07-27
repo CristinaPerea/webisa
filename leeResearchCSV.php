@@ -1,7 +1,8 @@
 <?php     
        include_once('lectorCSV.php');
        $arrayResearch = array();
-       $arrayResearch= loadDataFromCSV("https://docs.google.com/spreadsheets/d/171m6bh9V3-NfkqB3V49laxFHEYrwD28jZX36egZnTtM/pub?output=csv");
+       //$arrayResearch= loadDataFromCSV("https://docs.google.com/spreadsheets/d/171m6bh9V3-NfkqB3V49laxFHEYrwD28jZX36egZnTtM/pub?output=csv");
+       $arrayResearch = loadDataFromCSV("researchLines/researchLines.csv");
        //print_r($arrayResearch);  
 
        $title;

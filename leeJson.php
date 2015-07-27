@@ -100,6 +100,9 @@
         $elemento .= '</div>';
         echo $elemento;
 		*/
+	
+	$numTotal = sizeof($head);
+	$resto = $numTotal % 3;
 	$elemento = "";
     $elemento .= '<div class="col-xs-12 head">';
     //$elemento .= '<div class="portfolio_single_content estilo-members">';
@@ -116,24 +119,69 @@
 		$email = $head[$i][5];
 		$web = $head[$i][6];
 		$urlFoto = $head[$i][7];
-		if($urlFoto != "") {
-	        $elemento .= '<ul class="col-md-4 col-sm-6">';
-	        $elemento .= '  <li><img class="img-responsive avatar-members" src="'.$urlFoto.'""></img></li>';
-	        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
-	        $elemento .= '	<li>Office: '.$office.'</li>';
-	        $elemento .= '  <li>Phone: <a href="tel:'.$telephone.'">'.$telephone.'</a></li>';
-	        $elemento .= '  <li><a href="mailto:'.$email.'" target="_blank">Email</a>, <a href="'.$web.'" target="_blank">Personal Web</a></li>';
-	        $elemento .= '</ul>';
-        }
-        else{
-        	$elemento .= '<ul class="col-md-4 col-sm-6">';
-	        $elemento .= '  <li><img class="img-responsive avatar-members" src="http://www.isa.us.es/sites/default/files/pictures/default-avatar.jpg"></img>';
-	        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
-	        $elemento .= '	<li>Office: '.$office.'</li>';
-	        $elemento .= '  <li>Phone: <a href="tel:'.$telephone.'">'.$telephone.'</a></li>';
-	        $elemento .= '  <li><a href="mailto:'.$email.'" target="_blank">Email</a>, <a href="'.$web.'" target="_blank">Personal Web</a></li>';
-	        $elemento .= '</ul>';
-        }
+		if($i < $numTotal - $resto){
+			if($urlFoto != "") {
+		        $elemento .= '<ul class="col-md-4 col-sm-6">';
+		        $elemento .= '  <li><img class="img-responsive avatar-members" src="'.$urlFoto.'""></img></li>';
+		        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
+		        $elemento .= '	<li>Office: '.$office.'</li>';
+		        $elemento .= '  <li>Phone: <a href="tel:'.$telephone.'">'.$telephone.'</a></li>';
+		        $elemento .= '  <li><a href="mailto:'.$email.'" target="_blank">Email</a>, <a href="'.$web.'" target="_blank">Personal Web</a></li>';
+		        $elemento .= '</ul>';
+	        }
+	        else{
+	        	$elemento .= '<ul class="col-md-4 col-sm-6">';
+		        $elemento .= '  <li><img class="img-responsive avatar-members" src="http://www.isa.us.es/sites/default/files/pictures/default-avatar.jpg"></img>';
+		        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
+		        $elemento .= '	<li>Office: '.$office.'</li>';
+		        $elemento .= '  <li>Phone: <a href="tel:'.$telephone.'">'.$telephone.'</a></li>';
+		        $elemento .= '  <li><a href="mailto:'.$email.'" target="_blank">Email</a>, <a href="'.$web.'" target="_blank">Personal Web</a></li>';
+		        $elemento .= '</ul>';
+	        }
+	    }
+	    else {
+	    	if($resto == 2) {
+		    	if($urlFoto != "") {
+			        $elemento .= '<ul class="col-md-4 col-sm-6 quedaDos">';
+			        $elemento .= '  <li><img class="img-responsive avatar-members" src="'.$urlFoto.'""></img></li>';
+			        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
+			        $elemento .= '	<li>Office: '.$office.'</li>';
+			        $elemento .= '  <li>Phone: <a href="tel:'.$telephone.'">'.$telephone.'</a></li>';
+			        $elemento .= '  <li><a href="mailto:'.$email.'" target="_blank">Email</a>, <a href="'.$web.'" target="_blank">Personal Web</a></li>';
+			        $elemento .= '</ul>';
+		        }
+		        else{
+		        	$elemento .= '<ul class="col-md-4 col-sm-6 quedaDos">';
+			        $elemento .= '  <li><img class="img-responsive avatar-members" src="http://www.isa.us.es/sites/default/files/pictures/default-avatar.jpg"></img>';
+			        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
+			        $elemento .= '	<li>Office: '.$office.'</li>';
+			        $elemento .= '  <li>Phone: <a href="tel:'.$telephone.'">'.$telephone.'</a></li>';
+			        $elemento .= '  <li><a href="mailto:'.$email.'" target="_blank">Email</a>, <a href="'.$web.'" target="_blank">Personal Web</a></li>';
+			        $elemento .= '</ul>';
+		        }
+	    	}
+	    	else
+	    	{
+	    		if($urlFoto != "") {
+		        $elemento .= '<ul class="col-md-4 col-sm-6 quedaUnoHead">';
+		        $elemento .= '  <li><img class="img-responsive avatar-members" src="'.$urlFoto.'""></img></li>';
+		        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
+		        $elemento .= '	<li>Office: '.$office.'</li>';
+		        $elemento .= '  <li>Phone: <a href="tel:'.$telephone.'">'.$telephone.'</a></li>';
+		        $elemento .= '  <li><a href="mailto:'.$email.'" target="_blank">Email</a>, <a href="'.$web.'" target="_blank">Personal Web</a></li>';
+		        $elemento .= '</ul>';
+	       		}
+	       		else{
+	        	$elemento .= '<ul class="col-md-4 col-sm-6 quedaUnoHead">';
+		        $elemento .= '  <li><img class="img-responsive avatar-members" src="http://www.isa.us.es/sites/default/files/pictures/default-avatar.jpg"></img>';
+		        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
+		        $elemento .= '	<li>Office: '.$office.'</li>';
+		        $elemento .= '  <li>Phone: <a href="tel:'.$telephone.'">'.$telephone.'</a></li>';
+		        $elemento .= '  <li><a href="mailto:'.$email.'" target="_blank">Email</a>, <a href="'.$web.'" target="_blank">Personal Web</a></li>';
+		        $elemento .= '</ul>';
+	        	}
+	    	}
+	    }
     
     }
     
@@ -142,6 +190,8 @@
     echo $elemento;
 
     // Research staff
+    $numTotal = sizeof($researchStaff);
+	$resto = $numTotal % 3;
 	$elemento = "";
     $elemento .= '<div class="col-xs-12 reseachstaff">';
     $elemento .= '<div class="container"><div class="devider"></div><h4 class="text-center">RESEARCH STAFF</h4></div>';
@@ -156,25 +206,69 @@
 		$email = $researchStaff[$i][5];
 		$web = $researchStaff[$i][6];
 		$urlFoto = $researchStaff[$i][7];
-		if($urlFoto != "") {
-	        $elemento .= '<ul class="col-md-4 col-sm-6">';
-	        $elemento .= '  <li><img class="img-responsive avatar-members" src="'.$urlFoto.'""></img></li>';
-	        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
-	        $elemento .= '	<li>Office: '.$office.'</li>';
-	        $elemento .= '  <li>Phone: <a href="tel:'.$telephone.'">'.$telephone.'</a></li>';
-	        $elemento .= '  <li><a href="mailto:'.$email.'" target="_blank">Email</a>, <a href="'.$web.'" target="_blank">Personal Web</a></li>';
-	        $elemento .= '</ul>';
-        }
-        else{
-        	$elemento .= '<ul class="col-md-4 col-sm-6">';
-	        $elemento .= '  <li><img class="img-responsive avatar-members" src="http://www.isa.us.es/sites/default/files/pictures/default-avatar.jpg"></img>';
-	        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
-	        $elemento .= '	<li>Office: '.$office.'</li>';
-	        $elemento .= '  <li>Phone: <a href="tel:'.$telephone.'">'.$telephone.'</a></li>';
-	        $elemento .= '  <li><a href="mailto:'.$email.'" target="_blank">Email</a>, <a href="'.$web.'" target="_blank">Personal Web</a></li>';
-	        $elemento .= '</ul>';
-        }
-    
+		if($i < $numTotal - $resto){
+			if($urlFoto != "") {
+		        $elemento .= '<ul class="col-md-4 col-sm-6">';
+		        $elemento .= '  <li><img class="img-responsive avatar-members" src="'.$urlFoto.'""></img></li>';
+		        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
+		        $elemento .= '	<li>Office: '.$office.'</li>';
+		        $elemento .= '  <li>Phone: <a href="tel:'.$telephone.'">'.$telephone.'</a></li>';
+		        $elemento .= '  <li><a href="mailto:'.$email.'" target="_blank">Email</a>, <a href="'.$web.'" target="_blank">Personal Web</a></li>';
+		        $elemento .= '</ul>';
+	        }
+	        else{
+	        	$elemento .= '<ul class="col-md-4 col-sm-6">';
+		        $elemento .= '  <li><img class="img-responsive avatar-members" src="http://www.isa.us.es/sites/default/files/pictures/default-avatar.jpg"></img>';
+		        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
+		        $elemento .= '	<li>Office: '.$office.'</li>';
+		        $elemento .= '  <li>Phone: <a href="tel:'.$telephone.'">'.$telephone.'</a></li>';
+		        $elemento .= '  <li><a href="mailto:'.$email.'" target="_blank">Email</a>, <a href="'.$web.'" target="_blank">Personal Web</a></li>';
+		        $elemento .= '</ul>';
+	        }
+	    }
+    	else {
+	    	if($resto == 2) {
+		    		if($urlFoto != "") {
+			        $elemento .= '<ul class="col-md-4 col-sm-6 quedaDos">';
+			        $elemento .= '  <li><img class="img-responsive avatar-members" src="'.$urlFoto.'""></img></li>';
+			        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
+			        $elemento .= '	<li>Office: '.$office.'</li>';
+			        $elemento .= '  <li>Phone: <a href="tel:'.$telephone.'">'.$telephone.'</a></li>';
+			        $elemento .= '  <li><a href="mailto:'.$email.'" target="_blank">Email</a>, <a href="'.$web.'" target="_blank">Personal Web</a></li>';
+			        $elemento .= '</ul>';
+		        }
+		        else{
+		        	$elemento .= '<ul class="col-md-4 col-sm-6 quedaDos">';
+			        $elemento .= '  <li><img class="img-responsive avatar-members" src="http://www.isa.us.es/sites/default/files/pictures/default-avatar.jpg"></img>';
+			        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
+			        $elemento .= '	<li>Office: '.$office.'</li>';
+			        $elemento .= '  <li>Phone: <a href="tel:'.$telephone.'">'.$telephone.'</a></li>';
+			        $elemento .= '  <li><a href="mailto:'.$email.'" target="_blank">Email</a>, <a href="'.$web.'" target="_blank">Personal Web</a></li>';
+			        $elemento .= '</ul>';
+		        }
+	    	}
+	    	else
+	    	{
+	    		if($urlFoto != "") {
+		        $elemento .= '<ul class="col-md-4 col-sm-6 quedaUno">';
+		        $elemento .= '  <li><img class="img-responsive avatar-members" src="'.$urlFoto.'""></img></li>';
+		        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
+		        $elemento .= '	<li>Office: '.$office.'</li>';
+		        $elemento .= '  <li>Phone: <a href="tel:'.$telephone.'">'.$telephone.'</a></li>';
+		        $elemento .= '  <li><a href="mailto:'.$email.'" target="_blank">Email</a>, <a href="'.$web.'" target="_blank">Personal Web</a></li>';
+		        $elemento .= '</ul>';
+	       		}
+	       		else{
+	        	$elemento .= '<ul class="col-md-4 col-sm-6 quedaUno">';
+		        $elemento .= '  <li><img class="img-responsive avatar-members" src="http://www.isa.us.es/sites/default/files/pictures/default-avatar.jpg"></img>';
+		        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
+		        $elemento .= '	<li>Office: '.$office.'</li>';
+		        $elemento .= '  <li>Phone: <a href="tel:'.$telephone.'">'.$telephone.'</a></li>';
+		        $elemento .= '  <li><a href="mailto:'.$email.'" target="_blank">Email</a>, <a href="'.$web.'" target="_blank">Personal Web</a></li>';
+		        $elemento .= '</ul>';
+	        	}
+	    	}
+		}
     }
     
     $elemento .= ' </div>';
@@ -182,10 +276,13 @@
     echo $elemento;
 
     // Research assistants
+    $numTotal = sizeof($reseachAssistants);
+	$resto = $numTotal % 3;
 	$elemento = "";
     $elemento .= '<div class="col-xs-12 researchassistants">';
     $elemento .= '<div class="container"><div class="devider"></div><h4 class="text-center">RESEARCH ASSISTANTS</h4></div>';
     $elemento .= '<div class="estilo-members">';
+    $contadorResto =2 ;
     for ($i = 0; $i < sizeof($reseachAssistants); $i++) {
 
 		$name = $reseachAssistants[$i][0];
@@ -196,25 +293,71 @@
 		$email = $reseachAssistants[$i][5];
 		$web = $reseachAssistants[$i][6];
 		$urlFoto = $reseachAssistants[$i][7];
-		if($urlFoto != "") {
-	        $elemento .= '<ul class=" col-md-4 col-sm-6">';
-	        $elemento .= '  <li><img class="img-responsive avatar-members" src="'.$urlFoto.'""></img></li>';
-	        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
-	        $elemento .= '	<li>Office: '.$office.'</li>';
-	        $elemento .= '  <li>Phone: <a href="tel:'.$telephone.'">'.$telephone.'</a></li>';
-	        $elemento .= '  <li><a href="mailto:'.$email.'" target="_blank">Email</a>, <a href="'.$web.'" target="_blank">Personal Web</a></li>';
-	        $elemento .= '</ul>';
-        }
-        else{
-        	$elemento .= '<ul class="col-md-4 col-sm-6">';
-	        $elemento .= '  <li><img class="img-responsive avatar-members" src="http://www.isa.us.es/sites/default/files/pictures/default-avatar.jpg"></img>';
-	        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
-	       $elemento .= '	<li>Office: '.$office.'</li>';
-	        $elemento .= '  <li>Phone: <a href="tel:'.$telephone.'">'.$telephone.'</a></li>';
-	        $elemento .= '  <li><a href="mailto:'.$email.'" target="_blank">Email</a>, <a href="'.$web.'" target="_blank">Personal Web</a></li>';
-	        $elemento .= '</ul>';
-        }
-    
+		
+		if($i < $numTotal - $resto){
+				if($urlFoto != "") {
+		        $elemento .= '<ul class=" col-md-4 col-sm-6">';
+		        $elemento .= '  <li><img class="img-responsive avatar-members" src="'.$urlFoto.'""></img></li>';
+		        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
+		        $elemento .= '	<li>Office: '.$office.'</li>';
+		        $elemento .= '  <li>Phone: <a href="tel:'.$telephone.'">'.$telephone.'</a></li>';
+		        $elemento .= '  <li><a href="mailto:'.$email.'" target="_blank">Email</a>, <a href="'.$web.'" target="_blank">Personal Web</a></li>';
+		        $elemento .= '</ul>';
+	        }
+	        else{
+	        	$elemento .= '<ul class="col-md-4 col-sm-6">';
+		        $elemento .= '  <li><img class="img-responsive avatar-members" src="http://www.isa.us.es/sites/default/files/pictures/default-avatar.jpg"></img>';
+		        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
+		       $elemento .= '	<li>Office: '.$office.'</li>';
+		        $elemento .= '  <li>Phone: <a href="tel:'.$telephone.'">'.$telephone.'</a></li>';
+		        $elemento .= '  <li><a href="mailto:'.$email.'" target="_blank">Email</a>, <a href="'.$web.'" target="_blank">Personal Web</a></li>';
+		        $elemento .= '</ul>';
+	        }
+	    }
+    	else {
+	    	if($resto == 2) {
+		    	if($urlFoto != "") {
+			        $elemento .= '<ul class="col-md-4 col-sm-6 quedaDos">';
+			        $elemento .= '  <li><img class="img-responsive avatar-members" src="'.$urlFoto.'""></img></li>';
+			        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
+			        $elemento .= '	<li>Office: '.$office.'</li>';
+			        $elemento .= '  <li>Phone: <a href="tel:'.$telephone.'">'.$telephone.'</a></li>';
+			        $elemento .= '  <li><a href="mailto:'.$email.'" target="_blank">Email</a>, <a href="'.$web.'" target="_blank">Personal Web</a></li>';
+			        $elemento .= '</ul>';
+		        }
+		        else{
+		        	$elemento .= '<ul class="col-md-4 col-sm-6 quedaDos">';
+			        $elemento .= '  <li><img class="img-responsive avatar-members" src="http://www.isa.us.es/sites/default/files/pictures/default-avatar.jpg"></img>';
+			        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
+			        $elemento .= '	<li>Office: '.$office.'</li>';
+			        $elemento .= '  <li>Phone: <a href="tel:'.$telephone.'">'.$telephone.'</a></li>';
+			        $elemento .= '  <li><a href="mailto:'.$email.'" target="_blank">Email</a>, <a href="'.$web.'" target="_blank">Personal Web</a></li>';
+			        $elemento .= '</ul>';
+		        }
+		        $resto = 0;
+	    	}
+	    	else
+	    	{
+	    		if($urlFoto != "") {
+		        $elemento .= '<ul class="col-md-4 col-sm-6 quedaUno">';
+		        $elemento .= '  <li><img class="img-responsive avatar-members" src="'.$urlFoto.'""></img></li>';
+		        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
+		        $elemento .= '	<li>Office: '.$office.'</li>';
+		        $elemento .= '  <li>Phone: <a href="tel:'.$telephone.'">'.$telephone.'</a></li>';
+		        $elemento .= '  <li><a href="mailto:'.$email.'" target="_blank">Email</a>, <a href="'.$web.'" target="_blank">Personal Web</a></li>';
+		        $elemento .= '</ul>';
+	       		}
+	       		else{
+	        	$elemento .= '<ul class="col-md-4 col-sm-6 quedaUno">';
+		        $elemento .= '  <li><img class="img-responsive avatar-members" src="http://www.isa.us.es/sites/default/files/pictures/default-avatar.jpg"></img>';
+		        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
+		        $elemento .= '	<li>Office: '.$office.'</li>';
+		        $elemento .= '  <li>Phone: <a href="tel:'.$telephone.'">'.$telephone.'</a></li>';
+		        $elemento .= '  <li><a href="mailto:'.$email.'" target="_blank">Email</a>, <a href="'.$web.'" target="_blank">Personal Web</a></li>';
+		        $elemento .= '</ul>';
+	        	}
+	    	}
+	    }
     }
 
     $elemento .= ' </div>';
@@ -222,6 +365,8 @@
     echo $elemento;
 
     // External collaborators
+    $numTotal = sizeof($externalsCollaborators);
+	$resto = $numTotal % 3;
     $elemento = "";
     $elemento .= '<div class="col-xs-12 externalcollaborators">';
     //$elemento .= '<div class="portfolio_single_content estilo-members">';
@@ -237,25 +382,69 @@
 		$email = $externalsCollaborators[$i][5];
 		$web = $externalsCollaborators[$i][6];
 		$urlFoto = $externalsCollaborators[$i][7];
-		if($urlFoto != "") {
-	        $elemento .= '<ul class="col-md-4 col-sm-6">';
-	        $elemento .= '  <li><img class="img-responsive avatar-members" src="'.$urlFoto.'""></img></li>';
-	        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
-	        $elemento .= '	<li>Office: '.$office.'</li>';
-	        $elemento .= '  <li>Phone: <a href="tel:'.$telephone.'">'.$telephone.'</a></li>';
-	        $elemento .= '  <li><a href="mailto:'.$email.'" target="_blank">Email</a>, <a href="'.$web.'" target="_blank">Personal Web</a></li>';
-	        $elemento .= '</ul>';
-        }
-        else{
-        	$elemento .= '<ul class="col-md-4 col-sm-6">';
-	        $elemento .= '  <li><img class="img-responsive avatar-members" src="http://www.isa.us.es/sites/default/files/pictures/default-avatar.jpg"></img>';
-	        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
-	        $elemento .= '	<li>Office: '.$office.'</li>';
-	        $elemento .= '  <li>Phone: <a href="tel:'.$telephone.'">'.$telephone.'</a></li>';
-	        $elemento .= '  <li><a href="mailto:'.$email.'" target="_blank">Email</a>, <a href="'.$web.'" target="_blank">Personal Web</a></li>';
-	        $elemento .= '</ul>';
-        }
-    
+		if($i < $numTotal - $resto){
+			if($urlFoto != "") {
+		        $elemento .= '<ul class="col-md-4 col-sm-6">';
+		        $elemento .= '  <li><img class="img-responsive avatar-members" src="'.$urlFoto.'""></img></li>';
+		        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
+		        $elemento .= '	<li>Office: '.$office.'</li>';
+		        $elemento .= '  <li>Phone: <a href="tel:'.$telephone.'">'.$telephone.'</a></li>';
+		        $elemento .= '  <li><a href="mailto:'.$email.'" target="_blank">Email</a>, <a href="'.$web.'" target="_blank">Personal Web</a></li>';
+		        $elemento .= '</ul>';
+	        }
+	        else{
+	        	$elemento .= '<ul class="col-md-4 col-sm-6">';
+		        $elemento .= '  <li><img class="img-responsive avatar-members" src="http://www.isa.us.es/sites/default/files/pictures/default-avatar.jpg"></img>';
+		        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
+		        $elemento .= '	<li>Office: '.$office.'</li>';
+		        $elemento .= '  <li>Phone: <a href="tel:'.$telephone.'">'.$telephone.'</a></li>';
+		        $elemento .= '  <li><a href="mailto:'.$email.'" target="_blank">Email</a>, <a href="'.$web.'" target="_blank">Personal Web</a></li>';
+		        $elemento .= '</ul>';
+	        }
+	 	}else {
+	    	if($resto == 2) {
+		    	if($urlFoto != "") {
+			        $elemento .= '<ul class="col-md-4 col-sm-6 quedaDos">';
+			        $elemento .= '  <li><img class="img-responsive avatar-members" src="'.$urlFoto.'""></img></li>';
+			        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
+			        $elemento .= '	<li>Office: '.$office.'</li>';
+			        $elemento .= '  <li>Phone: <a href="tel:'.$telephone.'">'.$telephone.'</a></li>';
+			        $elemento .= '  <li><a href="mailto:'.$email.'" target="_blank">Email</a>, <a href="'.$web.'" target="_blank">Personal Web</a></li>';
+			        $elemento .= '</ul>';
+		        }
+		        else{
+		        	$elemento .= '<ul class="col-md-4 col-sm-6 quedaDos">';
+			        $elemento .= '  <li><img class="img-responsive avatar-members" src="http://www.isa.us.es/sites/default/files/pictures/default-avatar.jpg"></img>';
+			        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
+			        $elemento .= '	<li>Office: '.$office.'</li>';
+			        $elemento .= '  <li>Phone: <a href="tel:'.$telephone.'">'.$telephone.'</a></li>';
+			        $elemento .= '  <li><a href="mailto:'.$email.'" target="_blank">Email</a>, <a href="'.$web.'" target="_blank">Personal Web</a></li>';
+			        $elemento .= '</ul>';
+		        }
+		        $resto = 0;
+	    	}
+	    	else
+	    	{
+	    		if($urlFoto != "") {
+		        $elemento .= '<ul class="col-md-4 col-sm-6 quedaUno">';
+		        $elemento .= '  <li><img class="img-responsive avatar-members" src="'.$urlFoto.'""></img></li>';
+		        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
+		        $elemento .= '	<li>Office: '.$office.'</li>';
+		        $elemento .= '  <li>Phone: <a href="tel:'.$telephone.'">'.$telephone.'</a></li>';
+		        $elemento .= '  <li><a href="mailto:'.$email.'" target="_blank">Email</a>, <a href="'.$web.'" target="_blank">Personal Web</a></li>';
+		        $elemento .= '</ul>';
+	       		}
+	       		else{
+	        	$elemento .= '<ul class="col-md-4 col-sm-6 quedaUno">';
+		        $elemento .= '  <li><img class="img-responsive avatar-members" src="http://www.isa.us.es/sites/default/files/pictures/default-avatar.jpg"></img>';
+		        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
+		        $elemento .= '	<li>Office: '.$office.'</li>';
+		        $elemento .= '  <li>Phone: <a href="tel:'.$telephone.'">'.$telephone.'</a></li>';
+		        $elemento .= '  <li><a href="mailto:'.$email.'" target="_blank">Email</a>, <a href="'.$web.'" target="_blank">Personal Web</a></li>';
+		        $elemento .= '</ul>';
+	        	}
+	    	}
+	    }   
     }
     
     $elemento .= ' </div>';
@@ -263,6 +452,8 @@
     echo $elemento;
 
     //Technical staff
+    $numTotal = sizeof($technicalStaff);
+	$resto = $numTotal % 3;
     $elemento = "";
     $elemento .= '<div class="col-xs-12 technicalstaff">';
     //$elemento .= '<div class="portfolio_single_content estilo-members">';
@@ -278,25 +469,70 @@
 		$email = $technicalStaff[$i][5];
 		$web = $technicalStaff[$i][6];
 		$urlFoto = $technicalStaff[$i][7];
-		if($urlFoto != "") {
-	        $elemento .= '<ul class="col-md-4 col-sm-6">';
-	        $elemento .= '  <li><img class="img-responsive avatar-members" src="'.$urlFoto.'""></img></li>';
-	        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
-	        $elemento .= '	<li>Office: '.$office.'</li>';
-	        $elemento .= '  <li>Phone: <a href="tel:'.$telephone.'">'.$telephone.'</a></li>';
-	        $elemento .= '  <li><a href="mailto:'.$email.'" target="_blank">Email</a>, <a href="'.$web.'" target="_blank">Personal Web</a></li>';
-	        $elemento .= '</ul>';
-        }
-        else{
-        	$elemento .= '<ul class="col-md-4 col-sm-6">';
-	        $elemento .= '  <li><img class="img-responsive avatar-members" src="http://www.isa.us.es/sites/default/files/pictures/default-avatar.jpg"></img>';
-	        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
-	        $elemento .= '	<li>Office: '.$office.'</li>';
-	        $elemento .= '  <li>Phone: <a href="tel:'.$telephone.'">'.$telephone.'</a></li>';
-	        $elemento .= '  <li><a href="mailto:'.$email.'" target="_blank">Email</a>, <a href="'.$web.'" target="_blank">Personal Web</a></li>';
-	        $elemento .= '</ul>';
-        }
-    
+		$contadorResto = 2;
+		if($i < $numTotal - $resto){
+			if($urlFoto != "") {
+		        $elemento .= '<ul class="col-md-4 col-sm-6">';
+		        $elemento .= '  <li><img class="img-responsive avatar-members" src="'.$urlFoto.'""></img></li>';
+		        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
+		        $elemento .= '	<li>Office: '.$office.'</li>';
+		        $elemento .= '  <li>Phone: <a href="tel:'.$telephone.'">'.$telephone.'</a></li>';
+		        $elemento .= '  <li><a href="mailto:'.$email.'" target="_blank">Email</a>, <a href="'.$web.'" target="_blank">Personal Web</a></li>';
+		        $elemento .= '</ul>';
+	        }
+	        else{
+	        	$elemento .= '<ul class="col-md-4 col-sm-6">';
+		        $elemento .= '  <li><img class="img-responsive avatar-members" src="http://www.isa.us.es/sites/default/files/pictures/default-avatar.jpg"></img>';
+		        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
+		        $elemento .= '	<li>Office: '.$office.'</li>';
+		        $elemento .= '  <li>Phone: <a href="tel:'.$telephone.'">'.$telephone.'</a></li>';
+		        $elemento .= '  <li><a href="mailto:'.$email.'" target="_blank">Email</a>, <a href="'.$web.'" target="_blank">Personal Web</a></li>';
+		        $elemento .= '</ul>';
+	        }
+    	}else {
+	    	if($resto == 2) {
+		    	if($urlFoto != "") {
+			        $elemento .= '<ul class="col-md-4 col-sm-6">';
+			        $elemento .= '  <li><img class="img-responsive avatar-members" src="'.$urlFoto.'""></img></li>';
+			        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
+			        $elemento .= '	<li>Office: '.$office.'</li>';
+			        $elemento .= '  <li>Phone: <a href="tel:'.$telephone.'">'.$telephone.'</a></li>';
+			        $elemento .= '  <li><a href="mailto:'.$email.'" target="_blank">Email</a>, <a href="'.$web.'" target="_blank">Personal Web</a></li>';
+			        $elemento .= '</ul>';
+		        }
+		        else{
+		        	$elemento .= '<ul class="col-md-4 col-sm-6">';
+			        $elemento .= '  <li><img class="img-responsive avatar-members" src="http://www.isa.us.es/sites/default/files/pictures/default-avatar.jpg"></img>';
+			        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
+			        $elemento .= '	<li>Office: '.$office.'</li>';
+			        $elemento .= '  <li>Phone: <a href="tel:'.$telephone.'">'.$telephone.'</a></li>';
+			        $elemento .= '  <li><a href="mailto:'.$email.'" target="_blank">Email</a>, <a href="'.$web.'" target="_blank">Personal Web</a></li>';
+			        $elemento .= '</ul>';
+		        }
+		        $resto = 0;
+	    	}
+	    	else
+	    	{
+	    		if($urlFoto != "") {
+		        $elemento .= '<ul class="col-md-4 col-sm-6 quedaUno">';
+		        $elemento .= '  <li><img class="img-responsive avatar-members" src="'.$urlFoto.'""></img></li>';
+		        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
+		        $elemento .= '	<li>Office: '.$office.'</li>';
+		        $elemento .= '  <li>Phone: <a href="tel:'.$telephone.'">'.$telephone.'</a></li>';
+		        $elemento .= '  <li><a href="mailto:'.$email.'" target="_blank">Email</a>, <a href="'.$web.'" target="_blank">Personal Web</a></li>';
+		        $elemento .= '</ul>';
+	       		}
+	       		else{
+	        	$elemento .= '<ul class="col-md-4 col-sm-6 quedaUno">';
+		        $elemento .= '  <li><img class="img-responsive avatar-members" src="http://www.isa.us.es/sites/default/files/pictures/default-avatar.jpg"></img>';
+		        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
+		        $elemento .= '	<li>Office: '.$office.'</li>';
+		        $elemento .= '  <li>Phone: <a href="tel:'.$telephone.'">'.$telephone.'</a></li>';
+		        $elemento .= '  <li><a href="mailto:'.$email.'" target="_blank">Email</a>, <a href="'.$web.'" target="_blank">Personal Web</a></li>';
+		        $elemento .= '</ul>';
+	        	}
+	    	}
+	    }
     }
     
     $elemento .= ' </div>';
@@ -306,6 +542,8 @@
 
 
     // PhD Students
+    $numTotal = sizeof($phdStudents);
+	$resto = $numTotal % 3;
     $elemento = "";
     $elemento .= '<div class="col-xs-12 phdstudents">';
     //$elemento .= '<div class="portfolio_single_content estilo-members">';
@@ -322,25 +560,69 @@
 		$email = $phdStudents[$i][5];
 		$web = $phdStudents[$i][6];
 		$urlFoto = $phdStudents[$i][7];
-		if($urlFoto != "") {
-	        $elemento .= '<ul class="col-md-4 col-sm-6">';
-	        $elemento .= '  <li><img class="img-responsive avatar-members" src="'.$urlFoto.'""></img></li>';
-	        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
-	        $elemento .= '	<li>Office: '.$office.'</li>';
-	        $elemento .= '  <li>Phone: <a href="tel:'.$telephone.'">'.$telephone.'</a></li>';
-	        $elemento .= '  <li><a href="mailto:'.$email.'" target="_blank">Email</a>, <a href="'.$web.'" target="_blank">Personal Web</a></li>';
-	        $elemento .= '</ul>';
-        }
-        else{
-        	$elemento .= '<ul class="col-md-4 col-sm-6">';
-	        $elemento .= '  <li><img class="img-responsive avatar-members" src="http://www.isa.us.es/sites/default/files/pictures/default-avatar.jpg"></img>';
-	        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
-	        $elemento .= '	<li>Office: '.$office.'</li>';
-	        $elemento .= '  <li>Phone: <a href="tel:'.$telephone.'">'.$telephone.'</a></li>';
-	        $elemento .= '  <li><a href="mailto:'.$email.'" target="_blank">Email</a>, <a href="'.$web.'" target="_blank">Personal Web</a></li>';
-	        $elemento .= '</ul>';
-        }
-    
+		if($i < $numTotal - $resto){
+			if($urlFoto != "") {
+		        $elemento .= '<ul class="col-md-4 col-sm-6">';
+		        $elemento .= '  <li><img class="img-responsive avatar-members" src="'.$urlFoto.'""></img></li>';
+		        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
+		        $elemento .= '	<li>Office: '.$office.'</li>';
+		        $elemento .= '  <li>Phone: <a href="tel:'.$telephone.'">'.$telephone.'</a></li>';
+		        $elemento .= '  <li><a href="mailto:'.$email.'" target="_blank">Email</a>, <a href="'.$web.'" target="_blank">Personal Web</a></li>';
+		        $elemento .= '</ul>';
+	        }
+	        else{
+	        	$elemento .= '<ul class="col-md-4 col-sm-6">';
+		        $elemento .= '  <li><img class="img-responsive avatar-members" src="http://www.isa.us.es/sites/default/files/pictures/default-avatar.jpg"></img>';
+		        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
+		        $elemento .= '	<li>Office: '.$office.'</li>';
+		        $elemento .= '  <li>Phone: <a href="tel:'.$telephone.'">'.$telephone.'</a></li>';
+		        $elemento .= '  <li><a href="mailto:'.$email.'" target="_blank">Email</a>, <a href="'.$web.'" target="_blank">Personal Web</a></li>';
+		        $elemento .= '</ul>';
+	        }
+    	}    else {
+	    	if($resto == 2) {
+		    	if($urlFoto != "") {
+			        $elemento .= '<ul class="col-md-4 col-sm-6 quedaDos">';
+			        $elemento .= '  <li><img class="img-responsive avatar-members" src="'.$urlFoto.'""></img></li>';
+			        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
+			        $elemento .= '	<li>Office: '.$office.'</li>';
+			        $elemento .= '  <li>Phone: <a href="tel:'.$telephone.'">'.$telephone.'</a></li>';
+			        $elemento .= '  <li><a href="mailto:'.$email.'" target="_blank">Email</a>, <a href="'.$web.'" target="_blank">Personal Web</a></li>';
+			        $elemento .= '</ul>';
+		        }
+		        else{
+		        	$elemento .= '<ul class="col-md-4 col-sm-6 quedaDos">';
+			        $elemento .= '  <li><img class="img-responsive avatar-members" src="http://www.isa.us.es/sites/default/files/pictures/default-avatar.jpg"></img>';
+			        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
+			        $elemento .= '	<li>Office: '.$office.'</li>';
+			        $elemento .= '  <li>Phone: <a href="tel:'.$telephone.'">'.$telephone.'</a></li>';
+			        $elemento .= '  <li><a href="mailto:'.$email.'" target="_blank">Email</a>, <a href="'.$web.'" target="_blank">Personal Web</a></li>';
+			        $elemento .= '</ul>';
+		        }
+		        $resto = 0;
+	    	}
+	    	else
+	    	{
+	    		if($urlFoto != "") {
+		        $elemento .= '<ul class="col-md-4 col-sm-6 quedaUno">';
+		        $elemento .= '  <li><img class="img-responsive avatar-members" src="'.$urlFoto.'""></img></li>';
+		        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
+		        $elemento .= '	<li>Office: '.$office.'</li>';
+		        $elemento .= '  <li>Phone: <a href="tel:'.$telephone.'">'.$telephone.'</a></li>';
+		        $elemento .= '  <li><a href="mailto:'.$email.'" target="_blank">Email</a>, <a href="'.$web.'" target="_blank">Personal Web</a></li>';
+		        $elemento .= '</ul>';
+	       		}
+	       		else{
+	        	$elemento .= '<ul class="col-md-4 col-sm-6 quedaUno">';
+		        $elemento .= '  <li><img class="img-responsive avatar-members" src="http://www.isa.us.es/sites/default/files/pictures/default-avatar.jpg"></img>';
+		        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
+		        $elemento .= '	<li>Office: '.$office.'</li>';
+		        $elemento .= '  <li>Phone: <a href="tel:'.$telephone.'">'.$telephone.'</a></li>';
+		        $elemento .= '  <li><a href="mailto:'.$email.'" target="_blank">Email</a>, <a href="'.$web.'" target="_blank">Personal Web</a></li>';
+		        $elemento .= '</ul>';
+	        	}
+	    	}
+	    }
     }
     
     $elemento .= ' </div>';
@@ -348,7 +630,8 @@
     echo $elemento;
 
     // Msc Students
-        // PhD Students
+    $numTotal = sizeof($mscStudents);
+	$resto = $numTotal % 3;
     $elemento = "";
     $elemento .= '<div class="col-xs-12 mscstudents">';
     //$elemento .= '<div class="portfolio_single_content estilo-members">';
@@ -365,33 +648,78 @@
 		$email = $mscStudents[$i][5];
 		$web = $mscStudents[$i][6];
 		$urlFoto = $mscStudents[$i][7];
-		if($urlFoto != "") {
-	        $elemento .= '<ul class="col-md-4 col-sm-6">';
-	        $elemento .= '  <li><img class="img-responsive avatar-members" src="'.$urlFoto.'""></img></li>';
-	        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
-	        $elemento .= '	<li>Office: '.$office.'</li>';
-	        $elemento .= '  <li>Phone: <a href="tel:'.$telephone.'">'.$telephone.'</a></li>';
-	        $elemento .= '  <li><a href="mailto:'.$email.'" target="_blank">Email</a>, <a href="'.$web.'" target="_blank">Personal Web</a></li>';
-	        $elemento .= '</ul>';
-        }
-        else{
-        	$elemento .= '<ul class="col-md-4 col-sm-6">';
-	        $elemento .= '  <li><img class="img-responsive avatar-members" src="http://www.isa.us.es/sites/default/files/pictures/default-avatar.jpg"></img>';
-	        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
-	        $elemento .= '	<li>Office: '.$office.'</li>';
-	        $elemento .= '  <li>Phone: <a href="tel:'.$telephone.'">'.$telephone.'</a></li>';
-	        $elemento .= '  <li><a href="mailto:'.$email.'" target="_blank">Email</a>, <a href="'.$web.'" target="_blank">Personal Web</a></li>';
-	        $elemento .= '</ul>';
-        }
-    
+		if($i < $numTotal - $resto){
+			if($urlFoto != "") {
+		        $elemento .= '<ul class="col-md-4 col-sm-6">';
+		        $elemento .= '  <li><img class="img-responsive avatar-members" src="'.$urlFoto.'""></img></li>';
+		        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
+		        $elemento .= '	<li>Office: '.$office.'</li>';
+		        $elemento .= '  <li>Phone: <a href="tel:'.$telephone.'">'.$telephone.'</a></li>';
+		        $elemento .= '  <li><a href="mailto:'.$email.'" target="_blank">Email</a>, <a href="'.$web.'" target="_blank">Personal Web</a></li>';
+		        $elemento .= '</ul>';
+	        }
+	        else{
+	        	$elemento .= '<ul class="col-md-4 col-sm-6">';
+		        $elemento .= '  <li><img class="img-responsive avatar-members" src="http://www.isa.us.es/sites/default/files/pictures/default-avatar.jpg"></img>';
+		        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
+		        $elemento .= '	<li>Office: '.$office.'</li>';
+		        $elemento .= '  <li>Phone: <a href="tel:'.$telephone.'">'.$telephone.'</a></li>';
+		        $elemento .= '  <li><a href="mailto:'.$email.'" target="_blank">Email</a>, <a href="'.$web.'" target="_blank">Personal Web</a></li>';
+		        $elemento .= '</ul>';
+      		}
+    	}    else {
+	    	if($resto == 2) {
+		    	if($urlFoto != "") {
+			        $elemento .= '<ul class="col-md-4 col-sm-6 quedaDos">';
+			        $elemento .= '  <li><img class="img-responsive avatar-members" src="'.$urlFoto.'""></img></li>';
+			        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
+			        $elemento .= '	<li>Office: '.$office.'</li>';
+			        $elemento .= '  <li>Phone: <a href="tel:'.$telephone.'">'.$telephone.'</a></li>';
+			        $elemento .= '  <li><a href="mailto:'.$email.'" target="_blank">Email</a>, <a href="'.$web.'" target="_blank">Personal Web</a></li>';
+			        $elemento .= '</ul>';
+		        }
+		        else{
+		        	$elemento .= '<ul class="col-md-4 col-sm-6 quedaDos">';
+			        $elemento .= '  <li><img class="img-responsive avatar-members" src="http://www.isa.us.es/sites/default/files/pictures/default-avatar.jpg"></img>';
+			        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
+			        $elemento .= '	<li>Office: '.$office.'</li>';
+			        $elemento .= '  <li>Phone: <a href="tel:'.$telephone.'">'.$telephone.'</a></li>';
+			        $elemento .= '  <li><a href="mailto:'.$email.'" target="_blank">Email</a>, <a href="'.$web.'" target="_blank">Personal Web</a></li>';
+			        $elemento .= '</ul>';
+		        }
+		        $resto = 0;
+	    	}
+	    	else
+	    	{
+	    		if($urlFoto != "") {
+		        $elemento .= '<ul class="col-md-4 col-sm-6 quedaUno">';
+		        $elemento .= '  <li><img class="img-responsive avatar-members" src="'.$urlFoto.'""></img></li>';
+		        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
+		        $elemento .= '	<li>Office: '.$office.'</li>';
+		        $elemento .= '  <li>Phone: <a href="tel:'.$telephone.'">'.$telephone.'</a></li>';
+		        $elemento .= '  <li><a href="mailto:'.$email.'" target="_blank">Email</a>, <a href="'.$web.'" target="_blank">Personal Web</a></li>';
+		        $elemento .= '</ul>';
+	       		}
+	       		else{
+	        	$elemento .= '<ul class="col-md-4 col-sm-6 quedaUno">';
+		        $elemento .= '  <li><img class="img-responsive avatar-members" src="http://www.isa.us.es/sites/default/files/pictures/default-avatar.jpg"></img>';
+		        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
+		        $elemento .= '	<li>Office: '.$office.'</li>';
+		        $elemento .= '  <li>Phone: <a href="tel:'.$telephone.'">'.$telephone.'</a></li>';
+		        $elemento .= '  <li><a href="mailto:'.$email.'" target="_blank">Email</a>, <a href="'.$web.'" target="_blank">Personal Web</a></li>';
+		        $elemento .= '</ul>';
+	        	}
+	    	}
+	    }
     }
     
     $elemento .= ' </div>';
     $elemento .= '</div>';
     echo $elemento;
 
-        // Former Members
-    
+    // Former Members
+    $numTotal = sizeof($formerMembers);
+	$resto = $numTotal % 3;
 	$elemento = "";
     $elemento .= '<div class="col-xs-12 formermembers">';
     $elemento .= '<div class="container"><div class="devider"></div><h4 class="text-center">FORMER MEMBERS</h4></div>';
@@ -406,25 +734,70 @@
 		$email = $formerMembers[$i][5];
 		$web = $formerMembers[$i][6];
 		$urlFoto = $formerMembers[$i][7];
-		if($urlFoto != "") {
-	        $elemento .= '<ul class=" col-md-4 col-sm-6">';
-	        $elemento .= '  <li><img class="img-responsive avatar-members" src="'.$urlFoto.'""></img></li>';
-	        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
-	        $elemento .= '	<li>Office: '.$office.'</li>';
-	        $elemento .= '  <li>Phone: <a href="tel:'.$telephone.'">'.$telephone.'</a></li>';
-	        $elemento .= '  <li><a href="mailto:'.$email.'" target="_blank">Email</a>, <a href="'.$web.'" target="_blank">Personal Web</a></li>';
-	        $elemento .= '</ul>';
-        }
-        else{
-        	$elemento .= '<ul class="col-md-4 col-sm-6">';
-	        $elemento .= '  <li><img class="img-responsive avatar-members" src="http://www.isa.us.es/sites/default/files/pictures/default-avatar.jpg"></img>';
-	        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
-	       $elemento .= '	<li>Office: '.$office.'</li>';
-	        $elemento .= '  <li>Phone: <a href="tel:'.$telephone.'">'.$telephone.'</a></li>';
-	        $elemento .= '  <li><a href="mailto:'.$email.'" target="_blank">Email</a>, <a href="'.$web.'" target="_blank">Personal Web</a></li>';
-	        $elemento .= '</ul>';
-        }
-    
+		if($i < $numTotal - $resto){
+			if($urlFoto != "") {
+		        $elemento .= '<ul class=" col-md-4 col-sm-6">';
+		        $elemento .= '  <li><img class="img-responsive avatar-members" src="'.$urlFoto.'""></img></li>';
+		        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
+		        $elemento .= '	<li>Office: '.$office.'</li>';
+		        $elemento .= '  <li>Phone: <a href="tel:'.$telephone.'">'.$telephone.'</a></li>';
+		        $elemento .= '  <li><a href="mailto:'.$email.'" target="_blank">Email</a>, <a href="'.$web.'" target="_blank">Personal Web</a></li>';
+		        $elemento .= '</ul>';
+	        }
+	        else{
+	        	$elemento .= '<ul class="col-md-4 col-sm-6">';
+		        $elemento .= '  <li><img class="img-responsive avatar-members" src="http://www.isa.us.es/sites/default/files/pictures/default-avatar.jpg"></img>';
+		        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
+		       $elemento .= '	<li>Office: '.$office.'</li>';
+		        $elemento .= '  <li>Phone: <a href="tel:'.$telephone.'">'.$telephone.'</a></li>';
+		        $elemento .= '  <li><a href="mailto:'.$email.'" target="_blank">Email</a>, <a href="'.$web.'" target="_blank">Personal Web</a></li>';
+		        $elemento .= '</ul>';
+	        }
+	    }else {
+	    	if($resto == 2) {
+		    	if($urlFoto != "") {
+			        $elemento .= '<ul class="col-md-4 col-sm-6 quedaDos">';
+			        $elemento .= '  <li><img class="img-responsive avatar-members" src="'.$urlFoto.'""></img></li>';
+			        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
+			        $elemento .= '	<li>Office: '.$office.'</li>';
+			        $elemento .= '  <li>Phone: <a href="tel:'.$telephone.'">'.$telephone.'</a></li>';
+			        $elemento .= '  <li><a href="mailto:'.$email.'" target="_blank">Email</a>, <a href="'.$web.'" target="_blank">Personal Web</a></li>';
+			        $elemento .= '</ul>';
+		        }
+		        else{
+		        	$elemento .= '<ul class="col-md-4 col-sm-6 quedaDos">';
+			        $elemento .= '  <li><img class="img-responsive avatar-members" src="http://www.isa.us.es/sites/default/files/pictures/default-avatar.jpg"></img>';
+			        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
+			        $elemento .= '	<li>Office: '.$office.'</li>';
+			        $elemento .= '  <li>Phone: <a href="tel:'.$telephone.'">'.$telephone.'</a></li>';
+			        $elemento .= '  <li><a href="mailto:'.$email.'" target="_blank">Email</a>, <a href="'.$web.'" target="_blank">Personal Web</a></li>';
+			        $elemento .= '</ul>';
+		        }
+		        $resto = 0;
+	    	}
+	    	else
+	    	{
+	    		if($urlFoto != "") {
+		        $elemento .= '<ul class="col-md-4 col-sm-6 quedaUno">';
+		        $elemento .= '  <li><img class="img-responsive avatar-members" src="'.$urlFoto.'""></img></li>';
+		        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
+		        $elemento .= '	<li>Office: '.$office.'</li>';
+		        $elemento .= '  <li>Phone: <a href="tel:'.$telephone.'">'.$telephone.'</a></li>';
+		        $elemento .= '  <li><a href="mailto:'.$email.'" target="_blank">Email</a>, <a href="'.$web.'" target="_blank">Personal Web</a></li>';
+		        $elemento .= '</ul>';
+	       		}
+	       		else{
+	        	$elemento .= '<ul class="col-md-4 col-sm-6 quedaUno">';
+		        $elemento .= '  <li><img class="img-responsive avatar-members" src="http://www.isa.us.es/sites/default/files/pictures/default-avatar.jpg"></img>';
+		        $elemento .= '  <li>'.$name.' '.$surname.'</li>';
+		        $elemento .= '	<li>Office: '.$office.'</li>';
+		        $elemento .= '  <li>Phone: <a href="tel:'.$telephone.'">'.$telephone.'</a></li>';
+		        $elemento .= '  <li><a href="mailto:'.$email.'" target="_blank">Email</a>, <a href="'.$web.'" target="_blank">Personal Web</a></li>';
+		        $elemento .= '</ul>';
+	        	}
+	    	}
+	    }
+	    
     }
 
     $elemento .= ' </div>';

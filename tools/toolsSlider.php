@@ -4,6 +4,7 @@
 	$arrayHerramientas = array(); 
 	//$arrayHerramientas = loadDataFromCSV("https://docs.google.com/spreadsheets/d/1ysrUC9ls0ElV39V1IXXseWubjoQxwC4-uneFRustaKM/pub?gid=0&single=true&output=csv");
 	$arrayHerramientas = loadDataFromCSV("tools/tools.csv");
+	
 	$nombreHerramienta;
 	$enlaceLogoGrupo = "";
 	$enlaceLogoHerramienta;
