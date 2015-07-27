@@ -85,7 +85,7 @@ only screen and (max-width: 760px) {
 	td:nth-of-type(1):before { content: "Authors"; }
 	td:nth-of-type(2):before { content: "Title"; }
 	/*td:nth-of-type(3):before { content: "Description"; }*/
-	/*td:nth-of-type(4):before { content: "PDF"; }*/
+	td:nth-of-type(3):before { content: "PDF"; }
 }
 </style>
 	<?php 
@@ -109,14 +109,19 @@ only screen and (max-width: 760px) {
         </div>
         </form>
         </div>';
-		$mensaje .= '<table id="qs_tableTotal" border="1" class=""><thead id="cabecera-publicaciones"><tr><th width="30%">Authors</th><th width="30%">Title</th><!--<th width="35%">Description</th><th style="height:10px;" width="5%">PDF</th>--></tr></thead><tbody class="">';
+		$mensaje .= '<table id="qs_tableTotal" border="1" class=""><thead id="cabecera-publicaciones"><tr><th width="30%">Authors</th><th width="30%">Title</th><!--<th width="35%">Description</th>--><th style="height:10px;" width="5%">PDF</th></tr></thead><tbody class="">';
 		foreach ($miarray as $miarraykey => $miarrayvalue) {
 			//echo "Title = ".$miarrayvalue->{'title'}.'<br/>';
 		//echo "Description = ".$miarrayvalue->{'description'}.'<br/>';
+			$pdf = $miarrayvalue->{'fullPdf'};
+			if($pdf != null) {
+				$url = $pdf->{'filepath'};
+				$url = "http://www.isa.us.es/".$url;
+			}
 			$title = $miarrayvalue->{'title'};
 			$autores = "";
 			foreach ($miarrayvalue->{'authors'} as $miautorkey => $miautorvalue) {
-				$autores .= $miautorvalue->{'name'}." ".$miautorvalue->{'surname'}.", ";
+				$autores .= $miautorvalue->{'firstname'}." ".$miautorvalue->{'lastname'}.", ";
 			}
 			$caractervacio="";
 			$autores = substr($autores, 0, -2).$caractervacio;
@@ -124,10 +129,10 @@ only screen and (max-width: 760px) {
 				$mensaje .= ' class="entry"><td>'.$autores.'</td>';
 				$mensaje .= '<td>'.$title.'</td>';
 				//$mensaje .= '<td>'.$descripcion.'</td>';
-				//if($url != "")
-				//	$mensaje .= '<td><a href="'.$url.'"><center><img src="publications/icon-pdf.png"></img></center></a></td>';
-				//else 
-				//	$mensaje .= '<td>Not available</td>';
+				if($url != "")
+					$mensaje .= '<td><a target="_blank" href="'.$url.'"><center><img src="publications/icon-pdf.png"></img></center></a></td>';
+				else 
+					$mensaje .= '<td>Not available</td>';
 				$mensaje .= '</tr>';
 		//echo $autores.'<br/>';
 		}
@@ -150,14 +155,19 @@ only screen and (max-width: 760px) {
 		}*/
 		
 		echo $mensaje;
-		$mensaje = '<table id="qs_tableTotalBusquedas" border="1" class=""><thead id="cabecera-publicaciones"><tr><th width="30%">Authors</th><th width="30%">Title</th><!--<th width="35%">Description</th><th style="height:10px;" width="5%">PDF</th>--></tr></thead><tbody class="">';
+		$mensaje = '<table id="qs_tableTotalBusquedas" border="1" class=""><thead id="cabecera-publicaciones"><tr><th width="30%">Authors</th><th width="30%">Title</th><!--<th width="35%">Description</th>--><th style="height:10px;" width="5%">PDF</th></tr></thead><tbody class="">';
 		foreach ($miarray as $miarraykey => $miarrayvalue) {
 			//echo "Title = ".$miarrayvalue->{'title'}.'<br/>';
 		//echo "Description = ".$miarrayvalue->{'description'}.'<br/>';
+			$pdf = $miarrayvalue->{'fullPdf'};
+			if($pdf != null) {
+				$url = $pdf->{'filepath'};
+				$url = "http://www.isa.us.es/".$url;
+			}
 			$title = $miarrayvalue->{'title'};
 			$autores = "";
 			foreach ($miarrayvalue->{'authors'} as $miautorkey => $miautorvalue) {
-				$autores .= $miautorvalue->{'name'}." ".$miautorvalue->{'surname'}.", ";
+				$autores .= $miautorvalue->{'firstname'}." ".$miautorvalue->{'lastname'}.", ";
 			}
 			$caractervacio="";
 			$autores = substr($autores, 0, -2).$caractervacio;
@@ -165,10 +175,10 @@ only screen and (max-width: 760px) {
 				$mensaje .= ' class="entry"><td>'.$autores.'</td>';
 				$mensaje .= '<td>'.$title.'</td>';
 				//$mensaje .= '<td>'.$descripcion.'</td>';
-				//if($url != "")
-				//	$mensaje .= '<td><a href="'.$url.'"><center><img src="publications/icon-pdf.png"></img></center></a></td>';
-				//else 
-				//	$mensaje .= '<td>Not available</td>';
+				if($url != "")
+					$mensaje .= '<td><a target="_blank" href="'.$url.'"><center><img src="publications/icon-pdf.png"></img></center></a></td>';
+				else 
+					$mensaje .= '<td>Not available</td>';
 				$mensaje .= '</tr>';
 		//echo $autores.'<br/>';
 		}

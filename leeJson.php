@@ -1,11 +1,11 @@
 <?php
 	// Lectura de JSON desde la API de Drupal
 	// Código de desarrollo
-	//$miJsonURL = "http://www.isa.us.es/apps/api/members";
+	$miJsonURL = "http://www.isa.us.es/apps/api/members";
 	// Código de despliegue
 	//$miJsonURL = "http://localhost/apps/api/members";
 	// Caché
-	$miJsonURL="members.json";
+	//$miJsonURL="members.json";
 	$miJson = file_get_contents($miJsonURL);
 	//print_r(json_decode($miJson));
 	$miJsonDecode = json_decode($miJson);
@@ -104,7 +104,7 @@
 	$numTotal = sizeof($head);
 	$resto = $numTotal % 3;
 	$elemento = "";
-    $elemento .= '<div class="col-xs-12 head">';
+    $elemento .= '<div class="col-xs-12 head antiguo">';
     //$elemento .= '<div class="portfolio_single_content estilo-members">';
     $elemento .= '<div class="container"><div class="devider"></div><h4 class="text-center">HEAD</h4></div>';
     $elemento .= '<div class="estilo-members ">';

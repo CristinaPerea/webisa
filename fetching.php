@@ -12,8 +12,8 @@
 		$fundings = 'fundings.json';
 		$bytes_escritos_fundings = file_put_contents($fundings, $miJson);
 		// Generación de publications
-		//$miurl="http://www.isa.us.es/apps/api/publications/";
-		$miurl="http://localhost/apps/api/publications/";
+		//$miurl="http://www.isa.us.es/apps/api/publications/full";
+		$miurl="http://localhost/apps/api/publications/full/";
 		$miJson = file_get_contents($miurl);
 		$publications = 'publications.json';
 		$bytes_escritos_publications = file_put_contents($publications, $miJson);
