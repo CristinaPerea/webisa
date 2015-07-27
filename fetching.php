@@ -30,14 +30,21 @@
 		$researchLines = 'researchLines/researchLines.csv';
 		$bytes_escritos_researchLines = file_put_contents($researchLines, $miJson);
 
+		// Members.CSV
+		$miurl = "https://docs.google.com/spreadsheets/d/1-y5_vwyDSa3yJIdwy7O4R-l_CLK180WTsK_7gFt8EGw/pub?gid=0&single=true&output=csv";
+		$miJson = file_get_contents($miurl);
+		$membersCSV = 'members/members.csv';
+		$bytes_escritos_membersCSV = file_put_contents($membersCSV, $miJson);
+
 		$mensaje = "";
-		$mensaje .= "Escritos 5 ficheros:<br/>";
+		$mensaje .= "Escritos 6 ficheros:<br/>";
 		$mensaje .= '<a href="publications.json">publications.json</a> con '.$bytes_escritos_publications.' bytes escritos<br/>';
 		$mensaje .= '<a href="members.json">members.json</a> con '.$bytes_escritos_members.' bytes escritos<br/>';
 		$mensaje .= '<a href="fundings.json">fundings.json</a> con '.$bytes_escritos_fundings.' bytes escritos<br/>';
 		$mensaje .= '<a href="tools.csv">tools.csv</a> con '.$bytes_escritos_tools.' bytes escritos<br/>';
 		$mensaje .= '<a href="collaborations/collaborationsCSV.csv">collaborationsCSV.csv</a> con '.$bytes_escritos_collaborations.' bytes escritos<br/>';
 		$mensaje .= '<a href="researchLines/researchLines.csv">researchLinesCSV.csv</a> con '.$bytes_escritos_researchLines.' bytes escritos<br/>';
+		$mensaje .= '<a href="members/members.csv">members.csv</a> con '.$bytes_escritos_membersCSV.' bytes escritos<br/>';
 		if($miJson)
 			echo $mensaje;
 		else

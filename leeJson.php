@@ -13,8 +13,8 @@
 	// Lectura desde el CSV de Google Drive
 	include_once('lectorCSV.php');
     $arrayCSVMembers = array();
-    $arrayCSVMembers = loadDataFromCSV("https://docs.google.com/spreadsheets/d/1-y5_vwyDSa3yJIdwy7O4R-l_CLK180WTsK_7gFt8EGw/pub?gid=0&single=true&output=csv");
-
+    //$arrayCSVMembers = loadDataFromCSV("https://docs.google.com/spreadsheets/d/1-y5_vwyDSa3yJIdwy7O4R-l_CLK180WTsK_7gFt8EGw/pub?gid=0&single=true&output=csv");
+    $arrayCSVMembers = loadDataFromCSV("members/members.csv");
 	$miArrayPositions = array();
 	
 	$formerMembers = array();
