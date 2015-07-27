@@ -113,6 +113,7 @@ only screen and (max-width: 760px) {
 		foreach ($miarray as $miarraykey => $miarrayvalue) {
 			//echo "Title = ".$miarrayvalue->{'title'}.'<br/>';
 		//echo "Description = ".$miarrayvalue->{'description'}.'<br/>';
+			$url="";
 			$pdf = $miarrayvalue->{'fullPdf'};
 			if($pdf != null) {
 				$url = $pdf->{'filepath'};
@@ -159,6 +160,7 @@ only screen and (max-width: 760px) {
 		foreach ($miarray as $miarraykey => $miarrayvalue) {
 			//echo "Title = ".$miarrayvalue->{'title'}.'<br/>';
 		//echo "Description = ".$miarrayvalue->{'description'}.'<br/>';
+			$url = "";
 			$pdf = $miarrayvalue->{'fullPdf'};
 			if($pdf != null) {
 				$url = $pdf->{'filepath'};
