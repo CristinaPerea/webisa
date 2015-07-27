@@ -1,16 +1,19 @@
 <?php
 		// Generación de miembros
-		$miJsonURL = "http://www.isa.us.es/apps/api/members/";
+		//$miJsonURL = "http://www.isa.us.es/apps/api/members/";
+		$miJsonURL = "http://localhost/apps/api/members/";
 		$miJson = file_get_contents($miJsonURL);
 		$members = 'members.json';
 		$bytes_escritos_members = file_put_contents($members, $miJson);
 		// Generación de fundings
-		$miJsonURL = "http://www.isa.us.es/apps/api/projects/";
+		//$miJsonURL = "http://www.isa.us.es/apps/api/projects/";
+		$miJsonURL = "http://localhost/apps/api/projects/";
 		$miJson = file_get_contents($miJsonURL);
 		$fundings = 'fundings.json';
 		$bytes_escritos_fundings = file_put_contents($fundings, $miJson);
 		// Generación de publications
-		$miurl="http://www.isa.us.es/apps/api/publications/";
+		//$miurl="http://www.isa.us.es/apps/api/publications/";
+		$miurl="http://localhost/apps/api/publications/";
 		$miJson = file_get_contents($miurl);
 		$publications = 'publications.json';
 		$bytes_escritos_publications = file_put_contents($publications, $miJson);

@@ -1,11 +1,11 @@
 <?php
 	// Lectura de JSON desde la API de Drupal
 	// Código de desarrollo
-	$miJsonURL = "http://www.isa.us.es/apps/api/members";
+	//$miJsonURL = "http://www.isa.us.es/apps/api/members";
 	// Código de despliegue
 	//$miJsonURL = "http://localhost/apps/api/members";
 	// Caché
-	//$miJsonURL="members.json";
+	$miJsonURL="members.json";
 	$miJson = file_get_contents($miJsonURL);
 	//print_r(json_decode($miJson));
 	$miJsonDecode = json_decode($miJson);

@@ -1,7 +1,7 @@
 <?php
     include_once("lectorCSV.php");
-    $arrayHerramientas = loadDataFromCSV("https://docs.google.com/spreadsheets/d/1ysrUC9ls0ElV39V1IXXseWubjoQxwC4-uneFRustaKM/pub?gid=0&single=true&output=csv");
-    //$arrayHerramientas = loadDataFromCSV("tools/tools.csv");
+    //$arrayHerramientas = loadDataFromCSV("https://docs.google.com/spreadsheets/d/1ysrUC9ls0ElV39V1IXXseWubjoQxwC4-uneFRustaKM/pub?gid=0&single=true&output=csv");
+    $arrayHerramientas = loadDataFromCSV("tools/tools.csv");
     //print_r($arrayHerramientas);
 
     $tiposAñadidos = array();
