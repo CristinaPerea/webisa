@@ -117,28 +117,30 @@ only screen and (max-width: 760px) {
 		foreach ($miarray as $miarraykey => $miarrayvalue) {
 			//echo "Title = ".$miarrayvalue->{'title'}.'<br/>';
 		//echo "Description = ".$miarrayvalue->{'description'}.'<br/>';
-			$url="";
-			$pdf = $miarrayvalue->{'fullPdf'};
-			if($pdf != null) {
-				$url = $pdf->{'filepath'};
-				$url = "http://www.isa.us.es/".$url;
+			if($miarrayvalue->{'public'}) {
+				$url="";
+				$pdf = $miarrayvalue->{'fullPdf'};
+				if($pdf != null) {
+					$url = $pdf->{'filepath'};
+					$url = "http://www.isa.us.es/".$url;
+				}
+				$title = $miarrayvalue->{'title'};
+				$autores = "";
+				foreach ($miarrayvalue->{'authors'} as $miautorkey => $miautorvalue) {
+					$autores .= $miautorvalue->{'firstname'}." ".$miautorvalue->{'lastname'}.", ";
+				}
+				$caractervacio="";
+				$autores = substr($autores, 0, -2).$caractervacio;
+				$mensaje .= '<tr ';
+					$mensaje .= ' class="entry"><td>'.$autores.'</td>';
+					$mensaje .= '<td>'.$title.'</td>';
+					//$mensaje .= '<td>'.$descripcion.'</td>';
+					if($url != "")
+						$mensaje .= '<td><a target="_blank" href="'.$url.'"><center><img src="publications/icon-pdf.png"></img></center></a></td>';
+					else 
+						$mensaje .= '<td><div class="icono"></div></td>';
+					$mensaje .= '</tr>';
 			}
-			$title = $miarrayvalue->{'title'};
-			$autores = "";
-			foreach ($miarrayvalue->{'authors'} as $miautorkey => $miautorvalue) {
-				$autores .= $miautorvalue->{'firstname'}." ".$miautorvalue->{'lastname'}.", ";
-			}
-			$caractervacio="";
-			$autores = substr($autores, 0, -2).$caractervacio;
-			$mensaje .= '<tr ';
-				$mensaje .= ' class="entry"><td>'.$autores.'</td>';
-				$mensaje .= '<td>'.$title.'</td>';
-				//$mensaje .= '<td>'.$descripcion.'</td>';
-				if($url != "")
-					$mensaje .= '<td><a target="_blank" href="'.$url.'"><center><img src="publications/icon-pdf.png"></img></center></a></td>';
-				else 
-					$mensaje .= '<td><div class="icono"></div></td>';
-				$mensaje .= '</tr>';
 		//echo $autores.'<br/>';
 		}
 		$mensaje .= '</tbody></table>';
