@@ -104,7 +104,7 @@
 	$numTotal = sizeof($head);
 	$resto = $numTotal % 3;
 	$elemento = "";
-    $elemento .= '<div class="col-xs-12 head">';
+    $elemento .= '<div class="col-xs-12 head antiguo">';
     //$elemento .= '<div class="portfolio_single_content estilo-members">';
     $elemento .= '<div class="container"><div class="devider"></div><h4 class="text-center">HEAD</h4></div>';
     $elemento .= '<div class="estilo-members ">';
