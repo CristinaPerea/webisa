@@ -266,7 +266,7 @@
                                     <?php include("publications/tablaPublications.php"); ?>
                                 </div>           
                                 <div class="row">
-                                   <a href="http://www.isa.us.es/publications" target="_blank" class="btn btn-default botonTabla">More information</a>
+                                   <a href="http://www.isa.us.es/publications" target="_blank" class="btn btn-default botonTabla">Full List</a>
                                 </div>
                     </div>
                 </div>      
@@ -343,7 +343,7 @@
                 
                 
             <!-- Begin contact section -->
-			<section id="contact-section" class="page text-white parallax" data-stellar-background-ratio="0.5" style="background-image: url(img/map-bg.jpg);">
+			<section id="contact-section" class="page text-white parallax" data-stellar-background-ratio="0.5" style="background-image: url(img/reina.png);">
             <div class="cover"></div>
             
                  <!-- Begin page header-->
@@ -442,6 +442,8 @@
         <script type="text/javascript" src="publications/manejoDeTabla.js"></script>
         <script type="text/javascript" src="js/manejoSliderHerramientas.js"></script>
         <script type="text/javascript" src="publications/searcher.js"></script>
+        <script type="text/javascript" src="js/manejoMembers.js"></script>
+
 
 
 
