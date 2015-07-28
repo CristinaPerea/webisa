@@ -74,3 +74,8 @@
 		else
 			echo "No se ha podido leer la información";
 ?>
+<br/>
+
+<form action="fetching.php">
+	<button type="submit">Fetch!</button>
+</form>
