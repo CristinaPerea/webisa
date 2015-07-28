@@ -1335,6 +1335,9 @@ div.estilo-members>ul>li{
 	margin-bottom: 10px;
 
 }
+.icono{
+	height: 25px;
+}
 
 @media(max-width: 992px) {
 	.navbar-nav > li > a {

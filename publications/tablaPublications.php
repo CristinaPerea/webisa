@@ -86,17 +86,21 @@ only screen and (max-width: 760px) {
 	td:nth-of-type(2):before { content: "Title"; }
 	/*td:nth-of-type(3):before { content: "Description"; }*/
 	td:nth-of-type(3):before { content: "PDF"; }
+
+	@media{
+
+	}
 }
 </style>
 	<?php 
 		//include_once("lectorCSV.php");
 		//$miarray = loadDataFromCSV("publications/publications.csv");
 		// Código para desarrollo
-		//$miurl="http://www.isa.us.es/apps/api/publications";
+		$miurl="http://www.isa.us.es/apps/api/publications/full";
 		// Código para despliegue
-		//$miurl="http://localhost/apps/api/publications";
+		//$miurl="http://localhost/apps/api/publications/full";
 		// Caché
-		$miurl="publications.json";
+		//$miurl="publications.json";
 		$mijson = file_get_contents($miurl);
 		$miarray = json_decode($mijson);
 		$descripcion = "";
@@ -133,7 +137,7 @@ only screen and (max-width: 760px) {
 				if($url != "")
 					$mensaje .= '<td><a target="_blank" href="'.$url.'"><center><img src="publications/icon-pdf.png"></img></center></a></td>';
 				else 
-					$mensaje .= '<td>Not available</td>';
+					$mensaje .= '<td><div class="icono"></div></td>';
 				$mensaje .= '</tr>';
 		//echo $autores.'<br/>';
 		}
