@@ -41,6 +41,9 @@
 		$memberID = $miJsonValue->{'memberID'};
 		$tipoDeMiembro = tipoMiembro($memberID, $arrayCSVMembers);
 		$urlFoto = enlaceAImagen($memberID, $arrayCSVMembers);
+		$webCSV = enlaceADefaultWeb($memberID, $arrayCSVMembers);
+		if($webCSV != "")
+			$web = $webCSV;
 		$miPersonal = array();
 		array_push($miPersonal, $name);
 		array_push($miPersonal, $position);
@@ -114,12 +117,13 @@
 		$position = $head[$i][1];
 		$surname = $head[$i][2];
 		$office = $head[$i][3];
-
 		$telephone = $head[$i][4];
 		$email = $head[$i][5];
 		$web = $head[$i][6];
 		$urlFoto = $head[$i][7];
-		if($i < $numTotal - $resto){
+  		$elementoLocal = creaElemento($i, $numTotal, $resto, $urlFoto, $name, $surname, $office, $telephone, $email, $web);
+  		$elemento .= $elementoLocal;
+		/*if($i < $numTotal - $resto){
 			if($urlFoto != "") {
 		        $elemento .= '<ul class="col-md-4 col-sm-6">';
 		        $elemento .= '  <li><img class="img-responsive avatar-members" src="'.$urlFoto.'""></img></li>';
@@ -159,6 +163,7 @@
 			        $elemento .= '  <li><a href="mailto:'.$email.'" target="_blank">Email</a>, <a href="'.$web.'" target="_blank">Personal Web</a></li>';
 			        $elemento .= '</ul>';
 		        }
+		        $resto = 0;
 	    	}
 	    	else
 	    	{
@@ -181,7 +186,7 @@
 		        $elemento .= '</ul>';
 	        	}
 	    	}
-	    }
+	    }*/
     
     }
     
@@ -206,7 +211,9 @@
 		$email = $researchStaff[$i][5];
 		$web = $researchStaff[$i][6];
 		$urlFoto = $researchStaff[$i][7];
-		if($i < $numTotal - $resto){
+		$elementoLocal = creaElemento($i, $numTotal, $resto, $urlFoto, $name, $surname, $office, $telephone, $email, $web);
+  		$elemento .= $elementoLocal;
+		/*if($i < $numTotal - $resto){
 			if($urlFoto != "") {
 		        $elemento .= '<ul class="col-md-4 col-sm-6">';
 		        $elemento .= '  <li><img class="img-responsive avatar-members" src="'.$urlFoto.'""></img></li>';
@@ -246,6 +253,7 @@
 			        $elemento .= '  <li><a href="mailto:'.$email.'" target="_blank">Email</a>, <a href="'.$web.'" target="_blank">Personal Web</a></li>';
 			        $elemento .= '</ul>';
 		        }
+		        $resto = 0;
 	    	}
 	    	else
 	    	{
@@ -268,7 +276,7 @@
 		        $elemento .= '</ul>';
 	        	}
 	    	}
-		}
+		}*/
     }
     
     $elemento .= ' </div>';
@@ -293,8 +301,9 @@
 		$email = $reseachAssistants[$i][5];
 		$web = $reseachAssistants[$i][6];
 		$urlFoto = $reseachAssistants[$i][7];
-		
-		if($i < $numTotal - $resto){
+		$elementoLocal = creaElemento($i, $numTotal, $resto, $urlFoto, $name, $surname, $office, $telephone, $email, $web);
+  		$elemento .= $elementoLocal;
+		/*if($i < $numTotal - $resto){
 				if($urlFoto != "") {
 		        $elemento .= '<ul class=" col-md-4 col-sm-6">';
 		        $elemento .= '  <li><img class="img-responsive avatar-members" src="'.$urlFoto.'""></img></li>';
@@ -357,7 +366,7 @@
 		        $elemento .= '</ul>';
 	        	}
 	    	}
-	    }
+	    }*/
     }
 
     $elemento .= ' </div>';
@@ -382,6 +391,9 @@
 		$email = $externalsCollaborators[$i][5];
 		$web = $externalsCollaborators[$i][6];
 		$urlFoto = $externalsCollaborators[$i][7];
+		$elementoLocal = creaElemento($i, $numTotal, $resto, $urlFoto, $name, $surname, $office, $telephone, $email, $web);
+  		$elemento .= $elementoLocal;
+  		/*
 		if($i < $numTotal - $resto){
 			if($urlFoto != "") {
 		        $elemento .= '<ul class="col-md-4 col-sm-6">';
@@ -444,7 +456,7 @@
 		        $elemento .= '</ul>';
 	        	}
 	    	}
-	    }   
+	    }   */
     }
     
     $elemento .= ' </div>';
@@ -470,6 +482,9 @@
 		$web = $technicalStaff[$i][6];
 		$urlFoto = $technicalStaff[$i][7];
 		$contadorResto = 2;
+		$elementoLocal = creaElemento($i, $numTotal, $resto, $urlFoto, $name, $surname, $office, $telephone, $email, $web);
+  		$elemento .= $elementoLocal;
+  		/*
 		if($i < $numTotal - $resto){
 			if($urlFoto != "") {
 		        $elemento .= '<ul class="col-md-4 col-sm-6">';
@@ -532,7 +547,7 @@
 		        $elemento .= '</ul>';
 	        	}
 	    	}
-	    }
+	    }*/
     }
     
     $elemento .= ' </div>';
@@ -560,6 +575,8 @@
 		$email = $phdStudents[$i][5];
 		$web = $phdStudents[$i][6];
 		$urlFoto = $phdStudents[$i][7];
+		$elementoLocal = creaElemento($i, $numTotal, $resto, $urlFoto, $name, $surname, $office, $telephone, $email, $web);
+  		$elemento .= $elementoLocal;/*
 		if($i < $numTotal - $resto){
 			if($urlFoto != "") {
 		        $elemento .= '<ul class="col-md-4 col-sm-6">';
@@ -622,7 +639,7 @@
 		        $elemento .= '</ul>';
 	        	}
 	    	}
-	    }
+	    }*/
     }
     
     $elemento .= ' </div>';
@@ -648,6 +665,8 @@
 		$email = $mscStudents[$i][5];
 		$web = $mscStudents[$i][6];
 		$urlFoto = $mscStudents[$i][7];
+		$elementoLocal = creaElemento($i, $numTotal, $resto, $urlFoto, $name, $surname, $office, $telephone, $email, $web);
+  		$elemento .= $elementoLocal;/*
 		if($i < $numTotal - $resto){
 			if($urlFoto != "") {
 		        $elemento .= '<ul class="col-md-4 col-sm-6">';
@@ -710,7 +729,7 @@
 		        $elemento .= '</ul>';
 	        	}
 	    	}
-	    }
+	    }*/
     }
     
     $elemento .= ' </div>';
@@ -734,6 +753,8 @@
 		$email = $formerMembers[$i][5];
 		$web = $formerMembers[$i][6];
 		$urlFoto = $formerMembers[$i][7];
+		$elementoLocal = creaElemento($i, $numTotal, $resto, $urlFoto, $name, $surname, $office, $telephone, $email, $web);
+  		$elemento .= $elementoLocal;/*
 		if($i < $numTotal - $resto){
 			if($urlFoto != "") {
 		        $elemento .= '<ul class=" col-md-4 col-sm-6">';
@@ -796,7 +817,7 @@
 		        $elemento .= '</ul>';
 	        	}
 	    	}
-	    }
+	    }*/
 	    
     }
 
@@ -825,6 +846,23 @@
 		return $urlFoto;
 	}
 
+	function enlaceADefaultWeb($id, $arrayCSVMembers) {
+		$defaultWeb = "";
+		$encontrado = false;
+		$i = 1;
+		while($i < sizeof($arrayCSVMembers) && !$encontrado){
+			if($arrayCSVMembers[$i][0]==$id) {
+				$defaultWeb = $arrayCSVMembers[$i][4];
+				$encontrado = true;
+			}
+			else {
+				$i++;
+			}
+
+		}
+		return $defaultWeb;
+	}
+
 	function tipoMiembro($id, $arrayCSVMembers) {
 		$tipo = "";
 		$encontrado = false;
@@ -840,5 +878,74 @@
 
 		}
 		return $tipo;
+	}
+
+	function creaElemento($i, $numTotal, &$resto, $urlFoto, $name, $surname, $office, $telephone, $email, $web) {
+		$elementoLocal = "";
+		if($i < $numTotal - $resto){
+			if($urlFoto != "") {
+		        $elementoLocal .= '<ul class="col-md-4 col-sm-6">';
+		        $elementoLocal .= '  <li><a href="'.$web.'" target="_blank"><img class="img-responsive avatar-members" src="'.$urlFoto.'""></img></a></li>';
+		        $elementoLocal .= '  <li>'.$name.' '.$surname.'</li>';
+		        $elementoLocal .= '	<li>Office: '.$office.'</li>';
+		        $elementoLocal .= '  <li>Phone: <a href="tel:'.$telephone.'">'.$telephone.'</a></li>';
+		        $elementoLocal .= '  <li><a href="mailto:'.$email.'" target="_blank">Email</a>, <a href="'.$web.'" target="_blank">Web</a></li>';
+		        $elementoLocal .= '</ul>';
+	        }
+	        else{
+	        	$elementoLocal .= '<ul class="col-md-4 col-sm-6">';
+		        $elementoLocal .= '  <li><a href="'.$web.'" target="_blank"><img class="img-responsive avatar-members" src="http://www.isa.us.es/sites/default/files/pictures/default-avatar.jpg"></img></a></li>';
+		        $elementoLocal .= '  <li>'.$name.' '.$surname.'</li>';
+		        $elementoLocal .= '	<li>Office: '.$office.'</li>';
+		        $elementoLocal .= '  <li>Phone: <a href="tel:'.$telephone.'">'.$telephone.'</a></li>';
+		        $elementoLocal .= '  <li><a href="mailto:'.$email.'" target="_blank">Email</a>, <a href="'.$web.'" target="_blank">Web</a></li>';
+		        $elementoLocal .= '</ul>';
+	        }
+	    }
+	    else {
+	    	if($resto == 2) {
+		    	if($urlFoto != "") {
+			        $elementoLocal .= '<ul class="col-md-4 col-sm-6 quedaDos">';
+			        $elementoLocal .= '  <li><a href="'.$web.'" target="_blank"><img class="img-responsive avatar-members" src="'.$urlFoto.'""></img></a></li>';
+			        $elementoLocal .= '  <li>'.$name.' '.$surname.'</li>';
+			        $elementoLocal .= '	<li>Office: '.$office.'</li>';
+			        $elementoLocal .= '  <li>Phone: <a href="tel:'.$telephone.'">'.$telephone.'</a></li>';
+			        $elementoLocal .= '  <li><a href="mailto:'.$email.'" target="_blank">Email</a>, <a href="'.$web.'" target="_blank">Web</a></li>';
+			        $elementoLocal .= '</ul>';
+		        }
+		        else{
+		        	$elementoLocal .= '<ul class="col-md-4 col-sm-6 quedaDos">';
+			        $elementoLocal .= '  <li><a href="'.$web.'" target="_blank"><img class="img-responsive avatar-members" src="http://www.isa.us.es/sites/default/files/pictures/default-avatar.jpg"></img></a></li>';
+			        $elementoLocal .= '  <li>'.$name.' '.$surname.'</li>';
+			        $elementoLocal .= '	<li>Office: '.$office.'</li>';
+			        $elementoLocal .= '  <li>Phone: <a href="tel:'.$telephone.'">'.$telephone.'</a></li>';
+			        $elementoLocal .= '  <li><a href="mailto:'.$email.'" target="_blank">Email</a>, <a href="'.$web.'" target="_blank">Web</a></li>';
+			        $elementoLocal .= '</ul>';
+		        }
+		        $resto = 0;
+	    	}
+	    	else
+	    	{
+	    		if($urlFoto != "") {
+		        $elementoLocal .= '<ul class="col-md-4 col-sm-6 quedaUnoHead">';
+		        $elementoLocal .= '  <li><a href="'.$web.'" target="_blank"><img class="img-responsive avatar-members" src="'.$urlFoto.'""></img></a></li>';
+		        $elementoLocal .= '  <li>'.$name.' '.$surname.'</li>';
+		        $elementoLocal .= '	<li>Office: '.$office.'</li>';
+		        $elementoLocal .= '  <li>Phone: <a href="tel:'.$telephone.'">'.$telephone.'</a></li>';
+		        $elementoLocal .= '  <li><a href="mailto:'.$email.'" target="_blank">Email</a>, <a href="'.$web.'" target="_blank">Web</a></li>';
+		        $elementoLocal .= '</ul>';
+	       		}
+	       		else{
+	        	$elementoLocal .= '<ul class="col-md-4 col-sm-6 quedaUnoHead">';
+		        $elementoLocal .= '  <li><a href="'.$web.'" target="_blank"><img class="img-responsive avatar-members" src="http://www.isa.us.es/sites/default/files/pictures/default-avatar.jpg"></img></a></li>';
+		        $elementoLocal .= '  <li>'.$name.' '.$surname.'</li>';
+		        $elementoLocal .= '	<li>Office: '.$office.'</li>';
+		        $elementoLocal .= '  <li>Phone: <a href="tel:'.$telephone.'">'.$telephone.'</a></li>';
+		        $elementoLocal .= '  <li><a href="mailto:'.$email.'" target="_blank">Email</a>, <a href="'.$web.'" target="_blank">Web</a></li>';
+		        $elementoLocal .= '</ul>';
+	        	}
+	    	}
+	    }
+	    return $elementoLocal;
 	}
 ?>
