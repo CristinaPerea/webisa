@@ -50,6 +50,13 @@
 		$generalCSV = 'general/general.csv';
 		$bytes_escritos_generalCSV = file_put_contents($generalCSV, $miJson);
 
+		// Memebers iniciales
+		$miurl = "https://docs.google.com/spreadsheets/d/1-y5_vwyDSa3yJIdwy7O4R-l_CLK180WTsK_7gFt8EGw/pub?gid=1768150788&single=true&output=csv";
+		$miJson = file_get_contents($miurl);
+		$membersCSVIniciales = "members/membersIniciales.csv";
+		//$arrayCSVIniciales = loadDataFromCSV("");
+    	$bytes_escritos_memebersCSVIniciales = file_put_contents($membersCSVIniciales, $miJson);
+
 		$mensaje = "";
 		$mensaje .= '<h3>Data loaded:</h3>';
 		$mensaje .= '<a href="general/general.csv">general.csv</a>, '.$bytes_escritos_generalCSV.' bytes escritos<br/>';
@@ -83,6 +90,10 @@
 		$mensaje .= '<a href="researchLines/researchLines.csv">researchLinesCSV.csv</a>, '.$bytes_escritos_researchLines.' bytes escritos<br/>';
 		$mensaje .= 'From: <br/>';
 		$mensaje .= '-[[<a href="https://docs.google.com/spreadsheets/d/171m6bh9V3-NfkqB3V49laxFHEYrwD28jZX36egZnTtM/pub?output=csv">https://docs.google.com/spreadsheets/d/171m6bh9V3-NfkqB3V49laxFHEYrwD28jZX36egZnTtM/pub?output=csv</a>]] ("Research Lines" sheet in Google Drive)<br/>';
+		$mensaje .= '<br/>';
+		$mensaje .= '<a href="members/membersCSVIniciales.csv">membersCSVIniciales.csv</a>, '.$bytes_escritos_memebersCSVIniciales.' bytes escritos<br/>';
+		$mensaje .= 'From: <br/>';
+		$mensaje .= '-[[<a href="https://docs.google.com/spreadsheets/d/1-y5_vwyDSa3yJIdwy7O4R-l_CLK180WTsK_7gFt8EGw/pub?gid=1768150788&single=true&output=csv">https://docs.google.com/spreadsheets/d/1-y5_vwyDSa3yJIdwy7O4R-l_CLK180WTsK_7gFt8EGw/pub?gid=1768150788&single=true&output=csv</a>]] ("Memebers" sheet 2 in Google Drive)<br/>';
 
 		if($miJson)
 			echo $mensaje;

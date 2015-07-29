@@ -10,11 +10,16 @@
 	//print_r(json_decode($miJson));
 	$miJsonDecode = json_decode($miJson);
 
+
 	// Lectura desde el CSV de Google Drive
 	include_once('lectorCSV.php');
     $arrayCSVMembers = array();
     //$arrayCSVMembers = loadDataFromCSV("https://docs.google.com/spreadsheets/d/1-y5_vwyDSa3yJIdwy7O4R-l_CLK180WTsK_7gFt8EGw/pub?gid=0&single=true&output=csv");
     $arrayCSVMembers = loadDataFromCSV("members/members.csv");
+
+    // Secciones iniciales
+    //$arrayCSVIniciales = loadDataFromCSV("https://docs.google.com/spreadsheets/d/1-y5_vwyDSa3yJIdwy7O4R-l_CLK180WTsK_7gFt8EGw/pub?gid=1768150788&single=true&output=csv");
+    $arrayCSVIniciales = loadDataFromCSV("members/membersIniciales.csv");
 	$miArrayPositions = array();
 	
 	$formerMembers = array();
@@ -107,7 +112,10 @@
 	$numTotal = sizeof($head);
 	$resto = $numTotal % 3;
 	$elemento = "";
-    $elemento .= '<div class="col-xs-12 head antiguo">';
+	if(strcmp($arrayCSVIniciales[0][1],"n")==0)
+    	$elemento .= '<div class="col-xs-12 head antiguo noinicial">';
+    else
+    	$elemento .= '<div class="col-xs-12 head antiguo">';
     //$elemento .= '<div class="portfolio_single_content estilo-members">';
     $elemento .= '<div class="container"><div class="devider"></div><h4 class="text-center">HEAD</h4></div>';
     $elemento .= '<div class="estilo-members ">';
@@ -198,7 +206,10 @@
     $numTotal = sizeof($researchStaff);
 	$resto = $numTotal % 3;
 	$elemento = "";
-    $elemento .= '<div class="col-xs-12 reseachstaff">';
+	if(strcmp($arrayCSVIniciales[1][1],"n")==0)
+    	$elemento .= '<div class="col-xs-12 researchstaff noinicial">';
+    else
+    	$elemento .= '<div class="col-xs-12 researchstaff">';
     $elemento .= '<div class="container"><div class="devider"></div><h4 class="text-center">RESEARCH STAFF</h4></div>';
     $elemento .= '<div class="estilo-members ">';
     for ($i = 0; $i < sizeof($researchStaff); $i++) {
@@ -287,7 +298,10 @@
     $numTotal = sizeof($reseachAssistants);
 	$resto = $numTotal % 3;
 	$elemento = "";
-    $elemento .= '<div class="col-xs-12 researchassistants">';
+	if(strcmp($arrayCSVIniciales[2][1],"n")==0)
+    	$elemento .= '<div class="col-xs-12 researchassistants noinicial">';
+    else
+    	$elemento .= '<div class="col-xs-12 researchassistants">';
     $elemento .= '<div class="container"><div class="devider"></div><h4 class="text-center">RESEARCH ASSISTANTS</h4></div>';
     $elemento .= '<div class="estilo-members">';
     $contadorResto =2 ;
@@ -377,7 +391,10 @@
     $numTotal = sizeof($externalsCollaborators);
 	$resto = $numTotal % 3;
     $elemento = "";
-    $elemento .= '<div class="col-xs-12 externalcollaborators">';
+    if(strcmp($arrayCSVIniciales[4][1],"n")==0)
+    	$elemento .= '<div class="col-xs-12 externalcollaborators noinicial">';
+    else
+    	$elemento .= '<div class="col-xs-12 externalcollaborators">';
     //$elemento .= '<div class="portfolio_single_content estilo-members">';
     $elemento .= '<div class="container"><div class="devider"></div><h4 class="text-center">EXTERNAL COLLABORATORS</h4></div>';
     $elemento .= '<div class="estilo-members ">';
@@ -467,7 +484,10 @@
     $numTotal = sizeof($technicalStaff);
 	$resto = $numTotal % 3;
     $elemento = "";
-    $elemento .= '<div class="col-xs-12 technicalstaff">';
+    if(strcmp($arrayCSVIniciales[7][1],"n")==0)
+    	$elemento .= '<div class="col-xs-12 technicalstaff noinicial">';
+    else
+    	$elemento .= '<div class="col-xs-12 technicalstaff">';
     //$elemento .= '<div class="portfolio_single_content estilo-members">';
     $elemento .= '<div class="container"><div class="devider"></div><h4 class="text-center">TECHNICAL STAFF</h4></div>';
     $elemento .= '<div class="estilo-members ">';
@@ -560,7 +580,10 @@
     $numTotal = sizeof($phdStudents);
 	$resto = $numTotal % 3;
     $elemento = "";
-    $elemento .= '<div class="col-xs-12 phdstudents">';
+    if(strcmp($arrayCSVIniciales[3][1],"n")==0)
+    	$elemento .= '<div class="col-xs-12 phdstudents noinicial">';
+    else
+    	$elemento .= '<div class="col-xs-12 phdstudents">';
     //$elemento .= '<div class="portfolio_single_content estilo-members">';
     $elemento .= '<div class="container"><div class="devider"></div><h4 class="text-center">PHD STUDENTS</h4></div>';
     $elemento .= '<div class="estilo-members ">';
@@ -650,7 +673,10 @@
     $numTotal = sizeof($mscStudents);
 	$resto = $numTotal % 3;
     $elemento = "";
-    $elemento .= '<div class="col-xs-12 mscstudents">';
+    if(strcmp($arrayCSVIniciales[6][1],"n")==0)
+    	$elemento .= '<div class="col-xs-12 mscstudents noinicial">';
+    else
+    	$elemento .= '<div class="col-xs-12 mscstudents">';
     //$elemento .= '<div class="portfolio_single_content estilo-members">';
     $elemento .= '<div class="container"><div class="devider"></div><h4 class="text-center">MSC STUDENTS</h4></div>';
     $elemento .= '<div class="estilo-members ">';
@@ -740,6 +766,10 @@
     $numTotal = sizeof($formerMembers);
 	$resto = $numTotal % 3;
 	$elemento = "";
+	if(strcmp($arrayCSVIniciales[5][1],"n")==0)
+    	$elemento .= '<div class="col-xs-12 formermembers noinicial">';
+    else
+    	$elemento .= '<div class="col-xs-12 formermembers">';
     $elemento .= '<div class="col-xs-12 formermembers">';
     $elemento .= '<div class="container"><div class="devider"></div><h4 class="text-center">FORMER MEMBERS</h4></div>';
     $elemento .= '<div class="estilo-members">';
