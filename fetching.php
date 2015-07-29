@@ -5,28 +5,33 @@
 		$miJson = file_get_contents($miJsonURL);
 		$members = 'members.json';
 		$bytes_escritos_members = file_put_contents($members, $miJson);
+		
 		// Generación de fundings
 		//$miJsonURL = "http://www.isa.us.es/apps/api/projects/";
 		$miJsonURL = "http://localhost/apps/api/projects/";
 		$miJson = file_get_contents($miJsonURL);
 		$fundings = 'fundings.json';
 		$bytes_escritos_fundings = file_put_contents($fundings, $miJson);
+
 		// Generación de publications
 		//$miurl="http://www.isa.us.es/apps/api/publications/full";
 		$miurl="http://localhost/apps/api/publications/full/";
 		$miJson = file_get_contents($miurl);
 		$publications = 'publications.json';
 		$bytes_escritos_publications = file_put_contents($publications, $miJson);
+
 		// Generación de publications
 		$miurl="https://docs.google.com/spreadsheets/d/1ysrUC9ls0ElV39V1IXXseWubjoQxwC4-uneFRustaKM/pub?gid=0&single=true&output=csv";
 		$miJson = file_get_contents($miurl);
 		$tools = 'tools/tools.csv';
 		$bytes_escritos_tools = file_put_contents($tools, $miJson);
+
 		// Generación de collaborations
 		$miurl = "https://docs.google.com/spreadsheets/d/1DqBiUjIaL0nyPQ89VWP5pt3uqxrszaobeMfD_LyK3qM/pub?output=csv";
 		$miJson = file_get_contents($miurl);
 		$collaborations = 'collaborations/collaborationsCSV.csv';
 		$bytes_escritos_collaborations = file_put_contents($collaborations, $miJson);
+
 		// Research Lines
 		$miurl = "https://docs.google.com/spreadsheets/d/171m6bh9V3-NfkqB3V49laxFHEYrwD28jZX36egZnTtM/pub?output=csv";
 		$miJson = file_get_contents($miurl);
@@ -39,8 +44,18 @@
 		$membersCSV = 'members/members.csv';
 		$bytes_escritos_membersCSV = file_put_contents($membersCSV, $miJson);
 
+		// General.CSV
+		$miurl = "https://docs.google.com/spreadsheets/d/1TUpBi-kl91m-mg83DOnnpmOmE30zU0QKPqIPH0XnueQ/pub?output=csv";
+		$miJson = file_get_contents($miurl);
+		$generalCSV = 'general/general.csv';
+		$bytes_escritos_generalCSV = file_put_contents($generalCSV, $miJson);
+
 		$mensaje = "";
 		$mensaje .= '<h3>Data loaded:</h3>';
+		$mensaje .= '<a href="general/general.csv">general.csv</a>, '.$bytes_escritos_generalCSV.' bytes escritos<br/>';
+		$mensaje .= 'From: <br/>';
+		$mensaje .= '-[[<a href="https://docs.google.com/spreadsheets/d/1TUpBi-kl91m-mg83DOnnpmOmE30zU0QKPqIPH0XnueQ/pub?output=csv">https://docs.google.com/spreadsheets/d/1TUpBi-kl91m-mg83DOnnpmOmE30zU0QKPqIPH0XnueQ/pub?output=csv</a>]] ("General" sheet in Google Drive) <br/>';
+		$mensaje .= '<br/>';
 		$mensaje .= '<a href="publications.json">publications.json</a>, '.$bytes_escritos_publications.' bytes escritos<br/>';
 		$mensaje .= 'From: <br/>';
 		$mensaje .= '-[[<a href="http://www.isa.us.es/apps/api/publications/">http://www.isa.us.es/apps/api/publications/</a>]] (ISA'."'".'s Drupal) <br/>';

@@ -97,22 +97,11 @@
             </header>
             <!-- ========= END HEADER =========-->
             
-            
+           
         	<!-- Begin text carousel intro section -->
-			<section id="text-carousel-intro-section" class="parallax" data-stellar-background-ratio="0.5" style="background-image: url(img/fondoISA2.jpg);">
-				<div class="container">
-					<div class="caption text-center text-white" data-stellar-ratio="0.7">
-                        <!--id="owl-intro-text" class="owl-carousel"-->
-						<div id="" class="">
-							<div class="item">
-								<h1>Welcome to ISA site!</h1>
-								<p>ISA is the Research Group of Applied Software Engineering composed by research staff of the Department Computer Languages and Systems of the University of Sevilla.</p>
-							</div>
-						</div>
 
-					</div> <!-- /.caption -->
-				</div> <!-- /.container -->
-			</section>
+		    <?php include_once('leeCabeceraCSV.php'); ?>
+
 			<!-- End text carousel intro section -->
 
             <!--Begin team section-->  
@@ -159,17 +148,7 @@
             <!--End team section-->
 
             <!-- Begin page parallax-->
-            <section id="testimonial-section">
-
-                <div id="testimonial-trigger" class="testimonial text-white parallax" data-stellar-background-ratio="0.5" style="background-image: url(img/ETSII.jpg);">
-                    <div class="cover">
-                   
-                    </div>
-                 <div class="extra-space-l"></div>
-                    <div class="extra-space-l"></div>
-                    <div class="extra-space-l"></div>
-                </div>
-            </section>
+            <?php include_once('leeParallax-1CSV.php'); ?>
             <!-- End page parallax -->
 
               
@@ -199,14 +178,7 @@
             <!-- End Services -->
            
             <!-- Begin page parallax-->
-            <section id="testimonial-section">
-                <div id="testimonial-trigger" class="testimonial text-white parallax" data-stellar-background-ratio="0.5" style="background-image: url(img/ISA.jpg);">
-                <div class="cover"></div>
-                <div class="extra-space-l"></div>
-                <div class="extra-space-l"></div>
-                <div class="extra-space-l"></div>
-                </div>
-            </section>
+            <?php include_once('leeParallax-2CSV.php'); ?>
             <!-- End page parallax -->
                 
             <!-- Begin Portfolio -->
@@ -229,7 +201,7 @@
                                 <div class="portfoloi_content_area" >
                                     <div class="portfolio_menu" id="filters">
                                         <ul>
-                                            <li class="active_prot_menu"><a href="#porfolio_menu" data-filter="*">All project</a></li>
+                                            <!--<li class="active_prot_menu"><a href="#porfolio_menu" data-filter="*">All project</a></li>-->
                                             <li><a href="#porfolio_menu" data-filter=".ongoing">Ongoing projects</a></li>
                                             <li><a href="#porfolio_menu" data-filter=".publicprivate" >Public-Private Partnerships</a></li>
                                             
@@ -316,20 +288,7 @@
                 <div class="container">
                     <div class="row">
                     	<ul class="style-collaborations-section">
-                            <?php include("leeCollaborationsCSV.php"); ?>
-
-                           <!-- <li>Dr. Pastor and Dr. Pelechano's group, from the Univ. Politécnica de Valencia. Topic: transformation from BPMN to BPEL in order to build web applications automatically and development of dynamic software product line for embedded systems.</li>
-                            <li>Dr. Vallecillo's group, from the Univ. de Málaga. Topic: formal transformations between models.</li>
-                            <li>Drs. Franch and Botella's group, from the Univ. Politécnica de Cataluña. Topic: treatment of non-functional requirements for the procurement of software components, including web services, and in applying agile methodologies to develop software product lines.</li>
-                            <li>Dr. Batory's group, from the Univ. of Texas. Topic: Software Product Lines and feature-oriented programming.</li>
-                            <li>Dr. Hieron's group, from the Brunel University, Uxbridge, Middlesex, UK. Topic: Testing of SPL automated analysis tools.</li>
-                            <li>Dr. Heymans' group, from the Univ. of Namur in Belgium. Topic: establishing relations between feature models and other domain models in the development of product lines.</li>
-                            <li>Dr. Schmidt's group, from the Univ. of Vanderbilt in Tennessee. Topic: deployment of application in software product lines by means of configurators.</li>
-                            <li>Dr. Shrivastava's group, from the Univ. of Newcastle. Topic: automatic web service procurement, including topics like trust, reputation and creation of electronic agreements</li>
-                            <li>Dr. Casati's group, form the Univ. of Trento. Topic: automated analysis of SLAs, development of citation metrics based on mash-ups.</li>
-                            <li>Dr. Weske's group, from the HPI at the Univ. of Potsdam. Topic: definition of process performance indicators.</li>
-                            <li>Dr. Hinchey's group, from the Irish Software Engineering Research Centre Lero, University of Limerick. Topic: Agent-oriented software engineering and Multi-agent system software product lines.</li>--> 
-                                                 
+                            <?php include("leeCollaborationsCSV.php"); ?>                                                 
                         </ul>
                     </div>
                 </div>
