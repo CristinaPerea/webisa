@@ -179,18 +179,16 @@
                 <div class="page-header-wrapper">
                     <div class="container">
                         <div class="page-header text-center wow fadeInUp" data-wow-delay="0.3s">
-                            <h2>Research Lines</h2>
+                            <!--<h2>Research Lines</h2>
                             <div class="devider"></div>
                             <p class="subtitle">Our research spans four research areas including Service Oriented Computing, Business Process Management, Software Engineering and Methodologies and Software Product Lines. More specifically, our research lines focus on the following topics:</p>
                         </div>
                     </div>
                 </div>
-                <!-- End page header-->
-
-                <!-- Begin rotate box-1 -->
+                
                 <div class="rotate-box-1-wrapper">
                     <div class="container">
-                        <div class="row">
+                        <div class="row">-->
                             <?php include('leeResearchCSV.php'); ?>
                         </div> <!-- /.row -->
                     </div> <!-- /.container -->

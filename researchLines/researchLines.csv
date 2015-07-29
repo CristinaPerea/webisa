@@ -1,9 +1,10 @@
-Título,Descripción
-Service Level Agreements (SLAs),"Automated analysis, creation, diagnosis, negotiation and management of SLAs; advanced models of SLAs: temporal-awareness, symmetry, uncertainty, composition; formalisation and extension of WS-Agreement."
-SOA Governance,"Automated analysis, creation, diagnosis and management of governance documents; policies modelling; enforcement of SLAs; autonomic and self-* platforms; monitoring."
-Requirements engineering,"Requirements elicitation, specification, analysis, negotiation, validation and verification."
-Services engineering,"Quality-aware service composition, advanced modelling and management of user preferences; semantic discovery and ranking; service life-cycle support."
-Software product lines,Automated analysis and management of feature models; algebra of variability models; software ecosystems; product management.
-Metaheuristics,"Development of metaheuristic frameworks and ecosystems; new heuristics for optimization problems in service and software engineering: composition, negotiation, ranking..."
-Business process management,"Automated analysis, diagnosis and management of process models; key performance indicators and process performance indicators; business transactions; dashboards; compliance analysis; process model algebras."
-Software process,"Application lifecycle management (ALM); reference models (CMMI, Metrica...)."
+Título,Descripción,icon
+Research Lines,"Our research spans four research areas including Service Oriented Computing, Business Process Management, Software Engineering and Methodologies and Software Product Lines. More specifically, our research lines focus on the following topics:",
+Service Level Agreements (SLAs),"Automated analysis, creation, diagnosis, negotiation and management of SLAs; advanced models of SLAs: temporal-awareness, symmetry, uncertainty, composition; formalisation and extension of WS-Agreement.",fa-file-text-o
+SOA Governance,"Automated analysis, creation, diagnosis and management of governance documents; policies modelling; enforcement of SLAs; autonomic and self-* platforms; monitoring.",fa-cube
+Requirements engineering,"Requirements elicitation, specification, analysis, negotiation, validation and verification.",fa-database
+Services engineering,"Quality-aware service composition, advanced modelling and management of user preferences; semantic discovery and ranking; service life-cycle support.",fa-retweet
+Software product lines,Automated analysis and management of feature models; algebra of variability models; software ecosystems; product management.,fa-code
+Metaheuristics,"Development of metaheuristic frameworks and ecosystems; new heuristics for optimization problems in service and software engineering: composition, negotiation, ranking...",fa-code-fork
+Business process management,"Automated analysis, diagnosis and management of process models; key performance indicators and process performance indicators; business transactions; dashboards; compliance analysis; process model algebras.",fa-cubes
+Software process,"Application lifecycle management (ALM); reference models (CMMI, Metrica...).",fa-cogs
