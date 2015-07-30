@@ -333,7 +333,7 @@
                         	<div class="col-sm-6">
                                 <div class="contact-form">
                                 	<h4>Write to us</h4>
-                                    <form role="form">
+                                   <form role="form" id="formularioContacto" action="enviarEmail.php" name="formularioContacto" method="POST">
                                         <div class="form-group">
                                             <input type="text" class="form-control input-lg" placeholder="Your Name" required>
                                         </div>
