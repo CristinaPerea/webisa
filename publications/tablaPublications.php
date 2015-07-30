@@ -84,8 +84,10 @@ only screen and (max-width: 760px) {
 	*/
 	td:nth-of-type(1):before { content: "Authors"; }
 	td:nth-of-type(2):before { content: "Title"; }
+	td:nth-of-type(3):before { content: "Year"; }
+	td:nth-of-type(4):before { content: "Publication"; }
 	/*td:nth-of-type(3):before { content: "Description"; }*/
-	td:nth-of-type(3):before { content: "PDF"; }
+	td:nth-of-type(5):before { content: "PDF"; }
 
 	@media{
 
@@ -113,7 +115,7 @@ only screen and (max-width: 760px) {
         </div>
         </form>
         </div>';
-		$mensaje .= '<table id="qs_tableTotal" border="1" class=""><thead id="cabecera-publicaciones"><tr><th width="30%">Authors</th><th width="30%">Title</th><!--<th width="35%">Description</th>--><th style="height:10px;" width="5%">PDF</th></tr></thead><tbody class="">';
+		$mensaje .= '<table id="qs_tableTotal" border="1" class=""><thead id="cabecera-publicaciones"><tr><th width="30%">Authors</th><th width="30%">Title</th><th width="5%">Year</th><th width="30%">Publication</th><th width="5%">PDF</th></tr></thead><tbody class="">';
 		foreach ($miarray as $miarraykey => $miarrayvalue) {
 			//echo "Title = ".$miarrayvalue->{'title'}.'<br/>';
 		//echo "Description = ".$miarrayvalue->{'description'}.'<br/>';
@@ -146,6 +148,11 @@ only screen and (max-width: 760px) {
 					$parametro = $parametro || true;
 	    			
 				if($primerParametro || $parametro) {
+					$year = $miarrayvalue->{'yearOfPublication'};
+					if(array_key_exists('journal', $miarrayvalue))
+						$publicacion = $tituloLibro.' '.$miarrayvalue->{'journal'}.' '.$miarrayvalue->{'volume'}.' '.$miarrayvalue->{'pages'};
+					else
+						$publicacion = $tituloLibro.' '.$miarrayvalue->{'volume'}.' '.$miarrayvalue->{'pages'};
 					$url="";
 					$pdf = $miarrayvalue->{'fullPdf'};
 					if($pdf != null) {
@@ -162,7 +169,8 @@ only screen and (max-width: 760px) {
 					$mensaje .= '<tr ';
 						$mensaje .= ' class="entry"><td>'.$autores.'</td>';
 						$mensaje .= '<td>'.$title.'</td>';
-						//$mensaje .= '<td>'.$descripcion.'</td>';
+						$mensaje .= '<td>'.$year.'</td>';
+						$mensaje .= '<td>'.$publicacion.'</td>';
 						if($url != "")
 							$mensaje .= '<td><a target="_blank" href="'.$url.'"><center><img src="publications/icon-pdf.png"></img></center></a></td>';
 						else 
@@ -191,7 +199,7 @@ only screen and (max-width: 760px) {
 		}*/
 		
 		echo $mensaje;
-		$mensaje = '<table id="qs_tableTotalBusquedas" border="1" class=""><thead id="cabecera-publicaciones"><tr><th width="30%">Authors</th><th width="30%">Title</th><!--<th width="35%">Description</th>--><th style="height:10px;" width="5%">PDF</th></tr></thead><tbody class="">';
+		$mensaje = '<table id="qs_tableTotalBusquedas" border="1" class=""><thead id="cabecera-publicaciones"><tr><th width="30%">Authors</th><th width="30%">Title</th><th width="5%">Year</th><th width="30%">Publication</th><th width="5%">PDF</th></tr></thead><tbody class="">';
 		foreach ($miarray as $miarraykey => $miarrayvalue) {
 			//echo "Title = ".$miarrayvalue->{'title'}.'<br/>';
 		//echo "Description = ".$miarrayvalue->{'description'}.'<br/>';
@@ -225,6 +233,11 @@ only screen and (max-width: 760px) {
 					$parametro = $parametro || true;
 
 				if($primerParametro || $parametro) {
+				$year = $miarrayvalue->{'yearOfPublication'};
+					if(array_key_exists('journal', $miarrayvalue))
+						$publicacion = $tituloLibro.' '.$miarrayvalue->{'journal'}.' '.$miarrayvalue->{'volume'}.' '.$miarrayvalue->{'pages'};
+					else
+						$publicacion = $tituloLibro.' '.$miarrayvalue->{'volume'}.' '.$miarrayvalue->{'pages'};
 				$url = "";
 				$pdf = $miarrayvalue->{'fullPdf'};
 				if($pdf != null) {
@@ -241,11 +254,12 @@ only screen and (max-width: 760px) {
 				$mensaje .= '<tr ';
 					$mensaje .= ' class="entry"><td>'.$autores.'</td>';
 					$mensaje .= '<td>'.$title.'</td>';
-					//$mensaje .= '<td>'.$descripcion.'</td>';
+					$mensaje .= '<td>'.$year.'</td>';
+					$mensaje .= '<td>'.$publicacion.'</td>';
 					if($url != "")
 						$mensaje .= '<td><a target="_blank" href="'.$url.'"><center><img src="publications/icon-pdf.png"></img></center></a></td>';
 					else 
-						$mensaje .= '<td>Not available</td>';
+						$mensaje .= '<td><div class="icono"></div></td>';
 					$mensaje .= '</tr>';
 				}
 			}
