@@ -1447,3 +1447,12 @@ div.estilo-members>ul>li{
 .noinicial {
 	display:none;
 }
+
+div>a.estilo-hover-tools {
+	margin-top:10px;
+}
+
+div>span.estilo-hover-tools {
+	margin-top:3px;
+	text-transform: none;
+}

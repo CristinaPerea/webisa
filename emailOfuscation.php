@@ -1,7 +1,8 @@
 <?php
 function hide_email($email)
 
-{ $character_set = '+-.0123456789@ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcdefghijklmnopqrstuvwxyz';
+{ 
+  $character_set = '+-.0123456789@ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcdefghijklmnopqrstuvwxyz';
 
   $key = str_shuffle($character_set); $cipher_text = ''; $id = 'e'.rand(1,999999999);
 
