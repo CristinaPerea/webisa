@@ -325,7 +325,7 @@
                                     <ul class="contact-address">
 			                            <li><i class="fa fa-map-marker fa-lg"></i>&nbsp; Office F1.46. Dpto. Lenguajes y Sistemas Informáticos.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Universidad de Sevilla. ETSII.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Avda. Renia Mercedes, s/n 41012 Sevilla. Spain.</li>
 			                            <li><i class="fa fa-phone"></i>&nbsp; +34 954556874</li>
-			                            <li><i class="fa fa-envelope"></i>aruiz@us.es</li>
+			                            <li><i class="fa fa-envelope"></i><?php include_once("emailOfuscation.php"); echo hide_email("aruiz@us.es"); ?></li>
 			                        </ul>
                                 </div>
                             </div>
