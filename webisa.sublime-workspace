@@ -4,84 +4,120 @@
 		"selected_items":
 		[
 			[
-				"arra",
-				"arrayCollaborations"
+				"bytes_escritos_mem",
+				"bytes_escritos_memebersCSVIniciales"
 			],
 			[
-				"array",
-				"arrayResearch"
+				"members",
+				"membersCSVIniciales"
 			],
 			[
-				"inli",
-				"inline-block"
+				"technica",
+				"technicalstaff"
 			],
 			[
-				"element",
-				"elemento"
+				"external",
+				"externalcollaborators"
 			],
 			[
-				"Pro",
-				"projectID"
-			],
-			[
-				"pro",
-				"projectID"
-			],
-			[
-				"coor",
-				"coordinator"
-			],
-			[
-				"mi",
-				"miFunding"
-			],
-			[
-				"coo",
-				"coordinator"
-			],
-			[
-				"end",
-				"endDate"
-			],
-			[
-				"mij",
-				"miJsonValue"
-			],
-			[
-				"miJson",
-				"miJsonValue"
-			],
-			[
-				"rese",
+				"resear",
 				"researchStaff"
 			],
 			[
-				"include",
-				"include_once"
+				"arrayCSV",
+				"arrayCSVIniciales"
 			],
 			[
-				"margin",
+				"cre",
+				"creaElemento"
+			],
+			[
+				"enlaceA",
+				"enlaceADefaultWeb"
+			],
+			[
+				"margin-",
 				"margin-left"
 			],
 			[
-				"area",
-				"areaAñadida"
+				"contador",
+				"contadorResto"
 			],
 			[
-				"array_p",
-				"array_push"
+				"in-",
+				"inline-table"
 			],
 			[
-				"magin",
-				"margin-right"
+				"font",
+				"font"
 			],
 			[
-				"mar",
-				"margin-left"
+				"font-s",
+				"font-style"
 			],
 			[
-				"list",
-				"list-style"
+				"text-",
+				"text-transform"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"miP",
+				"miPaginadoInicial()"
+			],
+			[
+				"array",
+				"arrayCSVMembers"
+			],
+			[
+				"arr",
+				"arrayCSVMembers"
+			],
+			[
+				"tipo",
+				"tipoDeMiembro"
+			],
+			[
+				"file_",
+				"file_put_contents"
+			],
+			[
+				"fe",
+				"fechaFormateada"
+			],
+			[
+				"ca",
+				"caractervacio"
+			],
+			[
+				"max-",
+				"max-width"
+			],
+			[
+				"enla",
+				"enlaceHerramienta"
+			],
+			[
+				"des",
+				"descripcionHerramienta"
+			],
+			[
+				"arra",
+				"arrayHerramientas"
+			],
+			[
+				"enl",
+				"enlaceHerramienta"
+			],
+			[
+				"include_",
+				"set_include_path"
+			],
+			[
+				"include_pat",
+				"get_include_path"
 			],
 			[
 				"enlaceLoo",
@@ -93,10 +129,6 @@
 			],
 			[
 				"enlace",
-				"enlaceLogoGrupo"
-			],
-			[
-				"enla",
 				"enlaceLogoGrupo"
 			],
 			[
@@ -138,10 +170,6 @@
 			[
 				"h6",
 				"h6-participantes-right"
-			],
-			[
-				"text",
-				"text-align"
 			],
 			[
 				"res",
@@ -232,16 +260,8 @@
 				"enlaceLogoHerramienta"
 			],
 			[
-				"font",
-				"font-weight"
-			],
-			[
 				"cta-sec",
 				"cta-section2"
-			],
-			[
-				"file_",
-				"file_get_contents"
 			],
 			[
 				"print",
@@ -272,10 +292,6 @@
 				"font-weight"
 			],
 			[
-				"text-",
-				"text-decoration"
-			],
-			[
 				"in",
 				"inline-block"
 			],
@@ -291,43 +307,16 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "/C/Users/criperrui/Desktop/DSA/APUNTES/Modulos(I)",
-			"settings":
-			{
-				"buffer_size": 3245,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/criperrui/Desktop/DSA/APUNTES/sesion6.txt",
-			"settings":
-			{
-				"buffer_size": 1212,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/criperrui/Desktop/DSA/APUNTES/Sesión7Cris.txt",
-			"settings":
-			{
-				"buffer_size": 172,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/criperrui/Desktop/DSA/APUNTES/sesion5Cris.txt",
-			"settings":
-			{
-				"buffer_size": 3541,
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "Packages/SASS Build/SASS.sublime-build",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
 	"command_palette":
 	{
 		"height": 392.0,
+		"last_filter": "",
 		"selected_items":
 		[
 			[
@@ -425,62 +414,68 @@
 	"expanded_folders":
 	[
 		"/C/xampp/htdocs/webisa",
-		"/C/xampp/htdocs/webisa/css"
+		"/C/xampp/htdocs/webisa/css",
+		"/C/xampp/htdocs/webisa/js"
 	],
 	"file_history":
 	[
-		"/C/Users/criperrui/Desktop/DSA/APUNTES/clausura.txt",
 		"/C/xampp/htdocs/webisa/leeJson.php",
-		"/C/xampp/htdocs/webisa/leeCollaborationsCSV.php",
 		"/C/xampp/htdocs/webisa/fetching.php",
-		"/C/xampp/htdocs/webisa/tools/tools.php",
-		"/C/xampp/htdocs/webisa/publications/tablaPublications.php",
-		"/C/xampp/htdocs/webisa/leeResearchCSV.php",
-		"/C/xampp/htdocs/webisa/leeFundingJson.php",
-		"/C/xampp/htdocs/webisa/css/estilo-slider-herramientas.css",
-		"/C/xampp/htdocs/webisa/fundingCSV.php",
 		"/C/xampp/htdocs/webisa/index.php",
+		"/C/xampp/htdocs/webisa/js/manejoMembers.js",
 		"/C/xampp/htdocs/webisa/css/style.css",
-		"/C/xampp/htdocs/webisa/members.json",
+		"/C/xampp/htdocs/webisa/publications/tablaPublications.php",
+		"/C/xampp/htdocs/webisa/leeFundingJson.php",
+		"/C/xampp/htdocs/webisa/publications/manejoDeTabla.js",
+		"/C/xampp/htdocs/rcis/css/style.scss",
+		"/C/xampp/htdocs/rcis/css/style.css",
+		"/C/xampp/htdocs/rcis/tablaTotal.php",
+		"/C/xampp/htdocs/rcis/tablaResumen.php",
+		"/C/xampp/htdocs/webisa/css/estilo-slider-herramientas.css",
+		"/C/xampp/htdocs/webisa/leeResearchCSV.php",
+		"/C/xampp/htdocs/webisa/leeCollaborationsCSV.php",
+		"/C/xampp/htdocs/webisa/tools/toolsSlider.php",
+		"/C/xampp/htdocs/webisa/publications/searcher.js",
+		"/C/xampp/htdocs/webisa/tools/tools.php",
+		"/C/xampp/htdocs/bootstrap/02grid/index.html",
+		"/C/Users/MarcosAlberto/Downloads/Tools - Sheet1.csv",
+		"/C/xampp/htdocs/webisa/css/skin/cool-gray.css",
+		"/C/xampp/htdocs/webisa/css/mobile.css",
+		"/C/xampp/htdocs/webisa/js/theme.js",
+		"/C/xampp/htdocs/webisa/fundingCSV.php",
+		"/C/xampp/htdocs/webisa/fetchData.php",
+		"/C/xampp/htdocs/webisa/checkCredentials.php",
+		"/C/xampp/htdocs/webisa/js/manejoSliderHerramientas.js",
 		"/C/xampp/htdocs/webisa/publications/lectorPublicationsJSON.php",
+		"/C/xampp/htdocs/rcis/listaHerramientas.php",
+		"/C/xampp/htdocs/rcis/sliderHerramientasResponsive.html",
+		"/C/xampp/htdocs/rcis/cuerpoindex.html",
+		"/C/xampp/htdocs/webisa/tools/toolsSliderResponsive.php",
+		"/C/xampp/htdocs/rcis/js/manejoSliderHerramientas.js",
+		"/C/xampp/htdocs/webisa/tools/tools.csv",
+		"/C/xampp/htdocs/rcis/sliderHerramientasJSON.php",
+		"/C/Users/MarcosAlberto/Desktop/descargas.html",
 		"/C/xampp/htdocs/webisa/fundingCSVPublicPrivate.php",
 		"/C/xampp/htdocs/webisa/fundingCSVAll.php",
-		"/C/xampp/htdocs/webisa/js/theme.js",
-		"/C/Users/criperrui/Desktop/Modulos(I)",
-		"/C/xampp/htdocs/unika/index.html",
-		"/C/Users/criperrui/Google Drive/Drupal Summer/DrupalAcademy Sesión 6/Notas.txt",
-		"/C/Users/criperrui/Desktop/PARA FORO",
-		"/C/Users/criperrui/Google Drive/Drupal Summer/DrupalAcademy Sesión 7/Notas.txt",
-		"/C/xampp/htdocs/webisa/css/skin/cool-gray.css",
-		"/C/xampp/htdocs/webisa/inc/isotope.pkgd.min.js",
-		"/C/xampp/htdocs/webisa/funding/fundingCSV.php",
-		"/C/xampp/htdocs/webisa/funding/fundingPublicPrivateCSV.csv",
-		"/C/xampp/htdocs/webisa/index.html",
-		"/C/xampp/htdocs/rcis/listaHerramientas.php",
-		"/C/xampp/htdocs/webisa/funding/fundingCSVAll.csv",
-		"/C/xampp/htdocs/webisa/funding/FundingCSV.csv",
-		"/C/xampp/htdocs/rcis/participantesCSV.php",
-		"/C/xampp/htdocs/rcis/sliderHerramientasJSON.php",
-		"/C/xampp/htdocs/rcis/cuerpoindex.html",
-		"/C/xampp/htdocs/rcis/lectorCSV.php",
-		"/C/xampp/htdocs/webisa/css/reset.css",
-		"/C/xampp/htdocs/rcis/css/style.css",
+		"/C/xampp/htdocs/webisa/publications/publications.csv",
+		"/C/xampp/htdocs/rcis/index.php",
+		"/C/xampp/htdocs/rcis/js/manejoDeTablas.js",
+		"/C/xampp/htdocs/rcis/test-table-TotalOriginal.html",
+		"/C/Users/MarcosAlberto/Desktop/Plantillas Parallax/Plantilla Parallax 01/demo.imransdesign.com/unika/index.html",
+		"/C/xampp/htdocs/webisa/tools/tools.xlsx - Hoja1.csv",
+		"/C/xampp/htdocs/webisa/tools/tools2.csv",
 		"/C/xampp/htdocs/rcis/index.html",
-		"/C/xampp/htdocs/webisa/body.html",
+		"/C/xampp/htdocs/webisa/index.html",
+		"/C/Users/MarcosAlberto/Desktop/Plantillas Parallax/Plantilla Parallax 01/portal-herramientas.appspot.com/template4/css/style.css",
 		"/C/xampp/htdocs/archivos_base/Emmet/layout2.html",
 		"/C/Users/criperrui/Desktop/sesion9",
-		"/C/xampp/htdocs/rcis/css/style.scss",
+		"/C/xampp/htdocs/rcis/participantesCSV.php",
 		"/C/xampp/htdocs/rcis/enviarEmail.php",
 		"/C/xampp/htdocs/rcis/css/estilo-slider-herramientas.css",
 		"/C/xampp/htdocs/rcis/js/manejoOutline.js",
 		"/C/xampp/htdocs/rcis/logged.php",
-		"/C/xampp/htdocs/rcis/js/manejoDeTablas.js",
-		"/C/xampp/htdocs/rcis/tablaResumen.php",
-		"/C/xampp/htdocs/rcis/tablaTotal.php",
 		"/C/xampp/htdocs/rcis/outliner.js",
-		"/C/xampp/htdocs/rcis/index.php",
 		"/C/xampp/htdocs/rcis/tablaPrueba.php",
-		"/C/xampp/htdocs/rcis/sliderHerramientasResponsive.html",
 		"/C/Users/criperrui/Downloads/publicaciones-rcis (1).table",
 		"/C/xampp/htdocs/rcis/js/cambiaVistaRecursosDrive.js",
 		"/C/xampp/htdocs/rcis/css/skin/cool-gray.scss",
@@ -488,9 +483,8 @@
 		"/C/xampp/htdocs/rcis/popupsEmails.php",
 		"/C/xampp/htdocs/rcis/errorlogin.php",
 		"/C/xampp/htdocs/rcis/test-table-ResumenOriginal.html",
-		"/C/xampp/htdocs/rcis/test-table-TotalOriginal.html",
+		"/C/xampp/htdocs/rcis/lectorCSV.php",
 		"/C/xampp/htdocs/rcis/sliderHerramientasJSON.html",
-		"/C/xampp/htdocs/rcis/js/manejoSliderHerramientas.js",
 		"/C/Users/criperrui/Google Drive/Drupal Summer/Sesión7Cris.txt",
 		"/C/xampp/htdocs/rcis/scriptsSliderHerramientasFinales.html",
 		"/C/xampp/htdocs/rcis/Popover requires tooltip.html",
@@ -552,11 +546,7 @@
 		"/D/Dropbox/Facultad/Histórico/2/ADA/ADA - Análisis de Algoritmos/2002-2003/ADA/practiObligatoria0304/temporizadores/practiObligatoria0304/TemporizadorBusVoraz.java",
 		"/D/Dropbox/Facultad Grado/2/AC/Prácticas/Práctica 10/Soluciones.txt",
 		"/C/Users/MarcosAlberto/Google Drive/FAC GRADO/ASD (No completa - Actual)/Prácticas/P7ASD (1)/hola_mundo_avanzado_en_anillo.c",
-		"/C/xampp/htdocs/bootstrap/index.php",
-		"/D/Dropbox/Facultad Grado/2/AC/Prácticas/Práctica 11/P11ac/P11ac/practica11.cpp",
-		"/C/Users/MarcosAlberto/git/sos-2015-02/sos-2015-02/war/css/estilos.css",
-		"/C/xampp/htdocs/bootstrap/02grid/index.html",
-		"/C/Users/MarcosAlberto/git/sos-2015-02/sos-2015-02/war/css/fonts.css"
+		"/C/xampp/htdocs/bootstrap/index.php"
 	],
 	"find":
 	{
@@ -575,28 +565,39 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"Members",
-			"v-ce",
-			"portfolio",
-			"members",
-			"all",
-			"funding",
-			"page-scroll",
-			"bounceIn",
-			"clearfix",
-			"etsii",
-			"col-sm",
-			"service-section",
-			"funding",
-			"fund",
-			"data-fi",
+			"resea",
+			"researchAssistants",
+			"research",
+			"[3]",
+			"PDF",
+			"member",
+			"localhost",
+			"img-respnsive-capturas",
+			"img-respnsive",
+			"phd",
+			"msc",
+			"reseachAss",
+			"navbar-nav",
+			"col-md-4 col-sm-4",
+			"col-md-3 col-sm-3",
+			"active_prot_menu",
+			"active-prot-menu",
+			"avatar-members",
+			"estilo-funding",
+			"echo",
+			"portfolio-sec",
+			"logo",
+			"herramientas",
+			"Tools",
+			"logo",
 			"testimonial",
-			"wraper",
-			"cover",
-			"social",
-			".\n",
-			"join",
-			"navba",
+			"extra",
+			"extra-space-1",
+			"cola",
+			"colalb",
+			"colabo",
+			"white",
+			"navbar-brand",
 			"enlaceLogoGrupo",
 			"logos-slider",
 			"button",
@@ -691,15 +692,7 @@
 			";",
 			"ignore",
 			"92.222.220.175",
-			"444",
-			"92.222.220.175",
-			"ProposicionCurso",
-			"plantilla",
-			"entrenamiento",
-			"doc_bu",
-			"video707378/cute_bitches_2",
-			"roxxx",
-			"Light"
+			"444"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -707,6 +700,11 @@
 		"regex": true,
 		"replace_history":
 		[
+			"www.isa.us.es",
+			"col-md-4 col-sm-6",
+			"col-md-4 col-sm-4",
+			"img-responsive avatar-members",
+			"estilo-members",
 			",",
 			"",
 			",",
@@ -723,129 +721,14 @@
 	"groups":
 	[
 		{
-			"selected": 3,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "/C/Users/criperrui/Desktop/DSA/APUNTES/Modulos(I)",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3245,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 270.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/C/Users/criperrui/Desktop/DSA/APUNTES/sesion6.txt",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1212,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/C/Users/criperrui/Desktop/DSA/APUNTES/Sesión7Cris.txt",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 172,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "/C/Users/criperrui/Desktop/DSA/APUNTES/sesion5Cris.txt",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3541,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 23.0
+		"height": 30.0
 	},
 	"input":
 	{
@@ -880,21 +763,23 @@
 	},
 	"output.exec":
 	{
-		"height": 35.0
+		"height": 76.0
 	},
 	"output.find_results":
 	{
 		"height": 0.0
 	},
+	"pinned_build_system": "",
 	"project": "webisa.sublime-project",
 	"replace":
 	{
-		"height": 42.0
+		"height": 62.0
 	},
 	"save_all_on_build": true,
 	"select_file":
 	{
 		"height": 0.0,
+		"last_filter": "",
 		"selected_items":
 		[
 		],
@@ -903,6 +788,7 @@
 	"select_project":
 	{
 		"height": 500.0,
+		"last_filter": "",
 		"selected_items":
 		[
 		],
@@ -911,6 +797,7 @@
 	"select_symbol":
 	{
 		"height": 0.0,
+		"last_filter": "",
 		"selected_items":
 		[
 		],
@@ -924,7 +811,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 245.0,
+	"side_bar_width": 259.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

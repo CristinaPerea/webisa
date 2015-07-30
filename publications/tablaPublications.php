@@ -96,11 +96,11 @@ only screen and (max-width: 760px) {
 		//include_once("lectorCSV.php");
 		//$miarray = loadDataFromCSV("publications/publications.csv");
 		// Código para desarrollo
-		//$miurl="http://www.isa.us.es/apps/api/publications/full";
+		$miurl="http://www.isa.us.es/apps/api/publications/full";
 		// Código para despliegue
 		//$miurl="http://localhost/apps/api/publications/full";
 		// Caché
-		$miurl="publications.json";
+		//$miurl="publications.json";
 		$mijson = file_get_contents($miurl);
 		$miarray = json_decode($mijson);
 		$descripcion = "";
@@ -117,29 +117,58 @@ only screen and (max-width: 760px) {
 		foreach ($miarray as $miarraykey => $miarrayvalue) {
 			//echo "Title = ".$miarrayvalue->{'title'}.'<br/>';
 		//echo "Description = ".$miarrayvalue->{'description'}.'<br/>';
-			if($miarrayvalue->{'public'}) {
-				$url="";
-				$pdf = $miarrayvalue->{'fullPdf'};
-				if($pdf != null) {
-					$url = $pdf->{'filepath'};
-					$url = "http://www.isa.us.es/".$url;
+			if(array_key_exists('jcrIndex', $miarrayvalue->{'quality'}) || array_key_exists('bookTitle', $miarrayvalue)) {
+				if(array_key_exists('jcrIndex', $miarrayvalue->{'quality'}))
+					$primerParametro = $miarrayvalue->{'quality'}->{'jcrIndex'};
+				else
+					$primerParametro = false;
+				if(array_key_exists('bookTitle', $miarrayvalue))
+					$tituloLibro = $miarrayvalue->{'bookTitle'};
+				else
+					$tituloLibro = "";
+
+				$parametro = false;
+				if (strpos($tituloLibro, "ICWS") !== false)
+					$parametro = $parametro || true;
+				if (strpos($tituloLibro, "ICSOC") !== false)
+					$parametro = $parametro || true;
+				if (strpos($tituloLibro, "BPM") !== false)
+					$parametro = $parametro || true;
+				if (strpos($tituloLibro, "CAiSE") !== false)
+					$parametro = $parametro || true;
+				if (strpos($tituloLibro, "CooPIS") !== false)
+					$parametro = $parametro || true;
+				if (strpos($tituloLibro, "SPLC") !== false)
+					$parametro = $parametro || true;
+				if (strpos($tituloLibro, "ASE") !== false)
+					$parametro = $parametro || true;
+				if (strpos($tituloLibro, "CLOSER") !== false)
+					$parametro = $parametro || true;
+	    			
+				if($primerParametro || $parametro) {
+					$url="";
+					$pdf = $miarrayvalue->{'fullPdf'};
+					if($pdf != null) {
+						$url = $pdf->{'filepath'};
+						$url = "http://www.isa.us.es/".$url;
+					}
+					$title = $miarrayvalue->{'title'};
+					$autores = "";
+					foreach ($miarrayvalue->{'authors'} as $miautorkey => $miautorvalue) {
+						$autores .= $miautorvalue->{'firstname'}." ".$miautorvalue->{'lastname'}.", ";
+					}
+					$caractervacio="";
+					$autores = substr($autores, 0, -2).$caractervacio;
+					$mensaje .= '<tr ';
+						$mensaje .= ' class="entry"><td>'.$autores.'</td>';
+						$mensaje .= '<td>'.$title.'</td>';
+						//$mensaje .= '<td>'.$descripcion.'</td>';
+						if($url != "")
+							$mensaje .= '<td><a target="_blank" href="'.$url.'"><center><img src="publications/icon-pdf.png"></img></center></a></td>';
+						else 
+							$mensaje .= '<td><div class="icono"></div></td>';
+						$mensaje .= '</tr>';
 				}
-				$title = $miarrayvalue->{'title'};
-				$autores = "";
-				foreach ($miarrayvalue->{'authors'} as $miautorkey => $miautorvalue) {
-					$autores .= $miautorvalue->{'firstname'}." ".$miautorvalue->{'lastname'}.", ";
-				}
-				$caractervacio="";
-				$autores = substr($autores, 0, -2).$caractervacio;
-				$mensaje .= '<tr ';
-					$mensaje .= ' class="entry"><td>'.$autores.'</td>';
-					$mensaje .= '<td>'.$title.'</td>';
-					//$mensaje .= '<td>'.$descripcion.'</td>';
-					if($url != "")
-						$mensaje .= '<td><a target="_blank" href="'.$url.'"><center><img src="publications/icon-pdf.png"></img></center></a></td>';
-					else 
-						$mensaje .= '<td><div class="icono"></div></td>';
-					$mensaje .= '</tr>';
 			}
 		//echo $autores.'<br/>';
 		}
@@ -166,28 +195,60 @@ only screen and (max-width: 760px) {
 		foreach ($miarray as $miarraykey => $miarrayvalue) {
 			//echo "Title = ".$miarrayvalue->{'title'}.'<br/>';
 		//echo "Description = ".$miarrayvalue->{'description'}.'<br/>';
-			$url = "";
-			$pdf = $miarrayvalue->{'fullPdf'};
-			if($pdf != null) {
-				$url = $pdf->{'filepath'};
-				$url = "http://www.isa.us.es/".$url;
+			if(array_key_exists('jcrIndex', $miarrayvalue->{'quality'}) || array_key_exists('bookTitle', $miarrayvalue)) {
+				if(array_key_exists('jcrIndex', $miarrayvalue->{'quality'}))
+					$primerParametro = $miarrayvalue->{'quality'}->{'jcrIndex'};
+				else
+					$primerParametro = false;
+				if(array_key_exists('bookTitle', $miarrayvalue))
+					$tituloLibro = $miarrayvalue->{'bookTitle'};
+				else
+					$tituloLibro = "";
+
+				
+				$parametro = false;
+				if (strpos($tituloLibro, "ICWS") !== false)
+					$parametro = $parametro || true;
+				if (strpos($tituloLibro, "ICSOC") !== false)
+					$parametro = $parametro || true;
+				if (strpos($tituloLibro, "BPM") !== false)
+					$parametro = $parametro || true;
+				if (strpos($tituloLibro, "CAiSE") !== false)
+					$parametro = $parametro || true;
+				if (strpos($tituloLibro, "CooPIS") !== false)
+					$parametro = $parametro || true;
+				if (strpos($tituloLibro, "SPLC") !== false)
+					$parametro = $parametro || true;
+				if (strpos($tituloLibro, "ASE") !== false)
+					$parametro = $parametro || true;
+				if (strpos($tituloLibro, "CLOSER") !== false)
+					$parametro = $parametro || true;
+
+				if($primerParametro || $parametro) {
+				$url = "";
+				$pdf = $miarrayvalue->{'fullPdf'};
+				if($pdf != null) {
+					$url = $pdf->{'filepath'};
+					$url = "http://www.isa.us.es/".$url;
+				}
+				$title = $miarrayvalue->{'title'};
+				$autores = "";
+				foreach ($miarrayvalue->{'authors'} as $miautorkey => $miautorvalue) {
+					$autores .= $miautorvalue->{'firstname'}." ".$miautorvalue->{'lastname'}.", ";
+				}
+				$caractervacio="";
+				$autores = substr($autores, 0, -2).$caractervacio;
+				$mensaje .= '<tr ';
+					$mensaje .= ' class="entry"><td>'.$autores.'</td>';
+					$mensaje .= '<td>'.$title.'</td>';
+					//$mensaje .= '<td>'.$descripcion.'</td>';
+					if($url != "")
+						$mensaje .= '<td><a target="_blank" href="'.$url.'"><center><img src="publications/icon-pdf.png"></img></center></a></td>';
+					else 
+						$mensaje .= '<td>Not available</td>';
+					$mensaje .= '</tr>';
+				}
 			}
-			$title = $miarrayvalue->{'title'};
-			$autores = "";
-			foreach ($miarrayvalue->{'authors'} as $miautorkey => $miautorvalue) {
-				$autores .= $miautorvalue->{'firstname'}." ".$miautorvalue->{'lastname'}.", ";
-			}
-			$caractervacio="";
-			$autores = substr($autores, 0, -2).$caractervacio;
-			$mensaje .= '<tr ';
-				$mensaje .= ' class="entry"><td>'.$autores.'</td>';
-				$mensaje .= '<td>'.$title.'</td>';
-				//$mensaje .= '<td>'.$descripcion.'</td>';
-				if($url != "")
-					$mensaje .= '<td><a target="_blank" href="'.$url.'"><center><img src="publications/icon-pdf.png"></img></center></a></td>';
-				else 
-					$mensaje .= '<td>Not available</td>';
-				$mensaje .= '</tr>';
 		//echo $autores.'<br/>';
 		}
 		$mensaje .= '</tbody></table>';
